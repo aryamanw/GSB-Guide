@@ -1,0 +1,690 @@
+[
+  {
+    "id": "the-stanford-gsb-unofficial-survival-guide",
+    "title": "The Stanford GSB Unofficial Survival Guide",
+    "chapters": [
+      {
+        "id": "overview",
+        "number": 0,
+        "title": "Welcome & Overview",
+        "subsections": [
+          {
+            "id": "intro-overview",
+            "title": "Overview",
+            "body": "*An unofficial field guide for incoming students, from the people who just lived it*\n\n**Developed by:** Nikhil Jain (MBA Class of 2026)\n*With contributions from dozens of classmates, credited throughout, and material drawn from the International Student Handbook (MBA Student Association International Committee)*\n\n---\n\n> **Disclaimer & Copyright Notice:**\n> This is an unofficial, student-made guide. It is not published, reviewed, or endorsed by Stanford University or the Graduate School of Business. Verify anything sensitive against official sources.\n> \u00a9 2026 Nikhil Jain. Shared freely with the GSB community for personal, non-commercial use. Please don\u2019t republish or rebrand this work externally. Derivative versions (translations, future-class updates, substantial excerpts) should carry permission and clear credit. Want to build on it for a future class? Reach out.\n\n---"
+          }
+        ]
+      },
+      {
+        "id": "contents",
+        "number": 0,
+        "title": "Contents",
+        "subsections": [
+          {
+            "id": "contents-intro",
+            "title": "Contents",
+            "body": "- [How to Use This Guide](#how-to-use-this-guide)\n- [Acknowledgments](#acknowledgments)\n- [A Note from the Guide Creator](#a-note-from-the-guide-creator)\n- [A Brief History of the Farm (and the GSB)](#a-brief-history-of-the-farm-and-the-gsb)\n- **Part I \u2014 Before You Arrive**\n- [Chapter 1: Packing and Shipping](#1-packing-and-shipping)\n- [Chapter 2: Getting to Campus](#2-getting-to-campus)\n- [Chapter 3: Housing](#3-housing)\n- [Chapter 4: Health: Insurance, Vaccinations, and Prep](#4-health-insurance-vaccinations-and-prep)\n- [Chapter 5: Money Setup](#5-money-setup)\n- [Chapter 6: Phones and Connectivity](#6-phones-and-connectivity)\n- [Chapter 7: The Before-You-Arrive Checklist](#7-the-before-you-arrive-checklist)\n- **Part II \u2014 Life at the GSB**\n- [Chapter 8: Getting Oriented](#8-getting-oriented)\n- [Chapter 9: Your Room, Residence Life, and Move-In Shopping](#9-your-room-residence-life-and-move-in-shopping)\n- [Chapter 10: Eating: On Campus and Off](#10-eating-on-campus-and-off)\n- [Chapter 11: Tech, Printing, and Student Discounts](#11-tech-printing-and-student-discounts)\n- [Chapter 12: Communication Channels](#12-communication-channels)\n- [Chapter 13: Academics](#13-academics)\n- [Chapter 14: Careers](#14-careers)\n- [Chapter 15: Social Life, Clubs, and Traditions](#15-social-life-clubs-and-traditions)\n- [Chapter 16: Trips and Travel](#16-trips-and-travel)\n- [Chapter 17: Health and Wellbeing](#17-health-and-wellbeing)\n- [Chapter 18: Getting Around](#18-getting-around)\n- [Chapter 19: The Local Services Directory](#19-the-local-services-directory)\n- [Chapter 20: Significant Others and Families](#20-significant-others-and-families)\n- [Chapter 21: International Students](#21-international-students)\n- [Chapter 22: Community, Relationships, and Looking After Yourself](#22-community-relationships-and-looking-after-yourself)\n- [Chapter 23: Conferences and the Wider Bay Area Ecosystem](#23-conferences-and-the-wider-bay-area-ecosystem)\n- [Chapter 24: Sports, Fitness, and Recreation](#24-sports-fitness-and-recreation)\n- [Chapter 25: Day Trips and Weekend Escapes](#25-day-trips-and-weekend-escapes)\n- [Chapter 26: The Shape of the Year](#26-the-shape-of-the-year)\n- **Part III \u2014 Exiting the GSB**\n- [Chapter 27: The Summer Between Years](#27-the-summer-between-years)\n- [Chapter 28: Second Year](#28-second-year)\n- [Chapter 29: Graduation and Beyond](#29-graduation-and-beyond)\n- **Closing & Appendices**\n- [A Closing Note: On Contribution](#a-closing-note-on-contribution)\n- [Appendix A \u2014 The Resources Folder](#appendix-a--the-resources-folder)\n- [Appendix B \u2014 Quick-Reference Numbers and Links](#appendix-b--quick-reference-numbers-and-links)\n- [Appendix C \u2014 The Official-Links Directory](#appendix-c--the-official-links-directory)\n- [Appendix D \u2014 The GSB Dictionary](#appendix-d--the-gsb-dictionary)\n- [Appendix E \u2014 Quick Answers: The Class-Chat FAQ](#appendix-e--quick-answers-the-class-chat-faq)\n- [Appendix F \u2014 Primary Sources](#appendix-f--primary-sources)\n\n---"
+          }
+        ]
+      },
+      {
+        "id": "how-to-use-this-guide",
+        "number": 0,
+        "title": "How to Use This Guide",
+        "subsections": [
+          {
+            "id": "how-to-use-this-guide-intro",
+            "title": "How to Use This Guide",
+            "body": "Welcome. You are holding (or scrolling) the accumulated, argued-over, road-tested advice of a class of Stanford GSB students \u2014 pulled together from a year of WhatsApp threads, Slack posts, OneNote pages, handouts, and hallway conversations, then cleaned up and organized so you don't have to learn everything the hard way.\n\nThe guide follows the arc of your time here, in three parts:\n- **Part I \u2014 Before You Arrive:** Packing, getting here, housing, insurance, money, and phones. Read this the summer before you land.\n- **Part II \u2014 Life at the GSB:** The big middle: your room, food, tech, communication channels, academics, careers, social life, trips, health, getting around, local services, significant others, international students, and looking after yourself. Skim it early, then come back to chapters as they become relevant.\n- **Part III \u2014 Exiting the GSB:** The summer between years, second year, and graduation \u2014 the things everyone wishes they had known three months earlier.\n\nA companion **Resources folder** holds the most useful original attachments (a health-insurance comparison spreadsheet, a packing list, the Blast FAQ, and several official PDFs). It lives in a public Google Drive folder \u2014 open to anyone with the link, no Stanford login needed \u2014 and every reference to it in this guide is a direct link to the file itself. Appendix A lists everything in it.\n\nShort on time? Each part opens with an **Essentials** page \u2014 the handful of things to read if you read nothing else. And the fastest route of all: feed this guide into an AI assistant (Claude, ChatGPT, or Gemini \u2014 the PDF works well) and simply ask it questions. It will answer with the guide\u2019s specifics and point you to the right chapter.\n\n*(And if you want it on paper: any print shop will spiral-bind the digest-sized PDF for about fifteen dollars. It makes a decent gift for an admit.)*"
+          },
+          {
+            "id": "conventions-and-caveats",
+            "title": "Conventions and Caveats",
+            "body": "- **Attribution:** Advice drawn from named, passed-down guides \u2014 an author's reflection, a resource list with its maker's name on it \u2014 is credited inline. Advice from the class's group chats appears uncited by design; a collective thank-you lives in the Acknowledgments \u2014 with apologies to anyone missed.\n- **Prices and Dates:** Anything with a dollar sign was true in the 2025\u201326 academic year (or is marked with its year) and will drift. One-off events and dated deadlines have been cut; recurring patterns (\u201cregistration opens in late February\u201d) are kept as patterns, not promises.\n- **Links:** Hyperlinks are preserved throughout \u2014 including long Amazon product links and passed-down Google Docs, on the theory that a working link beats a pretty one. Many require a SUNet login; a few will inevitably rot \u2014 search MyGSB for the current page when one does. Class-specific links (forms, spreadsheets, chat invites) are kept as models of what each class rebuilds every year.\n- **A Word on Accuracy:** This guide was sourced from a great deal of information and guidance, compiled at a single point in time. The vast majority should be accurate \u2014 but if anything seems confusing or off, verify it against the GSB Student Support office, your peer mentors, and current MBA2s, who hold the most up-to-date knowledge. Many linked pages get updated (and some don't) \u2014 check the date on anything official before relying on it. External references are used throughout as sources, but it's never a perfect science.\n- **On Completeness:** These tips were deliberately compiled to include more ideas rather than fewer, so you get many students\u2019 takes side by side. Not every tip has been personally tested by the author, and plenty are individual opinions \u2014 take each for what it is.\n\n> **Official Disclaimer Notice:**\n> Nothing in this guide is official. When this document and a Stanford or GSB office disagree, the office is right. For visas and taxes specifically, only Bechtel International Center and a tax professional count.\n\n---"
+          }
+        ]
+      },
+      {
+        "id": "acknowledgments",
+        "number": 0,
+        "title": "Acknowledgments",
+        "subsections": [
+          {
+            "id": "acknowledgments-intro",
+            "title": "Acknowledgments",
+            "body": "Nothing in this guide was learned alone. It is compiled overwhelmingly from the generosity of classmates \u2014 in the advice chats, on Blast and Slack, in passed-down documents, and in hallway answers to one more question. Rather than footnote every tip, this page thanks everyone whose knowledge appears somewhere in these chapters. A companion document records who contributed what.\n\nA special debt is owed to **Mira \u201cMibo\u201d Bodek, MBA \u201925**, whose singular generosity to the Class of 2026 \u2014 and whose care in preserving the social knowledge, data, and institutional memory that a class usually loses \u2014 made so much of this guide possible. She set an example of service and contribution for the next generation to follow.\n\n**Particular debts:**\n- The authors of the passed-down guides this book leans on \u2014 the end-of-year reflection that anchors Chapter 22, the climate-ecosystem map in Chapter 14, the 390 playbook and the Super Round guide in Chapter 13, the free-software catalog in Chapter 11, the health-insurance comparison in Chapter 4, and the alumni-email walkthrough in Chapter 29.\n- The **MBA Student Association International Committee**, whose *International Student Handbook* (\u201cComing to the GSB,\u201d 2022 \u2014 by Diletta Milana, Camila Gonzalez, Florian Dahlhausen, Oceane Wu, Fer Ko, Edgar Bendezu, Angela Kheir, Jialei Qian, and Fransiska Putri Wina Hadiwidjana) is quoted and updated throughout.\n\n**Special thanks to classmates whose names recur throughout:**\n- **Culture & Traditions:** Celeste Bean, Lucia Mees, Alex LaPolice, Helen Cashman, Alexis Cook, Jake Chasan, and Varun Vobilisetty.\n- **Guides & Resource Maps:** Wasan Kumar, Isha Kulkarni, Max Yakubovich, Dr. Nick Chedid, Zach Teiger, Charlie Michael, Divyansh Agarwal, and Soham Saha.\n- **Community:** Yusef Houamed, whose \u201ccaring is cool\u201d is as good a summary of this place as any.\n\n**Thanks also to GSB & Stanford Staff:**\n- Staff in Student Life, the CMC, academic operations, the GST office, facilities, the libraries, and front desks.\n- Peer mentors, Blast Sheriffs, section reps, and committee volunteers who make the ecosystem work.\n\nAnd thank you to the **Classes of 2026 and 2027** \u2014 for the countless small tips, answers, and snippets of hard-won knowledge shared freely over these two years. So much of what follows is simply people\u2019s generosity, pooled. It is the clearest proof of something worth carrying with you: as a collective, we are always greater than we are as individuals, and this guide is one small example of that.\n\n---"
+          }
+        ]
+      },
+      {
+        "id": "a-note-from-the-guide-creator",
+        "number": 0,
+        "title": "A Note from the Guide Creator",
+        "subsections": [
+          {
+            "id": "a-note-from-the-guide-creator-intro",
+            "title": "A Note from the Guide Creator",
+            "body": "Dear incoming student,\n\nWelcome to the Stanford GSB. You're standing at the front edge of two of the highest-resolution years available anywhere \u2014 and I want you to arrive ready for the adventure that goes far beyond the classroom and the coursework: the growth, the reflection, the introspection, the relationships, and so much more.\n\nConsider a sample of what might happen to you here. You might pitch the company you've been quietly sketching for years at Startup Garage, or spend a week inside another country's business machinery on a Global Study Trip. You might stand up at TALK and tell two hundred classmates your life story \u2014 or sit in the dark listening to someone else's and realize you've never gotten to know anyone this well this fast. You might earn your section points in Shenanigans by popping champagne in the middle of a lecture, win a beer-pong playoff you'll bask in the glory of for months, dance until sunrise at Vegas FOAM, take an improv workshop on a whim, or slip away for a weekend under the redwoods in Big Sur.\n\nYou might cross the street and shadow a surgeon, build something at a hackathon next to an undergraduate who codes faster than you'll ever need to, meet students across schools by attending Stanford\u2019s Viennese Ball, or deliver a LOWKeynote that changes what your classmates think is possible \u2014 including for you.\n\nAnd that's just the grove you were planted in. You can think of Stanford as a forest of infinite trees: every department a different species, every one of them a ten-minute bike ride from where you sleep. It is an experience of density \u2014 a compression of brilliance into a space so small and so beautiful it almost defies belief. You might come to know the feeling as drowning in gold: waking up with more things to be excited about than you could ever possibly get to. You cannot climb every tree. Nobody can. But you'd have to work very hard to be bored in a forest like this.\n\nHere's the part that took me two years to learn, so you can have it on day one: the gold was never really the classes or the trips. It's the people \u2014 as clich\u00e9 as it is to say, it truly is the people: the classmates, professors, and mentors who are in it with you, colliding with you daily on a campus built to manufacture exactly those collisions. Say yes to the collisions.\n\nAbout this guide: it's a compilation of many, many people's ideas \u2014 chat threads, passed-down documents, hallway advice, and my own notes \u2014 organized so you don't have to learn everything the hard way. That makes it a running start, not gospel. Some of it is one person's opinion; some will have drifted out of date by the time you read it; none of it beats asking a current MBA2, a peer mentor, or the Student Support office. Take each tip for what it is, and enjoy having several hundred people's heads start on your side.\n\nSomewhere behind you is the version of you that hit submit on the application and dreamed that this day would come. You're about to hand that person everything they wished for. Make it count \u2014 and have even more fun than you're planning to. Welcome to the Stanford Graduate School of Business.\n\n\u2014 **Nikhil Jain, MBA Class of 2026**\n\n---"
+          }
+        ]
+      },
+      {
+        "id": "a-brief-history-of-the-farm-and-the-gsb",
+        "number": 0,
+        "title": "A Brief History of the Farm (and the GSB)",
+        "subsections": [
+          {
+            "id": "a-brief-history-of-the-farm-and-the-gsb-intro",
+            "title": "A Brief History of the Farm (and the GSB)",
+            "body": "Start with the university. In 1885, Leland and Jane Stanford founded a university on their Palo Alto stock farm in memory of their only son, Leland Jr., who had died of typhoid at fifteen \u2014 declaring that \u201cthe children of California shall be our children.\u201d The horse farm gave the campus its permanent nickname: **the Farm**. Stanford opened on October 1, 1891 \u2014 coeducational and non-denominational from the first day, both radical choices for the era \u2014 nearly went under after Leland Sr.'s death (Jane Stanford famously kept it alive through the lean years, reportedly ready to sell her jewels to pay the faculty), was shaken hard by the 1906 earthquake, and then spent the twentieth century becoming the intellectual engine of the region. When Frederick Terman began encouraging his engineering students to start companies nearby rather than go East, the orchards around the Farm started turning into what the world now calls Silicon Valley.\n\nSo much for the university. Now to the grove you'll live in.\n\nIt helps to know what you're joining. In 1925, trustee Herbert Hoover \u2014 two years before the presidency \u2014 assembled a committee of California businessmen (Wallace Alexander, George Rolph, Paul Shoup, Thomas Gregory, and Milton Esberg) to fund a business school on the Farm, largely so the West's ambitious wouldn't keep decamping East for their training. Willard Hotchkiss became the first dean, and on October 1, 1925, the Stanford Graduate School of Business opened with sixteen students in borrowed classrooms next to the biology department \u2014 only the second school in America to offer the MBA.\n\nThe century between then and you runs through the case method's arrival, the post-war quantitative turn, and the school's slow inversion of the East Coast hierarchy it was built to escape. The campus you'll live on is new by comparison: in 2006, Phil Knight, MBA '62, gave $105 million \u2014 then the largest gift ever made to a business school \u2014 toward the $375 million, 12.5-acre Knight Management Center, opened in 2011. The school marked its centennial on October 10, 2025 \u2014 reunions and panels in the same Town Square you'll cross daily.\n\nWhy it matters practically: the GSB's defining choice is smallness \u2014 a class of ~430 in a university of 17,000, on a campus built for conversation rather than lecture. Most of this guide's advice is downstream of that one design decision, made a hundred years ago and never reversed."
+          },
+          {
+            "id": "how-stanford-built-silicon-valley",
+            "title": "How Stanford Built Silicon Valley",
+            "body": "Know the ground you're standing on, because Stanford didn't just end up near Silicon Valley \u2014 it more or less created it. The prime mover was Frederick Terman, the engineering dean and later provost often called the father of Silicon Valley, whose radical idea in the 1930s and '40s was to push his students to start companies near Stanford rather than decamp to the East Coast. His most famous prot\u00e9g\u00e9s, Bill Hewlett and Dave Packard, did exactly that: Hewlett-Packard was formalized on January 1, 1939, out of a tiny Palo Alto garage now plaqued as the \u201cBirthplace of Silicon Valley.\u201d In 1951 Terman went further and created the Stanford Industrial Park (today the Stanford Research Park) \u2014 the world's first university research park \u2014 leasing Stanford land to firms like Varian and HP and pulling the whole industry to the university's doorstep. The other genetic strand arrived in 1956, when transistor co-inventor William Shockley set up shop in Mountain View; a year later eight of his best people (the \u201ctraitorous eight,\u201d among them Gordon Moore and Robert Noyce) walked out to found Fairchild Semiconductor, and Moore and Noyce later left Fairchild to start Intel. The silicon those companies etched is why the journalist Don Hoefler popularized the name \u201cSilicon Valley\u201d in print in 1971."
+          },
+          {
+            "id": "sand-hill-road",
+            "title": "Sand Hill Road",
+            "body": "The venture-capital half of the story is a two-minute drive from the GSB. Sand Hill Road, running right along the edge of campus, became the most famous concentration of venture capital on earth after Kleiner Perkins opened the first VC office there in 1972 and Sequoia Capital set up nearby the same year. The pleasing detail: the money and the silicon are the same bloodline \u2014 Eugene Kleiner was one of Fairchild's traitorous eight, Tom Perkins came out of HP, and Sequoia's Don Valentine came from Fairchild. The chip pioneers became the financiers. The address still carries the weight \u2014 Sand Hill has traded places with Manhattan for the most expensive office rents in the country \u2014 and the firms behind Amazon, Google, and countless others sit within biking distance of your dorm. You are at the literal center of this ecosystem; act accordingly."
+          },
+          {
+            "id": "born-at-stanford",
+            "title": "Born at Stanford",
+            "body": "A partial, humbling list of what has come out of this place:\n- **From the GSB specifically:** Nike (Phil Knight, MBA '62, whose original idea traces to a paper in a GSB small-business class), DoorDash (Tony Xu and Evan Moore, MBA '13, straight out of the Startup Garage course), Charles Schwab (MBA '61), Trulia, StubHub, and Kiva.\n- **From the wider university:** Hewlett-Packard, Google (Larry Page and Sergey Brin, CS PhD students), Yahoo, Cisco (built by two Stanford staffers, one of whom ran computing for the GSB), Sun Microsystems (whose name stands for *Stanford University Network*), Netflix (Reed Hastings, CS master's), Instagram, Snapchat, LinkedIn, Robinhood, Nvidia, VMware, and PayPal.\n\nThe point isn't to intimidate you \u2014 it's that the distance between \u201cstudent here\u201d and \u201cfounder of that\u201d has been crossed many times, from your exact seat.\n\n---"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "part-i-before-you-arrive",
+    "title": "Part I \u2014 Before You Arrive",
+    "chapters": [
+      {
+        "id": "part-i-before-you-arrive",
+        "number": 0,
+        "title": "Part I \u2014 Before You Arrive",
+        "subsections": [
+          {
+            "id": "part-i-before-you-arrive",
+            "title": "Part I \u2014 Before You Arrive",
+            "body": "> Everything in this part is best done (or at least started) before you get on the plane. If you read nothing else, read the checklist at the end of Part I."
+          },
+          {
+            "id": "the-essentials-if-you-read-nothing-else-in-part-i",
+            "title": "The Essentials \u2014 If You Read Nothing Else in Part I:",
+            "body": "- **Housing:** If you\u2019re single, most people apply for the GSB Residences \u2014 it\u2019s where MBA1 life happens. Couples mostly choose the GSB Residences or the EV mid-rises ([Chapter 3](#3-housing)).\n- **Insurance:** Cardinal Care auto-enrolls you (~$635/month) and it\u2019s a full-year commitment \u2014 compare the alternatives and file your waiver by the posted deadline, usually mid-September ([Chapter 4](#4-health-insurance-vaccinations-and-prep)).\n- **Money:** Set up direct deposit immediately, open a US bank account, and read the classmate credit-card consensus before you spend a dollar ([Chapter 5](#5-money-setup)).\n- **Internationals:** The phone-plan primer and the SSN groundwork are ten-minute reads that save weeks ([Chapter 6](#6-phones-and-connectivity) and [Chapter 21](#21-international-students)).\n- **Placement exams are real** \u2014 prep before you land ([Chapter 13](#13-academics)).\n- **Pack light:** Formalwear, a real coat, prescriptions. Nearly everything else is a 15-minute drive away ([Chapter 1](#1-packing-and-shipping)).\n- Then do the **Before-You-Arrive Checklist** ([Chapter 7](#7-the-before-you-arrive-checklist)) \u2014 it\u2019s this whole part, distilled.\n\n---"
+          }
+        ]
+      },
+      {
+        "id": "1-packing-and-shipping",
+        "number": 1,
+        "title": "1. Packing and Shipping",
+        "subsections": [
+          {
+            "id": "what-to-actually-bring",
+            "title": "What to Actually Bring",
+            "body": "Pack what is expensive, hard to replace, or needed the day you arrive \u2014 plus the personal stuff (photos, small decorations) that makes a dorm room feel like yours. Nearly everything else can be bought within a 15-minute drive or delivered in two days.\n\n- **Clothes:** The GSB dress code is very relaxed \u2014 t-shirts and athleisure are the norm. Bring formal outfits for interviews and formal GSB events. The unofficial wardrobe calendar: Halloween costumes in fall; something sparkly for Vegas FOAM in winter; formalwear (long gowns, suits) for the Winter Formal in winter and GSB Prom in spring; and national dress or costumes for the many themed and costume parties in between.\n- **A Warm Layer:** Despite the sunny brochures, Palo Alto gets cold from November to February, especially at night. Pack sweaters and a real coat.\n- **Medication and Prescriptions:** Bring a refill of any prescriptions so there's no pharmacy scramble on arrival, and a paper copy of your eyeglass prescription \u2014 eye exams in the US are expensive.\n- **Sports Gear:** Tahoe is three hours away, Santa Cruz has surf, and the redwoods have world-class trails. If you own gear you love, bring it \u2014 campus sports infrastructure is extensive.\n- **Electronics (International Students):** Bring at least one US-mains adapter for day one; consider replacing cheap electronics in the US rather than hauling a bag of adapters."
+          },
+          {
+            "id": "what-your-room-already-has",
+            "title": "What Your Room Already Has",
+            "body": "GSB Residences rooms come with more than you might expect. Shared kitchens include a two-burner stove, oven, refrigerator/freezer, microwave, garbage disposal, kitchen table and chairs, and a compost bin on request; studios come furnished with the basics. A room-by-room packing list \u2014 split into \u201cprovided by GSB Residences,\u201d \u201cship to school,\u201d and \u201cbuy at school\u201d \u2014 is in the Resources folder (`GSB Residences Packing List.xlsx`). Check what your specific housing includes before buying anything large, and remember on-campus rooms are small \u2014 pack accordingly."
+          },
+          {
+            "id": "shipping-and-pre-arrival-deliveries",
+            "title": "Shipping and Pre-Arrival Deliveries",
+            "body": "- GSB Residences accept packages a few days before move-in (and the front desks process deliveries year-round once you're in); other residences vary \u2014 confirm with your front desk before shipping. Official move-in info lives on MyGSB.\n- Linens and towels are not provided for day one. Order online for delivery to your dorm, or pack one set. Many students pre-order basics from IKEA for delivery \u2014 but at term start IKEA delivery slows down and dorm staples sell out, so order early.\n- International shipping via UPS/FedEx/DHL is expensive; check your home-country airlines' cargo divisions (e.g., Lufthansa Cargo, Delta Cargo), or ask an MBA2 or California-based classmate to accept boxes.\n- Forgot something? It's fine. A Stanford email historically gets a free six-month Amazon Prime student trial (terms change \u2014 check current), and Chapter 9 has the complete move-in shopping map.\n- Shipping a car across the country comes up at both ends of the two years \u2014 getting here, and the post-graduation scramble back east. Classmates have used and recommended **Montway** (praised on price and speed) and **McCollister\u2019s**; get a couple of quotes, since these are brokered and prices swing with the season and the route.\n\n---"
+          }
+        ]
+      },
+      {
+        "id": "2-getting-to-campus",
+        "number": 2,
+        "title": "2. Getting to Campus",
+        "subsections": [
+          {
+            "id": "2-getting-to-campus-main",
+            "title": "2. Getting to Campus",
+            "body": "Most people fly into **SFO** (closer, more international routes) or **SJC** (often calmer and closer to the South Bay). Your options from the airport, in rough order of popularity:\n\n1. **Uber/Lyft:** SFO to campus runs roughly $40\u2013$100 depending on surge, about 30 minutes without traffic and up to an hour in rush hour. Download both apps before you land; shared-ride tiers save money when they're offered.\n2. **Taxi:** Around $100 plus tip from SFO; rideshare is almost always the better deal.\n3. **Public Transit (cheapest, slowest, rough with luggage \u2014 1 hour+):** From SFO, take BART to Millbrae and switch to a southbound Caltrain to Palo Alto station; from SJC, take VTA to Santa Clara station and a northbound Caltrain to Palo Alto. From the Palo Alto station, the free Marguerite shuttle, a rideshare, or a ~10-minute cab gets you to campus.\n\n- **The Marguerite** is Stanford's free public bus \u2014 anyone can hop on, no ID needed. It connects campus with the Palo Alto Caltrain station and runs several routes you'll use all year (some are handy for groceries).\n- **Caltrain** itself is free for Stanford students through the **GoPass** \u2014 one of the best-kept transit secrets on campus.\n- If you arrive before your housing contract starts, Airbnb and Stanford's visitor-lodging list cover the gap.\n- **Driving to SFO instead?** Long-term parking sits just past the airport with the AirTrain running from the garage to the terminals; spots can be reserved in advance, though walk-ups usually work.\n\n> **Pro Tip:** Arrive early if you possibly can. Week Zero is a wall of admin, IT setup, and social events; you do not want to be assembling furniture during it. Aim to have your apartment functional before Welcome Weekend. If you'll have real furniture to assemble or a genuine move, just outsource it \u2014 a TaskRabbit for assembly or a two-person moving crew for a few hundred dollars is well worth skipping the Week-Zero scramble."
+          },
+          {
+            "id": "pre-mba-trips-for-the-admitted-student-reader",
+            "title": "Pre-MBA Trips (for the Admitted-Student Reader)",
+            "body": "- The big three are **Yacht Week**, **Colombia**, and **pre-MBA Tahoe**. One classmate enjoyed doing all three: it's pretty special to travel with a hundred-plus of your future classmates, and you're simply never going to get that in the real world. If your summer allows the time, enjoy it before school starts.\n- Some **Global Study Trips** also run as pre-MBA options. They get good reviews for exactly the opposite reason as the big trips: ~30 people instead of several hundred, which is a very good size for finding your first friend group.\n- They\u2019re complements, not substitutes: the Yacht Week boats build depth, and so do the Tahoe houses \u2014 small, automatic social circles formed around the group you travel with. Colombia is unstructured breadth: there\u2019s no easy way to make a three-hundred-person group smaller, so you simply meet a lot of people at a rapid rate \u2014 and even that makes it easier to say hello again when you cross paths on campus a few weeks later. One alum\u2019s verdict: the yacht-week core group \u201canchored me on the Colombia trip as I branched out.\u201d\n- **Logistics learned the hard way:**\n- On **Yacht Week**, get air conditioning and a host on your boat \u2014 without a host you will eat terribly all week \u2014 and push for all-GSB boats: people who sailed GSB-only boats stayed friends with their boatmates, while mixed boats meant half the crew vanished to HBS afterward. Yacht Week is where many people find their starting GSB friend group, and it pays off all fall quarter.\n- For **Colombia**, price the operator's add-ons against booking them yourself on Airbnb Experiences or TripAdvisor \u2014 the operator's real value is transport and keeping everyone physically together.\n- **Pre-MBA Tahoe** is, in my own opinion, the most skippable of the three, and not because it\u2019s bad: Tahoe is a few hours away and you will go all year (Chapter 25), while Yacht Week and Colombia happen exactly once. The counterpoint is scale \u2014 some classes turn it into a three-hundred-person weekend, which is its own kind of special. If you go, do the three-to-four-day version rather than the two-day one \u2014 it\u2019s three hours each way on a good day and five in traffic, and two days isn\u2019t worth the windshield time.\n- **Small detail:** Bring a Stanford flag \u2014 ideally more than one. Every group photo from Yacht Week and Colombia ends up wanting one."
+          },
+          {
+            "id": "colombia-tactically",
+            "title": "Colombia, Tactically",
+            "body": "- The trip runs through an outside operator (VAOVA, in recent years). The honest class consensus: you\u2019re paying a premium, and it\u2019s still worth going \u2014 what you\u2019re buying is transport, the big parties, and several hundred classmates moving as one group. Price everything else yourself.\n- **Book the parties; skip the packaged dinners.** The parties are the reason to pay. Dinners you can book yourself at the same restaurants for roughly half the price, in classmates\u2019 experience \u2014 and if you want company, post the restaurant in the class chat and people will simply show up.\n- **Worth the upgrade:** Your own bedroom. People run on wildly different schedules \u2014 the 4 a.m. crowd and the 8 a.m.-excursion crowd do not mix well in one room \u2014 and because it\u2019s Colombia, a single room costs surprisingly little extra. Skip the premium-hotel upgrade in Cartagena (you can walk over and hang out at that hotel with your friends anyway) and spend the same money on having your own bedroom instead.\n- Most day activities are cheaper booked yourself on Airbnb Experiences or TripAdvisor; the catch is rallying people, which is a hassle. Be honest about the 8 a.m. options, too \u2014 plenty of people end up selling their morning slots.\n- **Flights:** Book the Avianca legs the minute they\u2019re released \u2014 they can disappear within about fifteen minutes. Affiliate your United status for better boarding and points on the intermediate legs. Checking in early for a premium seat runs about $18, and first class on the short connecting flights is often only $10\u201315 more, which is worth it.\n- The airport buses leave three to three-and-a-half hours before flights, out of an abundance of caution. Plenty of people take a cheap Uber an hour later and sleep in instead \u2014 but carry that risk knowingly: if you miss the flight, the operator is not going to rebook you.\n- **Health:** Drink bottled water everywhere, and in Cartagena use it to brush your teeth as well. The move on arriving in each city: walk to the nearest grocery or convenience store and buy two of the big jugs for your room, and grab some fruit while you\u2019re there. Your body will thank you by day four.\n- **Packing & Extras:** Bogot\u00e1, Medell\u00edn, and Cartagena are three different climates, so packing cubes earn their keep. Bring a fan (Cartagena is hot and humid, and the airport has been known to have no air conditioning), shorts for the white party, a flower lei for the flower party, and cough drops.\n- **Conserve your voice:** This is the sleeper tip. Don\u2019t spend every night shouting over the music \u2014 talk to the people next to you instead. If you aren\u2019t conscious about it, your voice is gone by the second or third city and you\u2019ll croak through the rest of the trip.\n- **Two things people rave about:** **Tejo in Medell\u00edn** \u2014 Colombia\u2019s national game, gunpowder targets and all, which a local guide will set up and teach you (bring cash, around 50,000 COP) \u2014 and the **Comuna 13 walking tour**, which is worth doing with a good guide.\n- Some classes have run an unofficial **\u201cshadow trek\u201d**: booking the same flights, hotels, and cities themselves and travelling alongside the group. It\u2019s cheaper, and the trade-off is real \u2014 you can\u2019t sign up for the optional activities or the operator\u2019s big parties, so you\u2019re on your own to find people for those.\n- On the last day, tip the staff and hand over your leftover pesos before heading to the airport, and thank the local guides and drivers.\n- **Operator-Grade Specifics (2025 trip):** For Tejo in Medell\u00edn, the outfit at `instagram.com/tejo_in_medellin` runs a casual teaching session \u2014 ask for Chris \u201cEl Gringo,\u201d an expat who plays competitive Tejo; bring 50,000 COP in cash and get yourself to the courts in El Poblado. In Cartagena, the grocery store beside the Hotel Estelar covers bottled water and every other essential.\n\n---"
+          }
+        ]
+      },
+      {
+        "id": "3-housing",
+        "number": 3,
+        "title": "3. Housing",
+        "subsections": [
+          {
+            "id": "the-landscape",
+            "title": "The Landscape",
+            "body": "GSB students live all over: **Schwab Residential Center** and **Jack McDonald Hall (\u201cJMac\u201d)** \u2014 together \u201cthe GSB Residences\u201d \u2014 plus **Escondido Village Graduate Residences (EVGR)** and the mid-rises/low-rises, **Munger**, **Oak Creek** and other subsidized off-campus options, and regular Palo Alto apartments.\n\n- **Didn't get the GSB Residences?** Genuinely fine. You keep full access to GSB social life and can use the Residences' amenities and study spaces (a quick card-access request opens the buildings \u2014 Chapter 9). Every amenity in JMac or Schwab is available to residents of both.\n- Plenty of students actively prefer EVGR, Munger, or off-campus: more space, fresh air from the GSB bubble, room for a partner or kids (couples housing in the GSB Residences is limited), or lower cost for a slightly longer bike ride. Munger, EV/EVGR, and Rains are all close to the GSB with strong GSB communities.\n- University housing residents get a **Community Associate (CA)** \u2014 a returning Stanford student whose job is to help you settle in and build community."
+          },
+          {
+            "id": "choosing-where-to-live-from-the-center-outward",
+            "title": "Choosing Where to Live, From the Center Outward",
+            "body": "Housing runs from the GSB\u2019s own residences outward, and the trade-off is always the same \u2014 proximity and serendipity versus space and livability.\n\n- **The GSB Residences (Schwab & Jack McDonald / \"JMac\"):** Proximity and serendipity: the 1 a.m. common-room conversations are real, every meeting is a two-minute walk, and the peer-mentor culture lives here. Rooms come better-equipped than you\u2019d guess \u2014 a full XL bed with under-bed storage, desk and office chair, lounge chair with ottoman, a TV, a space heater; shared kitchens carry a stove, oven, microwave, fridge, table, and stools. Costs: you can really only work in your room, temperature complaints happen, and the lottery can screw you. Every amenity in either building is open to residents of both.\n- **Munger:** Trades proximity for livability: a dishwasher (do not underestimate this), bigger rooms, real hosting space, indoor common rooms, closer to the pool and Tresidder, and an MBA2-heavy, cross-school community \u2014 though you\u2019ll commute to spontaneous GSB socializing. Munger and the GSB Residences are the only housing on the entire campus with air conditioning \u2014 with the caveat that a Munger quad shares one A/C setting for the whole quad, while GSB Residences rooms control their own.\n- **EVGR High-Rises:** The workhorse choice, especially for second years watching budgets: solid big rooms, the EVGR Pub downstairs, and a relaxed feel once you cross the traffic circle \u2014 more of the wider grad-student world, a little more sterile.\n- **EV Mid-Rises:** The sweet spot for couples without kids: a real step up in space, still close, with a large GSB-couples contingent.\n- **Schwab Couples Housing:** The other couples option: unbeatable proximity, but really two Schwab singles joined with one room converted to a living room, at a notably higher price \u2014 it is quite expensive.\n- **EV Low-Rises:** Built for families with kids and incredible bang for the buck: a little farther out, but a no-brainer with a third or fourth family member coming.\n- **Rains:** Older and lower-quality, but its low-rise layout breeds real community and hosts a lot of the university\u2019s grad-student parties.\n\nHousing for your second year is a spring-quarter application (late April/early May) with group mechanics covered in Part III."
+          },
+          {
+            "id": "pets-before-you-promise-the-dog",
+            "title": "Pets, Before You Promise the Dog",
+            "body": "Stanford student housing is **no-pets, full stop** \u2014 and enforcement has teeth: a resident found with an animal is charged **$100 per day** until it's rehomed. The exceptions are registered service animals and OAE-approved support animals. If the dog is non-negotiable, R&DE maintains a list of subsidized off-campus apartments that accept pets. Decide this before you arrive, not after."
+          },
+          {
+            "id": "neighborhood-profiles-off-campus",
+            "title": "Neighborhood Profiles (Off-Campus)",
+            "body": "*Rent anchors are 2026 one-bedroom averages:*\n\n- **Downtown Palo Alto (University Ave):** Walk-to-everything option \u2014 restaurants, bars, social gravity. Priciest per square foot ($3,100\u2013$4,000).\n- **California Ave / Midtown Palo Alto:** Quieter, Sunday farmers market, Third Thursdays, fully bikeable to campus. Default for people who want Palo Alto without University Ave's volume.\n- **Menlo Park:** One-bedrooms ~$3,600. Sand Hill VC corridor on one end, sleepy downtown on the other. Popular with couples and finance-track students.\n- **Mountain View:** One-bedrooms ~$3,500\u2013$3,900. Newer buildings, amenities, parking. Castro Street is a real downtown; Caltrain makes campus a straight shot.\n- **Redwood City:** One-bedrooms ~$3,400\u2013$3,700. Best value-to-downtown ratio \u2014 revived center, Caltrain stop, 15\u201320 minutes to campus.\n- **East Palo Alto:** Lowest rents within biking distance (IKEA side of the freeway). Check specific block walkability and safety data.\n- **San Francisco:** Some MBA2s move for spring quarter or second year. Free Caltrain GoPass makes it a ~1-hour commute. You trade daily campus serendipity for city life.\n- **Passdown Houses (Chapter 27):** Named houses passed down between GSB classes change the math entirely, inheriting a social institution.\n\n---"
+          }
+        ]
+      },
+      {
+        "id": "4-health-insurance-vaccinations-and-prep",
+        "number": 4,
+        "title": "4. Health: Insurance, Vaccinations, and Prep",
+        "subsections": [
+          {
+            "id": "cardinal-care-the-default",
+            "title": "Cardinal Care \u2014 The Default",
+            "body": "All students are automatically enrolled in Cardinal Care, Stanford's student health plan (administered through Aetna networks). It is comprehensive and expensive (~$635/month), and enrollment is a full-year commitment running through August \u2014 no early-cancellation refunds, even if a summer employer covers you. If you want out, apply for a waiver by the posted deadline (mid-September for autumn entrants); no exceptions are granted.\n\n> **CRITICAL RULE:** Cardinal Care (underwritten by Wellfleet) strictly enforces a referral requirement. As of 2026, non-emergency specialty and off-campus care **must be referred through Vaden first**, or the claim can be denied. Unless it's an emergency, start at Vaden or its advice line."
+          },
+          {
+            "id": "waiving-and-comparing-plans",
+            "title": "Waiving and Comparing Plans",
+            "body": "A side-by-side comparison built by students (`Health Insurance \u2013 Plan Comparison.xlsx` in Resources folder; 2024\u201325 figures):\n\n| Metric | Cardinal Care | ISO Care Elite | ISO Care | PSI Plans |\n| :--- | :--- | :--- | :--- | :--- |\n| **Monthly Premium** | ~$635 | ~$228 | ~$128 | ~$235\u2013$343 |\n| **Annual Deductible** | $100 | $40 | $500 | $250 |\n| **In-Network Co-insurance** | 100% | 90% | 80% | 80% |\n| **Out-of-Pocket Max** | $2,000 | $6,350 | $6,350 | $6,350 |\n| **Waiver-Eligible?** | N/A (Default) | Yes | No | TBC (Check) |\n\n**Key Takeaways:**\n- Check waiver approval for your specific policy with Stanford before opting out. Stanford historically offered waivers for ISO Elite Care, but NOT ISO Care.\n- **International Students:** Waivers require proof of $50,000 medical-evacuation and $25,000 repatriation coverage. J-visa holders need a deductible of $500 or less.\n- **Exclusions:** Several cheap plans explicitly exclude skiing injuries. GSB students go to Tahoe constantly, and someone gets hurt every year.\n- **Dependents:** The Stanford Student Dependent Health Insurance Plan is opt-in and can ONLY be purchased when you first matriculate \u2014 your one chance for your entire degree, barring a qualifying life event.\n\n> **European-Passport Holders Note:** Several classmates waived Cardinal Care in favor of **Chapka Student** (French broker underwritten by AXA). Recent pricing ran ~\u20ac500/year over age 30 with no copay, no deductible, and no cap on hospitalization. US network partner is UnitedHealthcare (Stanford Health Care is in-network). Verify current Stanford waiver eligibility before relying on this."
+          },
+          {
+            "id": "vaccinations-and-records",
+            "title": "Vaccinations and Records",
+            "body": "- Immunization requirements trigger a registration hold if missing. As of recently, requirements include: 2 MMR doses (after 1st birthday, at least 28 days apart), full Hepatitis B series plus positive antibody titer, and TB screening. Deadlines are late July for exemptions.\n- International students: bring an English translation of immunization records. TB testing can be booked at Vaden Health Center (866 Campus Drive, 650-498-2336).\n- Vaden travel clinic can provide travel vaccines needed for GSTs and treks.\n\n---"
+          }
+        ]
+      },
+      {
+        "id": "5-money-setup",
+        "number": 5,
+        "title": "5. Money Setup",
+        "subsections": [
+          {
+            "id": "do-immediately-direct-deposit",
+            "title": "Do Immediately: Direct Deposit",
+            "body": "Student refunds (aid disbursements, over-payments) are sent to exactly one bank account. Enroll week one in Axess:\n1. Go to **Axess** -> **Student** role -> **My Finances** tab -> **Direct Deposit**.\n2. Add routing number (9 digits) and account number (10\u201312 digits, checking or savings).\n3. Set Deposit Type = `percent`, Amount = `100`, Deposit Order = `1`. *(Setting multiple accounts causes failed deposits)*.\n4. Verify and submit."
+          },
+          {
+            "id": "banking-where-and-how",
+            "title": "Banking: Where and How",
+            "body": "- **Stanford Federal Credit Union (SFCU):** Branches at Tresidder Union (2nd floor) and near EV. Unusually friendly to students without US credit history: immediate debit card and a guaranteed credit card even without SSN or US income (bring passport, proof of address like R&DE letter in Axess, and student ID).\n- **Chase** (855 El Camino Real), **Bank of America** (3000 El Camino Real), **Citibank** (250 University Ave), **Wells Fargo** (Tresidder).\n- **US Payment Culture:** Cards everywhere. **Venmo** dominates student-to-student payments (~$300 weekly limit initially). **Zelle** is also widely used and easier for internationals to start with. Keep a checkbook for off-campus rent. Foreign cards often fail at gas pumps and US online stores."
+          },
+          {
+            "id": "credit-cards-the-classmate-consensus",
+            "title": "Credit Cards \u2014 The Classmate Consensus",
+            "body": "- **Chase (Sapphire Reserve/Preferred):** Best for hotel redemptions (Hyatt). Apply first due to Chase's 5/24 rule (rejects applicants with >5 new cards in 24 months).\n- **Amex (Platinum):** Best for flight redemptions/lounges. Easy fee offsets (includes free Walmart+ membership, great for grocery delivery).\n- **Capital One (Venture X):** Great lower-effort break-even card.\n- **Rent Hack:** Pay GSB housing rent via the **Bilt app**'s \"Pay Rent\" tab to earn points without transaction fees."
+          },
+          {
+            "id": "fee-waiver-footnote",
+            "title": "Fee-Waiver Footnote",
+            "body": "- **ASSU Activity Fee:** Opt out quarterly if you don't use non-GSB graduate clubs (~$50 back/quarter).\n- **Late Tuition Fee:** You can raise a support ticket to waive a tuition late fee **once in your degree**. Save this mulligan for when it matters.\n\n---"
+          }
+        ]
+      },
+      {
+        "id": "6-phones-and-connectivity",
+        "number": 6,
+        "title": "6. Phones and Connectivity",
+        "subsections": [
+          {
+            "id": "6-phones-and-connectivity-main",
+            "title": "6. Phones and Connectivity",
+            "body": "- Get a US number working **before Week Zero** \u2014 every list, group chat, delivery, and 2FA prompt needs it. Carrier stores cluster on University Ave and El Camino Real.\n- **Campus Coverage:** AT&T and Verizon are historically strongest. T-Mobile is patchy in basements/interiors. Field reports show Mint Mobile and T-Mobile had dead zones inside Schwab/JMac rooms, while AT&T had full coverage. Enable **Wi-Fi Calling** in settings immediately."
+          },
+          {
+            "id": "us-phone-plan-primer",
+            "title": "US Phone-Plan Primer",
+            "body": "- **Big Three:** Verizon, AT&T (historically favorite of internationals as it didn't require SSN), T-Mobile.\n- **MVNOs (Mint, Google Fi, Cricket):** Resell big networks cheaper. Mint supports Wi-Fi calling and text.\n- **Prepaid vs. Postpaid:** Prepaid wins on cost and flexibility; postpaid wins on roaming.\n- **Family Plans:** 2\u20135 lines on one account ($30\u201360/member) \u2014 join American classmates or form groups.\n- *Note: Paying a phone bill does NOT build US credit.*\n\n---"
+          }
+        ]
+      },
+      {
+        "id": "7-the-before-you-arrive-checklist",
+        "number": 7,
+        "title": "7. The Before-You-Arrive Checklist",
+        "subsections": [
+          {
+            "id": "7-the-before-you-arrive-checklist-main",
+            "title": "7. The Before-You-Arrive Checklist",
+            "body": "1. Read the Admit tab of MyGSB end-to-end and monitor MyGSB Digest summer emails.\n2. Decide on Cardinal Care vs. waiver before the mid-September deadline.\n3. Clear Stanford immunization requirements through Vaden (MMR, Hep B + titer, TB).\n4. Book flights to arrive before Week Zero; line up gap housing if needed.\n5. Ship or order room basics; pack one set of linens.\n6. Set up direct deposit on Axess; plan US bank account.\n7. Sort a US phone plan / eSIM.\n8. Submit ID-card photo online in advance.\n9. Download essential apps: Uber, Lyft, Venmo, WhatsApp, Slack, GroupMe, Messenger, Yelp, Hopper/Going.\n10. Join class WhatsApp groups as invitations circulate.\n\n---"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "part-ii-life-at-the-gsb",
+    "title": "Part II \u2014 Life at the GSB",
+    "chapters": [
+      {
+        "id": "part-ii-life-at-the-gsb",
+        "number": 0,
+        "title": "Part II \u2014 Life at the GSB",
+        "subsections": [
+          {
+            "id": "part-ii-life-at-the-gsb",
+            "title": "Part II \u2014 Life at the GSB",
+            "body": "> *\u201cTake risks while you're here \u2014 it's all a sandbox and a learning laboratory.\u201d*"
+          },
+          {
+            "id": "the-essentials-if-you-read-nothing-else-in-part-ii",
+            "title": "The Essentials \u2014 If You Read Nothing Else in Part II:",
+            "body": "- **Say yes early:** Week Zero and the first month are crucial for forming lasting friendships.\n- **Join channels day one:** Blast (from original SUNet email), class WhatsApp, and Slack.\n- **Weekly rhythm:** FOAM Tuesdays, TALKs Wednesdays, BPL Thursdays, LPF Fridays, Town Square daily (11:30\u20131:15).\n- **Academics:** Take classes where you actually learn; grades are non-disclosure (GND).\n- **Careers:** Your `@stanford.edu` email is a superpower \u2014 founders and executives respond.\n- **Cross the street:** Explore non-GSB classes, institutes, and makerspaces.\n- **Health:** Start at Vaden (referrals required for Cardinal Care). Bikes are default transport; free loaner helmets at Schwab.\n- **Trips:** GST lottery, Vegas FOAM, and Tahoe weekends are major calendar anchors.\n\n---"
+          }
+        ]
+      },
+      {
+        "id": "8-getting-oriented",
+        "number": 8,
+        "title": "8. Getting Oriented",
+        "subsections": [
+          {
+            "id": "the-first-72-hours",
+            "title": "The First 72 Hours",
+            "body": "1. **Before Landing:** Screenshot housing assignment, front desk hours, and campus map.\n2. **Phone First:** Ensure US eSIM/SIM is working at airport.\n3. **Arrival:** Rideshare to 680 Jane Stanford Way (Schwab Circle).\n4. **Deposit Insurance:** Photograph every wall, floor, and appliance in your room before unpacking and email it to yourself.\n5. **Stanford ID:** Pick up at Tresidder Union or Schwab front desk.\n6. **Supply Run:** Target/Walmart at San Antonio or Trader Joe's at Town & Country.\n7. **Say Yes:** Accept the first social invitations you receive."
+          },
+          {
+            "id": "the-lay-of-the-land",
+            "title": "The Lay of the Land",
+            "body": "The GSB lives in the **Knight Management Center (KMC)**.\n- **Building Mnemonic (Counterclockwise walk):** **\"Great MBAs Come Prepared Everyday\"** -> **G**iles, **M**cClelland, **C**oughenour, **P**atterson, **E**merson."
+          },
+          {
+            "id": "key-leadership-2026-snapshot",
+            "title": "Key Leadership (2026 Snapshot)",
+            "body": "- **Jonathan Levin:** President of Stanford University (former GSB Dean).\n- **Sarah A. Soule:** Dean of the GSB.\n- **Senior Associate Deans:** Anne Beyer (Accounting), Deborah Gruenfeld (Organizational Behavior), Wesley Hartmann (Marketing), Amit Seru (Finance).\n- **Administration:** Margaret Long Hayes (Associate Dean, MBA/MSx), Erin Nixon (Assistant Dean, Admissions & Financial Aid), Jamie Schein (Director, CMC), Derrick Bolton (Associate Dean, External Relations)."
+          },
+          {
+            "id": "stanford-side-quests",
+            "title": "Stanford Side Quests",
+            "body": "- **The Dish:** 3.7-mile foothill loop past the radio telescope (no bikes allowed).\n- **Cantor Arts Center & Rodin Garden:** Free; massive Rodin bronze collection. Next door is the **Anderson Collection** (Rothko, Pollock).\n- **Papua New Guinea Sculpture Garden & Arizona Cactus Garden:** Quiet historic spots.\n- **Hoover Tower:** 250-foot observation deck (free with Stanford ID).\n- **Windhover Contemplative Center:** Quiet sanctuary with outdoor labyrinth.\n- **SLAC:** Two-mile linear accelerator; free public tours.\n- **Makerspaces:** Product Realization Lab (PRL) and ME 203 for machining/woodworking/3D printing.\n- **CCRMA:** Center for Computer Research in Music and Acoustics at The Knoll.\n- **Stanford Theatre:** Restored 1925 cinema on University Ave showing classic films on 35mm with live organ.\n\n---"
+          }
+        ]
+      },
+      {
+        "id": "9-your-room-residence-life-and-move-in-shopping",
+        "number": 9,
+        "title": "9. Your Room, Residence Life, and Move-In Shopping",
+        "subsections": [
+          {
+            "id": "deposit-protection-maintenance",
+            "title": "Deposit Protection & Maintenance",
+            "body": "- Photograph room condition immediately upon move-in.\n- **RENTERS INSURANCE IS MANDATORY IN PRACTICE:** Stanford does not cover personal property loss/theft.\n- **COMMAND HOOK WARNING:** Remove all Command hooks carefully at move-out and clean with Goo Gone. Leftover hooks or wall damage have resulted in fines of $100\u2013$200 per hook (up to $1,000+)."
+          },
+          {
+            "id": "products-classmates-swear-by",
+            "title": "Products Classmates Swear By",
+            "body": "- **Folding Wagon:** Essential for hauling groceries and packages from the front desk.\n- **Countertop Dishwasher:** Small tabletop model with internal water tank (JMac sinks don't fit faucet adapters; e.g., Farberware/Hermitlux).\n- **Portable Monitor:** ASUS ZenScreen or iPad via Sidecar.\n- **Dawn Powerwash:** Essential for handwashing dishes in dorm sinks."
+          },
+          {
+            "id": "facilities-services",
+            "title": "Facilities & Services",
+            "body": "- **Schwab Desk:** Staffed 24/7; serves both Schwab and JMac. Free loaner helmets available in Schwab entryway.\n- **Housekeeping:** Bookable through front desk ($75 bed/bath, $150 with kitchen).\n- **PurpleTie Dry Cleaning:** Drop-off/pickup locker in JMac lower lobby (Room 015).\n- **Card Access for Non-Residences:** Request at Facilities Operations (Munger CM004).\n\n---"
+          }
+        ]
+      },
+      {
+        "id": "10-eating-on-campus-and-off",
+        "number": 10,
+        "title": "10. Eating: On Campus and Off",
+        "subsections": [
+          {
+            "id": "on-campus-dining",
+            "title": "On-Campus Dining",
+            "body": "- **Arbuckle Caf\u00e9:** KMC center; international buffet and salad bar.\n- **Coupa Caf\u00e9:** Venezuelan coffee, paninis, crepes.\n- **Dining Halls (Arrillaga, Branner, Gerhard, Wilbur, Stern):** All-you-can-eat.\n- **Meal Pack Hack:** Buy a 25-meal pack (~$14/dinner) at `connectstanford.atriumcampus.com`. Unused meals are refundable at year end.\n- **Ray's Grill:** Grad pub near EV.\n- **Food Trucks:** White Plaza market on Tuesdays & Fridays (10\u20132)."
+          },
+          {
+            "id": "groceries",
+            "title": "Groceries",
+            "body": "- **On Campus:** Munger Mercadito, EVGR Market.\n- **Off Campus:** Trader Joe's (Town & Country), Safeway, Whole Foods, Real Produce Market, 99 Ranch (Asian market), Costco (Mountain View), Target/Walmart (San Antonio).\n\n---"
+          }
+        ]
+      },
+      {
+        "id": "11-tech-printing-and-student-discounts",
+        "number": 11,
+        "title": "11. Tech, Printing, and Student Discounts",
+        "subsections": [
+          {
+            "id": "wi-fi-home-setup",
+            "title": "Wi-Fi & Home Setup",
+            "body": "- **Router Hack:** Plug a personal Wi-Fi router (e.g., TP-Link AX1800) into the wired wall Ethernet port in your dorm room and register its MAC address at `rnt.stanford.edu` for fast, private Wi-Fi.\n- Disable MAC address randomization on personal devices if connection drops occur."
+          },
+          {
+            "id": "printing",
+            "title": "Printing",
+            "body": "- **Cardinal Print:** Upload to portal or email `cardinalprint@stanford.edu`. Tap ID on any printer.\n- GSB provides a **$100 annual printing allotment**. Select the GSB account code on screen."
+          },
+          {
+            "id": "free-discounted-software",
+            "title": "Free & Discounted Software",
+            "body": "- **Free via Stanford:** Office 365, Zoom Pro, ChatGPT Edu, Claude for Education, Gemini Enterprise, Dashlane, MATLAB, Qualtrics, Stanford VPN, LinkedIn Learning, Coursera, Puffer Live TV, Windows Virtual Desktop.\n- **Discounts:** Adobe Creative Cloud, Superhuman ($10/mo), Spotify Student, Notion, Figma, GitHub Student Pack.\n\n---"
+          }
+        ]
+      },
+      {
+        "id": "12-communication-channels",
+        "number": 12,
+        "title": "12. Communication Channels",
+        "subsections": [
+          {
+            "id": "email-the-mygsb-digest",
+            "title": "Email & The MyGSB Digest",
+            "body": "- GSB uses **Google Workspace**.\n- **MyGSB Digest:** Sent Sunday nights (~8:30 PM); click \"View Current Messages in Browser\" to prevent truncation."
+          },
+          {
+            "id": "blast-class-mass-email",
+            "title": "Blast (Class Mass Email)",
+            "body": "- Unofficial, student-run email list (`gsb-blast-mba-20XX@lists.stanford.edu`).\n- **THE BLAST TAX:** Every Blast email MUST include a meme or funny image at the bottom.\n- Never hit \"Reply-All.\" BCC list addresses when sending.\n- Sign up from original `@stanford.edu` address (not an alias).\n\n---"
+          }
+        ]
+      },
+      {
+        "id": "13-academics",
+        "number": 13,
+        "title": "13. Academics",
+        "subsections": [
+          {
+            "id": "overview-grading-policy",
+            "title": "Overview & Grading Policy",
+            "body": "- **Grade Non-Disclosure (GND):** GSB has a strict non-disclosure policy. Students are prohibited from disclosing grades to prospective employers.\n- **Grading Scale:** H (High Pass), P (Pass), LP (Low Pass), U (Unsatisfactory)."
+          },
+          {
+            "id": "core-curriculum-exemption-exams",
+            "title": "Core Curriculum & Exemption Exams",
+            "body": "- First-year autumn quarter consists of core requirements (Finance, Financial Accounting, Microeconomics, Organizational Behavior, Ethics, Optimization).\n- Placement/Exemption exams allow students to jump to Advanced/Accelerated sections or waive requirements. Take these seriously before arriving."
+          },
+          {
+            "id": "course-bidding-marrs-system",
+            "title": "Course Bidding (MARRS System)",
+            "body": "- Electives use a priority/bidding system. Read bidding playbooks before allocating points.\n\n---"
+          }
+        ]
+      },
+      {
+        "id": "14-careers",
+        "number": 14,
+        "title": "14. Careers",
+        "subsections": [
+          {
+            "id": "14-careers-main",
+            "title": "14. Careers",
+            "body": "- **Career Management Center (CMC):** Coaching, resume databases, on-campus interviewing.\n- **The Stanford Email Advantage:** Cold outreach using `@stanford.edu` yields unprecedented response rates from alumni, founders, and CEOs.\n- **Recruiting Timelines:** Banking/Consulting (Autumn/Winter), Tech/PE/VC/Startups (Winter/Spring/Just-in-Time).\n\n---"
+          }
+        ]
+      },
+      {
+        "id": "15-social-life-clubs-and-traditions",
+        "number": 15,
+        "title": "15. Social Life, Clubs, and Traditions",
+        "subsections": [
+          {
+            "id": "weekly-rhythm",
+            "title": "Weekly Rhythm",
+            "body": "- **Tuesdays:** FOAM (Friend of Andrew Mellor / Friends of Arbuckle) party night.\n- **Wednesdays:** TALK (Student life stories in JMac GA room).\n- **Thursdays:** BPL (Beer Pong League).\n- **Fridays:** LPF (Late Performance Fee) campus happy hour.\n- **Daily:** Town Square social hours (11:30\u20131:15)."
+          },
+          {
+            "id": "major-annual-events",
+            "title": "Major Annual Events",
+            "body": "- **Autumn:** Halloween, Big Game vs. Cal, Pre-MBA trips.\n- **Winter:** Vegas FOAM, Winter Formal, Charity Auction.\n- **Spring:** GSB Prom, Challenge 4 Charity (C4C), LOWKeynotes.\n\n---"
+          }
+        ]
+      },
+      {
+        "id": "16-trips-and-travel",
+        "number": 16,
+        "title": "16. Trips and Travel",
+        "subsections": [
+          {
+            "id": "16-trips-and-travel-main",
+            "title": "16. Trips and Travel",
+            "body": "- **Global Study Trips (GST):** University-sponsored international trips run over breaks.\n- **Student-Led Treks:** Colombia, Japan, Israel, Brazil, South Africa, etc.\n- **Ski Houses:** Groups rent seasonal houses in Tahoe.\n\n---"
+          }
+        ]
+      },
+      {
+        "id": "17-health-and-wellbeing",
+        "number": 17,
+        "title": "17. Health and Wellbeing",
+        "subsections": [
+          {
+            "id": "17-health-and-wellbeing-main",
+            "title": "17. Health and Wellbeing",
+            "body": "- **Vaden Health Center:** Primary care, counseling (CAPS), physical therapy.\n- **Psychological Services:** CAPS offers short-term individual therapy and group sessions.\n- **Recreation:** AOERC and ACSR fitness centers.\n\n---"
+          }
+        ]
+      },
+      {
+        "id": "18-getting-around",
+        "number": 18,
+        "title": "18. Getting Around",
+        "subsections": [
+          {
+            "id": "18-getting-around-main",
+            "title": "18. Getting Around",
+            "body": "- **Bicycles:** The default campus transport. Buy used on SU Post or from graduating students. U-lock is mandatory.\n- **Marguerite Shuttle:** Free campus bus system.\n- **Caltrain:** Free GoPass for students; connects to SF and San Jose.\n- **Parking:** Enterprise parking permits required for personal cars on campus.\n\n---"
+          }
+        ]
+      },
+      {
+        "id": "19-the-local-services-directory",
+        "number": 19,
+        "title": "19. The Local Services Directory",
+        "subsections": [
+          {
+            "id": "19-the-local-services-directory-main",
+            "title": "19. The Local Services Directory",
+            "body": "- **Dry Cleaning:** PurpleTie (JMac locker).\n- **Barbers/Salons:** University Ave / Cal Ave options.\n- **Auto Repair:** Local shops on El Camino Real.\n\n---"
+          }
+        ]
+      },
+      {
+        "id": "20-significant-others-and-families",
+        "number": 20,
+        "title": "20. Significant Others and Families",
+        "subsections": [
+          {
+            "id": "20-significant-others-and-families-main",
+            "title": "20. Significant Others and Families",
+            "body": "- **SO Community:** \"SO-MBA\" network, social events, dedicated Blast list (`gsb_so20XX@lists.stanford.edu`).\n- **Campus Access:** SOs can get Stanford Non-Academic Affiliated IDs for library/gym access.\n- **Childcare:** Stanford childcare centers and Bing Nursery School.\n\n---"
+          }
+        ]
+      },
+      {
+        "id": "21-international-students",
+        "number": 21,
+        "title": "21. International Students",
+        "subsections": [
+          {
+            "id": "21-international-students-main",
+            "title": "21. International Students",
+            "body": "- **Bechtel International Center:** Visa processing (F-1/J-1), CPT, OPT, STEM extensions.\n- **Social Security Number (SSN):** Require campus employment or CPT authorization to apply.\n- **Building US Credit:** Start early with SFCU credit card, Deserve Edu, or Amex global transfer.\n\n---"
+          }
+        ]
+      },
+      {
+        "id": "22-community-relationships-and-looking-after-yourself",
+        "number": 22,
+        "title": "22. Community, Relationships, and Looking After Yourself",
+        "subsections": [
+          {
+            "id": "22-community-relationships-and-looking-after-yourself-main",
+            "title": "22. Community, Relationships, and Looking After Yourself",
+            "body": "- **Managing FOMO:** Density of opportunities requires setting intentional boundaries.\n- **TALK Culture:** Vulnerability and authentic connection.\n- **Touchy Feely (Interpersonal Dynamics / GEN 374):** Signature GSB elective focusing on emotional intelligence and feedback.\n\n---"
+          }
+        ]
+      },
+      {
+        "id": "23-conferences-and-the-wider-bay-area-ecosystem",
+        "number": 23,
+        "title": "23. Conferences and the Wider Bay Area Ecosystem",
+        "subsections": [
+          {
+            "id": "23-conferences-and-the-wider-bay-area-ecosystem-main",
+            "title": "23. Conferences and the Wider Bay Area Ecosystem",
+            "body": "- **Student-Run Conferences:** Future of Food, Climate Summit, Healthcare Conference, Search Fund Conference.\n- Cross-registration options at Stanford Law School, d.school, and School of Engineering.\n\n---"
+          }
+        ]
+      },
+      {
+        "id": "24-sports-fitness-and-recreation",
+        "number": 24,
+        "title": "24. Sports, Fitness, and Recreation",
+        "subsections": [
+          {
+            "id": "24-sports-fitness-and-recreation-main",
+            "title": "24. Sports, Fitness, and Recreation",
+            "body": "- **Facilities:** AOERC (Arrillaga Outdoor Education and Recreation Center), Avery Aquatic Center, Ford Center.\n- **Intramurals:** Spikeball, basketball, soccer, tennis, golf at Stanford Golf Course.\n\n---"
+          }
+        ]
+      },
+      {
+        "id": "25-day-trips-and-weekend-escapes",
+        "number": 25,
+        "title": "25. Day Trips and Weekend Escapes",
+        "subsections": [
+          {
+            "id": "25-day-trips-and-weekend-escapes-main",
+            "title": "25. Day Trips and Weekend Escapes",
+            "body": "- **Napa / Sonoma:** Wine tasting (1.5\u20132 hours north).\n- **Santa Cruz & Monterey:** Surfing, coastal drive (1 hour south).\n- **Yosemite & Big Sur:** Camping and hiking.\n- **Lake Tahoe:** Skiing in winter, lake activities in summer (3.5\u20134 hours east).\n\n---"
+          }
+        ]
+      },
+      {
+        "id": "26-the-shape-of-the-year",
+        "number": 26,
+        "title": "26. The Shape of the Year",
+        "subsections": [
+          {
+            "id": "26-the-shape-of-the-year-main",
+            "title": "26. The Shape of the Year",
+            "body": "- **Autumn Quarter:** Onboarding, core classes, section bonding, intense social calendar.\n- **Winter Quarter:** Electives begin, recruiting ramps up, Tahoe ski weekends, Vegas FOAM.\n- **Spring Quarter:** Electives, treks, warm-weather social events, graduation prep for MBA2s.\n\n---"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "part-iii-exiting-the-gsb",
+    "title": "Part III \u2014 Exiting the GSB",
+    "chapters": [
+      {
+        "id": "part-iii-exiting-the-gsb",
+        "number": 0,
+        "title": "Part III \u2014 Exiting the GSB",
+        "subsections": [
+          {
+            "id": "part-iii-exiting-the-gsb",
+            "title": "Part III \u2014 Exiting the GSB",
+            "body": "---"
+          }
+        ]
+      },
+      {
+        "id": "27-the-summer-between-years",
+        "number": 27,
+        "title": "27. The Summer Between Years",
+        "subsections": [
+          {
+            "id": "27-the-summer-between-years-main",
+            "title": "27. The Summer Between Years",
+            "body": "- **Internships & Startup Projects:** Summer internship funding, social impact fellowships, enterprise testing.\n- **Housing Passdown:** Inheriting off-campus houses from graduating MBA2s.\n\n---"
+          }
+        ]
+      },
+      {
+        "id": "28-second-year",
+        "number": 28,
+        "title": "28. Second Year",
+        "subsections": [
+          {
+            "id": "28-second-year-main",
+            "title": "28. Second Year",
+            "body": "- **Elective Freedom:** 100% elective coursework.\n- **Leadership Roles:** Club leadership, CAs, Peer Mentors, SA leadership.\n- **Just-in-Time Recruiting:** Later hiring cycles for startups, VC, and niche industries.\n\n---"
+          }
+        ]
+      },
+      {
+        "id": "29-graduation-and-beyond",
+        "number": 29,
+        "title": "29. Graduation and Beyond",
+        "subsections": [
+          {
+            "id": "29-graduation-and-beyond-main",
+            "title": "29. Graduation and Beyond",
+            "body": "- **Graduation Requirements:** Check credit units and residency requirements early.\n- **Alumni Email & Services:** Transition to lifetime alumni Google Workspace account.\n- **Alumni Network:** Regional alumni chapters, lifelong connection.\n\n---"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "closing-appendices",
+    "title": "Closing & Appendices",
+    "chapters": [
+      {
+        "id": "closing-appendices",
+        "number": 0,
+        "title": "Closing & Appendices",
+        "subsections": [
+          {
+            "id": "closing-appendices",
+            "title": "Closing & Appendices",
+            "body": "---"
+          },
+          {
+            "id": "a-closing-note-on-contribution",
+            "title": "A Closing Note: On Contribution",
+            "body": "Leave the campground better than you found it. Pass down notes, maintain house traditions, mentor incoming students, and keep this survival guide alive for future classes.\n\n---"
+          },
+          {
+            "id": "appendix-a-the-resources-folder",
+            "title": "Appendix A \u2014 The Resources Folder",
+            "body": "*Contents of the public companion Drive folder:*\n1. `Health Insurance \u2013 Plan Comparison.xlsx`\n2. `GSB Residences Packing List.xlsx`\n3. `Blast FAQ.docx`\n4. `Free Software List.docx`\n5. `GSB Knight Management Center Map and Directory.pdf`\n6. `Stanford GSB Virtual Meeting Backgrounds/`\n\n---"
+          },
+          {
+            "id": "appendix-b-quick-reference-numbers-and-links",
+            "title": "Appendix B \u2014 Quick-Reference Numbers and Links",
+            "body": "- **Emergency:** 911 (Campus Police / Fire)\n- **Stanford Police (Non-Emergency):** (650) 723-9633\n- **Vaden Health Center:** (650) 498-2336\n- **Maintenance (R&DE Fix-It):** (650) 725-1602\n- **IT Help Desk:** (650) 725-HELP (4357)\n- **Schwab Front Desk:** (650) 725-6880\n\n---"
+          },
+          {
+            "id": "appendix-c-the-official-links-directory",
+            "title": "Appendix C \u2014 The Official-Links Directory",
+            "body": "- **MyGSB:** `mygsb.stanford.edu`\n- **Axess:** `axess.stanford.edu`\n- **Canvas:** `courses.gsb.stanford.edu`\n- **Vaden Health:** `vaden.stanford.edu`\n- **Bechtel Center:** `bechtel.stanford.edu`\n- **Stanford Card Services:** `cardservices.stanford.edu`\n\n---"
+          },
+          {
+            "id": "appendix-d-the-gsb-dictionary",
+            "title": "Appendix D \u2014 The GSB Dictionary",
+            "body": "- **Arbuckle:** The main dining caf\u00e9 in KMC.\n- **Blast:** The class-wide mass email system.\n- **C4C:** Challenge 4 Charity.\n- **FOAM:** Friend of Andrew Mellor (Tuesday party tradition).\n- **GND:** Grade Non-Disclosure.\n- **GST:** Global Study Trip.\n- **JMac:** Jack McDonald Hall.\n- **KMC:** Knight Management Center.\n- **LPF:** Late Performance Fee (Friday happy hour).\n- **Schwab:** Schwab Residential Center.\n- **TALK:** Weekly student storytelling tradition.\n- **Touchy Feely:** Interpersonal Dynamics course.\n\n---"
+          },
+          {
+            "id": "appendix-e-quick-answers-the-class-chat-faq",
+            "title": "Appendix E \u2014 Quick Answers: The Class-Chat FAQ",
+            "body": "- *Do I need a car?* Helpful for Tahoe/grocery runs, but bikes + Caltrain + Uber/Lyft cover 90% of daily life.\n- *Is Cardinal Care mandatory?* You are auto-enrolled unless you submit an approved waiver by mid-September.\n- *Where do I get my student ID?* Tresidder Union (or Schwab desk for GSB residents).\n- *Can I bring pets?* No pets in Stanford housing ($100/day fine) unless approved service/support animal.\n\n---"
+          },
+          {
+            "id": "appendix-f-primary-sources",
+            "title": "Appendix F \u2014 Primary Sources",
+            "body": "- *International Student Handbook* (MBA Student Association International Committee).\n- Class of 2025 & 2026 advice archives, Blast posts, and passed-down playbooks.\n- Stanford University & GSB Official Administrative Directories."
+          }
+        ]
+      }
+    ]
+  }
+]

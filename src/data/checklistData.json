@@ -1,0 +1,98 @@
+[
+  {
+    "id": "chk-1",
+    "category": "Before You Arrive",
+    "task": "Read the Admit tab of MyGSB end-to-end and monitor MyGSB Digest summer emails.",
+    "defaultChecked": false
+  },
+  {
+    "id": "chk-2",
+    "category": "Before You Arrive",
+    "task": "Decide on Cardinal Care vs. waiver before the mid-September deadline.",
+    "defaultChecked": false
+  },
+  {
+    "id": "chk-3",
+    "category": "Before You Arrive",
+    "task": "Clear Stanford immunization requirements through Vaden (MMR, Hep B + titer, TB).",
+    "defaultChecked": false
+  },
+  {
+    "id": "chk-4",
+    "category": "Before You Arrive",
+    "task": "Book flights to arrive before Week Zero; line up gap housing if needed.",
+    "defaultChecked": false
+  },
+  {
+    "id": "chk-5",
+    "category": "Before You Arrive",
+    "task": "Ship or order room basics; pack one set of linens.",
+    "defaultChecked": false
+  },
+  {
+    "id": "chk-6",
+    "category": "Before You Arrive",
+    "task": "Set up direct deposit on Axess; plan US bank account.",
+    "defaultChecked": false
+  },
+  {
+    "id": "chk-7",
+    "category": "Before You Arrive",
+    "task": "Sort a US phone plan / eSIM.",
+    "defaultChecked": false
+  },
+  {
+    "id": "chk-8",
+    "category": "Before You Arrive",
+    "task": "Submit ID-card photo online in advance.",
+    "defaultChecked": false
+  },
+  {
+    "id": "chk-9",
+    "category": "Before You Arrive",
+    "task": "Download essential apps: Uber, Lyft, Venmo, WhatsApp, Slack, GroupMe, Messenger, Yelp, Hopper/Going.",
+    "defaultChecked": false
+  },
+  {
+    "id": "chk-10",
+    "category": "Before You Arrive",
+    "task": "Join class WhatsApp groups as invitations circulate.  ---",
+    "defaultChecked": false
+  },
+  {
+    "id": "chk-intl-1",
+    "category": "International Prep",
+    "task": "Obtain F-1 / J-1 Visa stamp and verify I-20 / DS-2019 details",
+    "defaultChecked": false
+  },
+  {
+    "id": "chk-intl-2",
+    "category": "International Prep",
+    "task": "Check US entry regulations & customs requirements for international travel",
+    "defaultChecked": false
+  },
+  {
+    "id": "chk-intl-3",
+    "category": "International Prep",
+    "task": "Apply for Social Security Number (SSN) after arriving and securing eligible campus job/CPT",
+    "defaultChecked": false
+  },
+  {
+    "id": "chk-intl-4",
+    "category": "International Prep",
+    "task": "Prepare tax documents (Form 8843) for Bechtel International Center compliance",
+    "defaultChecked": false
+  },
+  {
+    "id": "chk-intl-5",
+    "category": "International Prep",
+    "task": "Open US Bank Account (Bank of America / Chase / Wells Fargo near campus)",
+    "defaultChecked": false
+  },
+  {
+    "id": "chk-intl-6",
+    "category": "International Prep",
+    "task": "Get US eSIM / SIM Card (Mint Mobile / AT&T / T-Mobile)",
+    "defaultChecked": false
+  }
+]

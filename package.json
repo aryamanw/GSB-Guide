@@ -1,0 +1,26 @@
+{
+  "name": "stanford-gsb-survival-guide",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "python3 scripts/parse_md.py && vite build",
+    "preview": "vite preview",
+    "parse": "python3 scripts/parse_md.py"
+  },
+  "dependencies": {
+    "canvas-confetti": "^1.9.4",
+    "fuse.js": "^7.1.0",
+    "lucide-react": "^0.475.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.5.4",
+    "postcss": "^8.5.26",
+    "tailwindcss": "^3.4.19",
+    "vite": "^6.2.0"
+  }
+}
