@@ -15,129 +15,342 @@ def clean_text(text):
     text = re.sub(r'\[cite:\s*\d+\]', '', text)
     return text.strip()
 
-def parse_survival_guide():
-    filepath = os.path.join(MD_DIR, 'gsb-guide-gemini.md')
+def slugify(text):
+    slug = re.sub(r'[^\w\s-]', '', text.lower())
+    return re.sub(r'[-\s]+', '-', slug).strip('-')
+
+
+# ---------------------------------------------------------------------------
+# Full-text Survival Guide parser
+#
+# md-files/gsb-guide-gemini.md is a hand-condensed ~9.5k-word retelling of the
+# guide (used below for the Dictionary/FAQ/Checklist appendices, which are
+# already cleanly structured there). The Survival Guide *reader*, however,
+# should carry the complete ~50k-word guide, so it's parsed straight from the
+# raw PDF-text extraction in "GSB Survival Guide.md" instead.
+#
+# That raw file has PDF-extraction quirks this parser cleans up:
+#   - every chapter/section opens with a nav banner line like "← S →3. Housing"
+#     (arrows + "S" = prev/contents/next); these double as reliable section
+#     boundaries.
+#   - running page headers/footers repeat the section title in caps
+#     ("3. HOUSING") throughout the body and need stripping.
+#   - inline image URLs (Google-hosted banner images) litter the text.
+#   - PDF line-wrap hyphenation splits words across lines ("attach-ments").
+# ---------------------------------------------------------------------------
+
+DICT_WORDS_PATH = '/usr/share/dict/words'
+
+def _load_dictionary_words():
+    try:
+        with open(DICT_WORDS_PATH, encoding='utf-8') as f:
+            return set(w.strip().lower() for w in f if w.strip())
+    except OSError:
+        return set()
+
+_DICT_WORDS = _load_dictionary_words()
+
+# Populated per-document by build_corpus_wordset() before parsing: proper
+# nouns like "Stanford" or "Munger" get split by the same line-wrap
+# hyphenation but aren't in a general-purpose word list. Since they appear
+# whole, unbroken, elsewhere in the same guide, harvesting real words the
+# document itself uses covers them without hardcoding names.
+_EXTRA_WORDS = set()
+
+def build_corpus_wordset(lines):
+    words = set()
+    for line in lines:
+        s = line.strip()
+        if not s or IMAGE_LINE_RE.match(s) or ORPHAN_NUMBER_RE.match(s) or is_footerish(s):
+            continue
+        # words not touching a hyphen on either side, so split fragments
+        # ("Stan-ford" -> "Stan", "ford") never pollute the corpus
+        for tok in re.findall(r'(?<![A-Za-z-])[A-Za-z]{3,}(?![A-Za-z-])', s):
+            words.add(tok.lower())
+    return words
+
+def _is_dictionary_word(word):
+    """True if `word` (or its likely uninflected stem) is a real word.
+    The system word list skips most plurals/inflections, so a handful of
+    common suffixes are also tried before giving up."""
+    w = word.lower()
+    known = w in _DICT_WORDS or w in _EXTRA_WORDS
+    if known:
+        return True
+    if w.endswith('s') and (w[:-1] in _DICT_WORDS or w[:-1] in _EXTRA_WORDS):
+        return True
+    if w.endswith('es') and (w[:-2] in _DICT_WORDS or w[:-2] in _EXTRA_WORDS):
+        return True
+    if w.endswith('ed') and (w[:-2] in _DICT_WORDS or w[:-2] in _EXTRA_WORDS):
+        return True
+    if w.endswith('ing') and (w[:-3] in _DICT_WORDS or w[:-3] + 'e' in _DICT_WORDS
+                               or w[:-3] in _EXTRA_WORDS or w[:-3] + 'e' in _EXTRA_WORDS):
+        return True
+    return False
+
+
+def dehyphenate(text):
+    """Rejoin words that PDF line-wrapping split with a hyphen (e.g.
+    'attach-ments' -> 'attachments'), while leaving real hyphenated
+    compounds (e.g. 'off-campus') alone. Uses the system word list to tell
+    the two apart: only merge when the joined form is a real word."""
+    if not _DICT_WORDS:
+        return text
+
+    def repl(m):
+        a, b = m.group(1), m.group(2)
+        if _is_dictionary_word(a + b):
+            return a + b
+        return m.group(0)
+
+    return re.sub(r'\b([A-Za-z]{2,})-([a-z]{2,})\b', repl, text)
+
+
+IMAGE_LINE_RE = re.compile(r'^https?://\S+$')
+ORPHAN_NUMBER_RE = re.compile(r'^\d+\.$')
+BOUNDARY_RE = re.compile(r'^(←)?\s*S\s*(→)?\s*(?=[A-Z0-9])(.+)$')
+
+
+def is_footerish(line):
+    """Running headers/footers in the raw text are short all-caps lines
+    (page headers repeating the section title, or letter-spaced banners
+    like "P A R T I I")."""
+    s = line.strip()
+    if not s or len(s) > 70:
+        return False
+    letters = re.sub(r'[^A-Za-z]', '', s)
+    if len(letters) < 3:
+        return False
+    return letters.isupper()
+
+
+def looks_like_subheading(line, chapter_title):
+    s = line.strip()
+    if not s or len(s) > 70:
+        return False
+    if s[-1] in '.!?;:,':
+        return False
+    if s.startswith(('—', '-', '•', 'http')):
+        return False
+    if not s[0].isupper():
+        return False
+    words = s.split()
+    if not (1 <= len(words) <= 9):
+        return False
+    if s.lower().rstrip('.') == re.sub(r'^\d+\.\s*', '', chapter_title).lower():
+        return False
+    return True
+
+
+def find_chapter_boundaries(lines):
+    """Returns [(line_index, title), ...] for every chapter/section nav
+    banner in the raw guide, in document order."""
+    boundaries = []
+    for i, line in enumerate(lines):
+        m = BOUNDARY_RE.match(line.strip())
+        if m and (m.group(1) or m.group(2)):
+            boundaries.append((i, m.group(3).strip()))
+    return boundaries
+
+
+def merge_line_end_hyphens(lines):
+    """The raw text wraps mid-word at the end of a physical line
+    ('conversa-' / 'tions'), unlike the same-line hyphenation
+    dehyphenate() handles. Stitch those back into one line, dropping the
+    hyphen when the joined word is real (matching dehyphenate()'s logic)
+    and keeping it when the line just happens to end on a genuine
+    hyphenated compound."""
+    out = []
+    i = 0
+    n = len(lines)
+    while i < n:
+        line = lines[i]
+        while line[-1:] == '-' and line[-2:-1].isalpha() and i + 1 < n and lines[i + 1]:
+            nxt = lines[i + 1]
+            m = re.match(r'^([A-Za-z]+)', nxt)
+            if not m:
+                break
+            first_word = m.group(1)
+            rest = nxt[len(first_word):]
+            stem_match = re.search(r'([A-Za-z]+)-$', line)
+            prefix = line[:stem_match.start()]
+            stem = stem_match.group(1)
+            joined = stem + first_word
+            if _is_dictionary_word(joined):
+                line = prefix + joined + rest
+            else:
+                line = prefix + stem + '-' + first_word + rest
+            i += 1
+        out.append(line)
+        i += 1
+    return out
+
+
+def clean_body_lines(raw_lines, chapter_title):
+    """Strip image URLs, running headers/footers, and orphaned list-marker
+    lines from a chapter's raw line range; return cleaned lines."""
+    cleaned = []
+    for line in raw_lines:
+        s = line.strip()
+        if not s:
+            cleaned.append('')
+            continue
+        if IMAGE_LINE_RE.match(s):
+            continue
+        if ORPHAN_NUMBER_RE.match(s):
+            continue
+        if is_footerish(s):
+            continue
+        cleaned.append(s)
+    return merge_line_end_hyphens(cleaned)
+
+
+def build_subsections(cleaned_lines, chapter_title, base_id):
+    """Split a chapter's cleaned lines into subsections at heading-like
+    standalone lines, joining the rest into paragraph text."""
+    subsections = []
+    current_title = None
+    current_lines = []
+
+    def flush():
+        if not current_lines and current_title is None:
+            return
+        body = '\n'.join(current_lines).strip()
+        # collapse 3+ blank lines down to a single paragraph break
+        body = re.sub(r'\n{3,}', '\n\n', body)
+        if not body:
+            return
+        title = current_title or chapter_title
+        sub_id = slugify(f"{base_id}-{title}") if current_title else f"{base_id}-main"
+        subsections.append({"id": sub_id, "title": title, "body": dehyphenate(body)})
+
+    for line in cleaned_lines:
+        if line == '':
+            if current_lines and current_lines[-1] != '':
+                current_lines.append('')
+            continue
+        if looks_like_subheading(line, chapter_title):
+            flush()
+            current_title = line.strip()
+            current_lines = []
+        else:
+            current_lines.append(line)
+
+    flush()
+
+    if not subsections:
+        subsections.append({
+            "id": f"{base_id}-main",
+            "title": chapter_title,
+            "body": ""
+        })
+
+    return subsections
+
+
+def parse_survival_guide_full():
+    filepath = os.path.join(MD_DIR, 'GSB Survival Guide.md')
     if not os.path.exists(filepath):
-        filepath = os.path.join(MD_DIR, 'GSB Survival Guide.md')
+        return []
 
     with open(filepath, 'r', encoding='utf-8') as f:
-        content = f.read()
+        raw_lines = [l.rstrip('\n') for l in f]
 
-    content = clean_text(content)
-    
-    # Split content into sections based on headings
-    lines = content.split('\n')
-    
+    global _EXTRA_WORDS
+    _EXTRA_WORDS = build_corpus_wordset(raw_lines)
+
+    boundaries = find_chapter_boundaries(raw_lines)
+    if not boundaries:
+        return []
+
+    # Group chapters into parts by title. Order and grouping mirror the
+    # guide's own table of contents.
+    part_defs = [
+        ("front-matter", "Front Matter", {
+            "How to Use This Guide", "Acknowledgments",
+            "A Note from the Guide Creator",
+            "A Brief History of the Farm (and the GSB)"
+        }),
+        ("part-i", "Part I — Before You Arrive", None),   # chapters 1-7
+        ("part-ii", "Part II — Life at the GSB", None),   # chapters 8-26
+        ("part-iii", "Part III — Exiting the GSB", None), # chapters 27-29
+        ("closing-appendices", "Closing & Appendices", {
+            "A Closing Note: On Contribution",
+            "Appendix A — The Resources Folder",
+            "Appendix B — Quick-Reference Numbers and Links",
+            "Appendix C — The Official-Links Directory",
+            "Appendix D — The GSB Dictionary",
+            "Appendix E — Quick Answers: The Class-Chat FAQ",
+            "Appendix F — Primary Sources",
+        }),
+    ]
+
+    # Chapters whose full text is better served by the site's dedicated,
+    # purpose-built tabs (Dictionary / FAQ) rather than duplicated here as
+    # dense raw prose.
+    POINTER_OVERRIDES = {
+        "Appendix D — The GSB Dictionary":
+            "The full glossary lives in the Dictionary tab above — head there "
+            "for definitions of every GSB term, acronym, and tradition "
+            "mentioned throughout this guide.",
+        "Appendix E — Quick Answers: The Class-Chat FAQ":
+            "This appendix's full Q&A archive lives in the searchable FAQ tab "
+            "above — head there for fast answers on living, food, tech, "
+            "academics, careers, transport, and health questions.",
+    }
+
+    chapters_all = []
+    for idx, (start, title) in enumerate(boundaries):
+        end = boundaries[idx + 1][0] if idx + 1 < len(boundaries) else len(raw_lines)
+        body_lines = raw_lines[start + 1:end]
+        chapters_all.append((title, body_lines))
+
     parts = []
-    current_part = {
-        "id": "intro",
-        "title": "Introduction & Overview",
-        "chapters": []
-    }
+    for part_id, part_title, title_set in part_defs:
+        part = {"id": part_id, "title": part_title, "chapters": []}
 
-    current_chapter = {
-        "id": "overview",
-        "number": 0,
-        "title": "Welcome & Overview",
-        "subsections": []
-    }
-
-    current_subsection = {
-        "id": "intro-overview",
-        "title": "Overview",
-        "content": []
-    }
-
-    def slugify(text):
-        slug = re.sub(r'[^\w\s-]', '', text.lower())
-        return re.sub(r'[-\s]+', '-', slug).strip('-')
-
-    for line in lines:
-        raw = line.strip()
-        if not raw:
-            if current_subsection["content"] and current_subsection["content"][-1] != "":
-                current_subsection["content"].append("")
-            continue
-
-        if raw.startswith('# '):
-            # Part header
-            title = raw.lstrip('# ').strip()
-            if current_subsection["content"]:
-                current_chapter["subsections"].append(current_subsection)
-                current_subsection = {"id": slugify(title), "title": title, "content": []}
-            if current_chapter["subsections"]:
-                current_part["chapters"].append(current_chapter)
-                current_chapter = {"id": slugify(title), "number": 0, "title": title, "subsections": []}
-            if current_part["chapters"]:
-                parts.append(current_part)
-                current_part = {"id": slugify(title), "title": title, "chapters": []}
-            current_part["title"] = title
-            current_part["id"] = slugify(title)
-
-        elif raw.startswith('## '):
-            title = raw.lstrip('## ').strip()
-            if current_subsection["content"]:
-                current_chapter["subsections"].append(current_subsection)
-            if current_chapter["subsections"]:
-                current_part["chapters"].append(current_chapter)
-            
-            chap_id = slugify(title)
-            current_chapter = {
-                "id": chap_id,
-                "number": 0,
-                "title": title,
-                "subsections": []
-            }
-            current_subsection = {"id": chap_id + "-intro", "title": title, "content": []}
-
-        elif raw.startswith('### '):
-            title = raw.lstrip('### ').strip()
-            if current_subsection["content"]:
-                current_chapter["subsections"].append(current_subsection)
-            
-            # Check for chapter number pattern like "1. Packing and Shipping" or "Chapter 1: ..."
+        for title, body_lines in chapters_all:
             match_num = re.match(r'^(\d+)\.\s*(.*)', title)
             chap_num = int(match_num.group(1)) if match_num else 0
-            
-            sub_id = slugify(title)
-            if chap_num > 0:
-                if current_chapter["subsections"]:
-                    current_part["chapters"].append(current_chapter)
-                current_chapter = {
-                    "id": sub_id,
-                    "number": chap_num,
-                    "title": title,
-                    "subsections": []
-                }
-                current_subsection = {"id": sub_id + "-main", "title": title, "content": []}
+
+            if title_set is not None:
+                belongs = title in title_set
+            elif part_id == "part-i":
+                belongs = 1 <= chap_num <= 7
+            elif part_id == "part-ii":
+                belongs = 8 <= chap_num <= 26
+            elif part_id == "part-iii":
+                belongs = 27 <= chap_num <= 29
             else:
-                current_subsection = {"id": sub_id, "title": title, "content": []}
+                belongs = False
 
-        elif raw.startswith('#### '):
-            title = raw.lstrip('#### ').strip()
-            if current_subsection["content"]:
-                current_chapter["subsections"].append(current_subsection)
-            current_subsection = {"id": slugify(title), "title": title, "content": []}
+            if not belongs:
+                continue
 
-        else:
-            current_subsection["content"].append(raw)
+            chap_id = slugify(title)
 
-    # Flush last section
-    if current_subsection["content"]:
-        current_chapter["subsections"].append(current_subsection)
-    if current_chapter["subsections"]:
-        current_part["chapters"].append(current_chapter)
-    if current_part["chapters"]:
-        parts.append(current_part)
+            if title in POINTER_OVERRIDES:
+                subsections = [{
+                    "id": f"{chap_id}-main",
+                    "title": title,
+                    "body": POINTER_OVERRIDES[title]
+                }]
+            else:
+                cleaned = clean_body_lines(body_lines, title)
+                subsections = build_subsections(cleaned, title, chap_id)
 
-    # Post-process parts & chapters to clean content lists into clean paragraphs / markdown strings
-    for p in parts:
-        for c in p["chapters"]:
-            for s in c["subsections"]:
-                s["body"] = "\n".join(s["content"]).strip()
-                del s["content"]
+            part["chapters"].append({
+                "id": chap_id,
+                "number": chap_num,
+                "title": title,
+                "subsections": subsections
+            })
+
+        if part["chapters"]:
+            parts.append(part)
 
     return parts
+
 
 def parse_international_guide():
     filepath = os.path.join(MD_DIR, 'International Students Guide.md')
@@ -158,18 +371,18 @@ def parse_international_guide():
         if not raw:
             current_sec["lines"].append("")
             continue
-        
+
         # Check for headings like "Part I...", "1. ...", "2.1 ..."
         is_heading = False
         if raw.startswith('Part ') or re.match(r'^\d+(\.\d+)?\s+[A-Z]', raw):
             is_heading = True
-        
+
         if is_heading and len(raw) < 100:
             if current_sec["lines"]:
                 current_sec["body"] = "\n".join(current_sec["lines"]).strip()
                 del current_sec["lines"]
                 sections.append(current_sec)
-            
+
             slug = re.sub(r'[^\w\s-]', '', raw.lower())
             slug = re.sub(r'[-\s]+', '-', slug).strip('-')
             current_sec = {"id": slug, "title": raw, "lines": []}
@@ -187,7 +400,7 @@ def parse_dictionary():
     filepath = os.path.join(MD_DIR, 'gsb-guide-gemini.md')
     with open(filepath, 'r', encoding='utf-8') as f:
         content = f.read()
-    
+
     app_d = re.search(r'### Appendix D — The GSB Dictionary(.*?)(### Appendix E|\Z)', content, re.DOTALL)
     terms = []
     if app_d:
@@ -199,7 +412,7 @@ def parse_dictionary():
                 "term": term.strip(),
                 "definition": clean_def
             })
-    
+
     # Fallback default terms if regex missed any
     if not terms:
         terms = [
@@ -223,7 +436,7 @@ def parse_faqs():
     filepath = os.path.join(MD_DIR, 'gsb-guide-gemini.md')
     with open(filepath, 'r', encoding='utf-8') as f:
         content = f.read()
-    
+
     app_e = re.search(r'### Appendix E — Quick Answers: The Class-Chat FAQ(.*?)(### Appendix F|\Z)', content, re.DOTALL)
     faqs = []
     if app_e:
@@ -240,7 +453,7 @@ def parse_checklists():
     filepath = os.path.join(MD_DIR, 'gsb-guide-gemini.md')
     with open(filepath, 'r', encoding='utf-8') as f:
         content = f.read()
-    
+
     chap_7 = re.search(r'### 7\. The Before-You-Arrive Checklist(.*?)(# Part II|\Z)', content, re.DOTALL)
     items = []
     if chap_7:
@@ -267,8 +480,8 @@ def parse_checklists():
     return items + intl_items
 
 if __name__ == '__main__':
-    print("Parsing Survival Guide...")
-    survival = parse_survival_guide()
+    print("Parsing Survival Guide (full text)...")
+    survival = parse_survival_guide_full()
     with open(os.path.join(DATA_DIR, 'survivalGuideData.json'), 'w', encoding='utf-8') as f:
         json.dump(survival, f, indent=2)
 
