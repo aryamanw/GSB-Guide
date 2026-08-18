@@ -207,7 +207,18 @@ def clean_body_lines(raw_lines, chapter_title):
 
 def build_subsections(cleaned_lines, chapter_title, base_id):
     """Split a chapter's cleaned lines into subsections at heading-like
-    standalone lines, joining the rest into paragraph text."""
+    standalone lines, joining the rest into paragraph text.
+
+    Dense reference tables (contact lists, event tables) extract as runs of
+    consecutive short, punctuation-free lines that each look like a heading
+    in isolation. Promoting every one of them would flush() a heading
+    immediately followed by another heading — i.e. zero accumulated body —
+    which used to silently drop that line's text entirely. To avoid losing
+    content, a line is only promoted to a heading when the next non-blank
+    line is *not* itself heading-shaped; a run of heading-shaped lines
+    collapses into ordinary body text instead, and as a last-resort safety
+    net flush() falls back to keeping an orphaned title as its own body
+    rather than discarding it."""
     subsections = []
     current_title = None
     current_lines = []
@@ -218,18 +229,25 @@ def build_subsections(cleaned_lines, chapter_title, base_id):
         body = '\n'.join(current_lines).strip()
         # collapse 3+ blank lines down to a single paragraph break
         body = re.sub(r'\n{3,}', '\n\n', body)
-        if not body:
-            return
         title = current_title or chapter_title
+        if not body:
+            if not current_title:
+                return
+            body = current_title  # never silently drop an orphaned heading
         sub_id = slugify(f"{base_id}-{title}") if current_title else f"{base_id}-main"
         subsections.append({"id": sub_id, "title": title, "body": dehyphenate(body)})
 
-    for line in cleaned_lines:
+    n = len(cleaned_lines)
+    for i, line in enumerate(cleaned_lines):
         if line == '':
             if current_lines and current_lines[-1] != '':
                 current_lines.append('')
             continue
-        if looks_like_subheading(line, chapter_title):
+
+        next_line = next((cleaned_lines[j] for j in range(i + 1, n) if cleaned_lines[j] != ''), None)
+        next_is_heading = next_line is not None and looks_like_subheading(next_line, chapter_title)
+
+        if looks_like_subheading(line, chapter_title) and not next_is_heading:
             flush()
             current_title = line.strip()
             current_lines = []
@@ -361,6 +379,16 @@ def parse_international_guide():
         content = f.read()
 
     content = clean_text(content)
+
+    # Drop the "Table of Contents" block: its dotted/numbered entries
+    # ("1. Packing and Shipping 7 2. Preparing for Arrival 8") match the
+    # same heading pattern used below and would otherwise leak in as a
+    # couple of junk sections ahead of the real "Part I – Welcome!" opener.
+    toc_match = re.search(r'^Table of Contents\s*$', content, re.MULTILINE)
+    real_start = re.search(r'^Part I – Welcome!\s*$', content, re.MULTILINE)
+    if toc_match and real_start and real_start.start() > toc_match.start():
+        content = content[:toc_match.start()] + content[real_start.start():]
+
     lines = content.split('\n')
 
     sections = []
@@ -404,8 +432,12 @@ def parse_dictionary():
     app_d = re.search(r'### Appendix D — The GSB Dictionary(.*?)(### Appendix E|\Z)', content, re.DOTALL)
     terms = []
     if app_d:
-        block = app_d.group(1)
-        matches = re.findall(r'-\s*\*\*([^\*]+)\*\*:\s*(.*?)(?=\n-\s*\*|\Z)', block, re.DOTALL)
+        # Drop the trailing "---" section divider so it doesn't get
+        # swallowed into the last entry's definition.
+        block = re.sub(r'\n-{3,}\s*\Z', '', app_d.group(1))
+        # Entries are "- **Term:** definition" — the colon sits *inside*
+        # the closing bold marker, not after it.
+        matches = re.findall(r'-\s*\*\*([^\*:]+):\*\*\s*(.*?)(?=\n-\s*\*\*|\Z)', block, re.DOTALL)
         for term, definition in matches:
             clean_def = clean_text(definition.replace('\n', ' '))
             terms.append({
@@ -440,13 +472,25 @@ def parse_faqs():
     app_e = re.search(r'### Appendix E — Quick Answers: The Class-Chat FAQ(.*?)(### Appendix F|\Z)', content, re.DOTALL)
     faqs = []
     if app_e:
-        block = app_e.group(1)
-        matches = re.findall(r'-\s*\*([^\*]+)\*\s*(.*?)(?=\n-\s*\*|\Z)', block, re.DOTALL)
-        for question, answer in matches:
-            faqs.append({
-                "question": clean_text(question.strip()),
-                "answer": clean_text(answer.replace('\n', ' ').strip())
-            })
+        # Drop the trailing "---" section divider so it doesn't get
+        # swallowed into the last entry's answer.
+        block = re.sub(r'\n-{3,}\s*\Z', '', app_e.group(1))
+        # The block is split into "#### Category" groups; fall back to a
+        # single uncategorized group if none are present.
+        groups = re.split(r'\n#### (.+)\n', block)
+        if len(groups) == 1:
+            groups = [None, "General", groups[0]]
+        # re.split with a capturing group yields [preamble, cat1, body1, cat2, body2, ...]
+        for i in range(1, len(groups), 2):
+            category = groups[i].strip()
+            body = groups[i + 1]
+            matches = re.findall(r'-\s*\*([^\*]+)\*\s*(.*?)(?=\n-\s*\*|\Z)', body, re.DOTALL)
+            for question, answer in matches:
+                faqs.append({
+                    "question": clean_text(question.strip()),
+                    "answer": clean_text(answer.replace('\n', ' ').strip()),
+                    "category": category
+                })
     return faqs
 
 def parse_checklists():
@@ -457,7 +501,9 @@ def parse_checklists():
     chap_7 = re.search(r'### 7\. The Before-You-Arrive Checklist(.*?)(# Part II|\Z)', content, re.DOTALL)
     items = []
     if chap_7:
-        block = chap_7.group(1)
+        # Drop the trailing "---" section divider so it doesn't get
+        # swallowed into the last item's task text.
+        block = re.sub(r'\n-{3,}\s*\Z', '', chap_7.group(1))
         matches = re.findall(r'(\d+)\.\s*(.*?)(?=\n\d+\.|\Z)', block, re.DOTALL)
         for num, text in matches:
             items.append({

@@ -4,47 +4,211 @@
     "definition": "The main dining caf\u00e9 located in Knight Management Center (KMC)."
   },
   {
-    "term": "Blast",
-    "definition": "The class-wide mass email system for announcements."
+    "term": "ATS",
+    "definition": "\"Across the street\" \u2014 any class taken outside the GSB, anywhere at Stanford."
+  },
+  {
+    "term": "Axess",
+    "definition": "Stanford's university-wide system of record: enrollment, transcripts, billing, housing letters."
+  },
+  {
+    "term": "BBL",
+    "definition": "Brown-bag lunch \u2014 a noon speaker event; bring your own food, walk in."
+  },
+  {
+    "term": "Bechtel",
+    "definition": "Bechtel International Center \u2014 the official (and only) authority on visas and immigration."
+  },
+  {
+    "term": "Big Game",
+    "definition": "The annual Stanford\u2013Cal football rivalry, Thanksgiving Saturday, alternating campuses."
+  },
+  {
+    "term": "Blast / Blast Tax / Blast Sheriff",
+    "definition": "The unofficial class-wide email lists; the required meme appended to every Blast; the student who keeps it all running."
+  },
+  {
+    "term": "BPL",
+    "definition": "Beer Pong League \u2014 Thursdays at the Patio, season, playoffs, and all."
   },
   {
     "term": "C4C",
-    "definition": "Challenge 4 Charity - sports and fundraising competition between West Coast business schools."
+    "definition": "Challenge 4 Charity \u2014 a sports and fundraising competition between West Coast business schools."
+  },
+  {
+    "term": "CA",
+    "definition": "Community Associate \u2014 the returning student assigned to help your housing community settle in."
+  },
+  {
+    "term": "CAPS",
+    "definition": "Counseling and Psychological Services, at Vaden."
+  },
+  {
+    "term": "Cardinal Care",
+    "definition": "Stanford's default (auto-enrolled) student health insurance."
+  },
+  {
+    "term": "CardPlan / Cardinal Dollars",
+    "definition": "Two ways to load money onto your Stanford ID for campus food and the bookstore."
+  },
+  {
+    "term": "CMC",
+    "definition": "Career Management Center."
+  },
+  {
+    "term": "D&D",
+    "definition": "Data & Decisions \u2014 one of the placement-exam subjects (no dragons)."
+  },
+  {
+    "term": "The Dish",
+    "definition": "The radio-telescope foothills loop behind campus \u2014 the default run/walk/reset."
+  },
+  {
+    "term": "EVGR / EV",
+    "definition": "Escondido Village (Graduate Residences) \u2014 the big graduate housing complex."
+  },
+  {
+    "term": "Exec Challenge",
+    "definition": "Executive Challenge \u2014 the all-day fall MBA1 event judged by real executives."
+  },
+  {
+    "term": "Festifall",
+    "definition": "Stanford's all-university club fair, early fall, three days."
   },
   {
     "term": "FOAM",
-    "definition": "Friends of Andrew Mellor - iconic Tuesday night GSB party tradition."
+    "definition": "Friends of Arjay Miller \u2014 the Tuesday happy-hour institution and its destination events (Vegas FOAM, LA FOAM, Band)."
+  },
+  {
+    "term": "GER",
+    "definition": "Global Experience Requirement \u2014 satisfied by a GST, GMIX, or equivalent."
+  },
+  {
+    "term": "GMIX",
+    "definition": "Global Management Immersion Experience \u2014 a summer work project abroad."
   },
   {
     "term": "GND",
-    "definition": "Grade Non-Disclosure policy maintained by students."
+    "definition": "Grade Non-Disclosure \u2014 the student-maintained policy of not sharing grades."
+  },
+  {
+    "term": "GoPass",
+    "definition": "Free Caltrain pass for Stanford students."
+  },
+  {
+    "term": "GSB Show",
+    "definition": "The annual student sketch-comedy/musical production."
   },
   {
     "term": "GST",
-    "definition": "Global Study Trip - overseas immersive business trip."
+    "definition": "Global Study Trip \u2014 the faculty-led international trips allocated by lottery (Chapter 16)."
   },
   {
     "term": "JMac",
-    "definition": "Jack McDonald Hall - student housing residence."
+    "definition": "Jack McDonald Hall \u2014 half of \"the GSB Residences,\" with Schwab."
   },
   {
     "term": "KMC",
-    "definition": "Knight Management Center - the GSB campus complex."
+    "definition": "Knight Management Center \u2014 the GSB's campus."
+  },
+  {
+    "term": "LOWKeynotes",
+    "definition": "The student TED-style talk series."
   },
   {
     "term": "LPF",
-    "definition": "Late Performance Fee - Friday afternoon social/happy hour tradition."
+    "definition": "Liquidity Preference Function \u2014 the Friday happy hour, and proof finance people name things."
+  },
+  {
+    "term": "Marguerite",
+    "definition": "Stanford's free public shuttle bus."
+  },
+  {
+    "term": "MSx",
+    "definition": "The one-year masters program for experienced leaders \u2014 your older, wiser neighbors (Chapter 13)."
+  },
+  {
+    "term": "MyGSB",
+    "definition": "The GSB intranet \u2014 registration, policies, careers, everything official."
+  },
+  {
+    "term": "NGSO",
+    "definition": "New Graduate Student Orientation \u2014 the university-wide orientation most GSBers skip and shouldn't."
+  },
+  {
+    "term": "OB / OSM",
+    "definition": "Organizational Behavior; Optimization & Simulation Modeling \u2014 autumn core staples."
+  },
+  {
+    "term": "Passdown house",
+    "definition": "An off-campus house whose lease is handed down class to class, lore included."
+  },
+  {
+    "term": "Peer Mentor",
+    "definition": "An MBA2 assigned to help you land \u2014 and the spirit of this entire guide."
+  },
+  {
+    "term": "PMF",
+    "definition": "Product-Market Fit \u2014 the famously high-effort, high-reward entrepreneurship course."
+  },
+  {
+    "term": "RCC",
+    "definition": "Resident Computer Consultant \u2014 paid student tech support in university housing."
+  },
+  {
+    "term": "Rolling Funds",
+    "definition": "Quarterly SA re-allocation of unspent budget \u2014 fundable by any student with an idea (Chapter 15)."
   },
   {
     "term": "Schwab",
-    "definition": "Schwab Residential Center - primary MBA1 housing residence."
+    "definition": "Schwab Residential Center \u2014 the other half of the GSB Residences."
+  },
+  {
+    "term": "Shenanigans",
+    "definition": "The sanctioned tradition of pre-planned classroom absurdity, scored by section (Chapter 15)."
+  },
+  {
+    "term": "SMIF / ESIP / EcoSIP",
+    "definition": "GSB summer funding programs for low-paid internships and entrepreneurial projects (Chapter 27)."
+  },
+  {
+    "term": "SO",
+    "definition": "Significant other \u2014 with real standing in GSB life (Chapter 20)."
+  },
+  {
+    "term": "SUNet ID",
+    "definition": "Your Stanford username \u2014 the key to every system."
+  },
+  {
+    "term": "Super Round",
+    "definition": "Your once-a-year near-guaranteed class pick in registration (Chapter 13)."
   },
   {
     "term": "TALK",
-    "definition": "Weekly student intimate storytelling tradition every intimate Tuesday evening."
+    "definition": "The Wednesday-night tradition: two classmates tell their life stories."
   },
   {
-    "term": "Touchy Feely",
-    "definition": "Interpersonal Dynamics - the famous core elective course at Stanford GSB."
+    "term": "TF / T-group",
+    "definition": "Touchy Feely (Interpersonal Dynamics) \u2014 the famous course \u2014 and its small training group."
+  },
+  {
+    "term": "Vaden",
+    "definition": "Vaden Health Center \u2014 student medical care."
+  },
+  {
+    "term": "VFTT",
+    "definition": "View From The Top \u2014 the dean-hosted executive speaker series."
+  },
+  {
+    "term": "Week Zero",
+    "definition": "The pre-quarter week of orientation, admin, and setup."
+  },
+  {
+    "term": "Window Wars",
+    "definition": "The once-a-year event where first-floor residents \"sell\" home cooking out their windows."
+  },
+  {
+    "term": "The Farm",
+    "definition": "Stanford itself \u2014 it really was one."
   }
 ]

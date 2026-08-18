@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { HelpCircle, ChevronDown, ChevronUp, Search, MessageSquare } from 'lucide-react';
 
 export default function FAQView({ faqs }) {
-  const [openIndex, setOpenIndex] = useState(0);
+  const [openId, setOpenId] = useState(null);
   const [search, setSearch] = useState('');
 
   const filteredFaqs = faqs.filter(
@@ -10,6 +10,18 @@ export default function FAQView({ faqs }) {
       f.question.toLowerCase().includes(search.toLowerCase()) ||
       f.answer.toLowerCase().includes(search.toLowerCase())
   );
+
+  // Group into the guide's own categories (Living, Food, Tech, ...) so a
+  // 50+ entry list stays scannable instead of one long flat accordion.
+  const groups = useMemo(() => {
+    const byCategory = new Map();
+    for (const f of filteredFaqs) {
+      const cat = f.category || 'General';
+      if (!byCategory.has(cat)) byCategory.set(cat, []);
+      byCategory.get(cat).push(f);
+    }
+    return Array.from(byCategory.entries());
+  }, [filteredFaqs]);
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8 space-y-8">
@@ -43,38 +55,46 @@ export default function FAQView({ faqs }) {
         />
       </div>
 
-      {/* Accordion List */}
-      <div className="space-y-3">
-        {filteredFaqs.map((faq, idx) => {
-          const isOpen = openIndex === idx;
-          return (
-            <div
-              key={idx}
-              className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm transition-colors"
-            >
-              <button
-                onClick={() => setOpenIndex(isOpen ? null : idx)}
-                className="w-full px-6 py-4 text-left flex items-center justify-between gap-4 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors"
-              >
-                <span className="font-serif font-semibold text-slate-900 dark:text-white text-base sm:text-lg flex items-center gap-2">
-                  <MessageSquare size={18} className="text-[#8C1515] shrink-0" />
-                  {faq.question}
-                </span>
-                {isOpen ? (
-                  <ChevronUp size={18} className="text-slate-400 shrink-0" />
-                ) : (
-                  <ChevronDown size={18} className="text-slate-400 shrink-0" />
-                )}
-              </button>
+      {/* Grouped Accordion List */}
+      <div className="space-y-8">
+        {groups.map(([category, items]) => (
+          <div key={category} className="space-y-3">
+            <h2 className="text-xs font-bold uppercase tracking-wider text-[#8C1515] dark:text-red-400 px-1">
+              {category}
+            </h2>
+            {items.map((faq, idx) => {
+              const faqId = `${category}-${idx}`;
+              const isOpen = openId === faqId;
+              return (
+                <div
+                  key={faqId}
+                  className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm transition-colors"
+                >
+                  <button
+                    onClick={() => setOpenId(isOpen ? null : faqId)}
+                    className="w-full px-6 py-4 text-left flex items-center justify-between gap-4 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors"
+                  >
+                    <span className="font-serif font-semibold text-slate-900 dark:text-white text-base sm:text-lg flex items-center gap-2">
+                      <MessageSquare size={18} className="text-[#8C1515] shrink-0" />
+                      {faq.question}
+                    </span>
+                    {isOpen ? (
+                      <ChevronUp size={18} className="text-slate-400 shrink-0" />
+                    ) : (
+                      <ChevronDown size={18} className="text-slate-400 shrink-0" />
+                    )}
+                  </button>
 
-              {isOpen && (
-                <div className="px-6 pb-5 pt-1 text-slate-600 dark:text-slate-300 text-sm leading-relaxed border-t border-slate-100 dark:border-slate-800/60 bg-slate-50/50 dark:bg-slate-950/40">
-                  {faq.answer}
+                  {isOpen && (
+                    <div className="px-6 pb-5 pt-1 text-slate-600 dark:text-slate-300 text-sm leading-relaxed border-t border-slate-100 dark:border-slate-800/60 bg-slate-50/50 dark:bg-slate-950/40">
+                      {faq.answer}
+                    </div>
+                  )}
                 </div>
-              )}
-            </div>
-          );
-        })}
+              );
+            })}
+          </div>
+        ))}
       </div>
     </div>
   );

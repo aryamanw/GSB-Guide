@@ -161,7 +161,7 @@
           {
             "id": "4-health-insurance-vaccinations-and-prep-waiving-and-comparing-plans",
             "title": "Waiving and comparing plans",
-            "body": "A group of students built a side-by-side comparison of Cardinal Care against the common alternatives \u2014 it lives in the Resources folder as Health Insurance \u2013 Plan Comparison.xlsx. The headline numbers (2024\u201325 figures; expect drift, verify current):"
+            "body": "A group of students built a side-by-side comparison of Cardinal Care against the common alternatives \u2014 it lives in the Resources folder as Health Insurance \u2013 Plan Comparison.xlsx. The headline numbers (2024\u201325 figures; expect drift, verify current):\nCardinal Care\nISO Care Elite\nISO Care PSI plans"
           },
           {
             "id": "4-health-insurance-vaccinations-and-prep-monthly-premium-approx",
@@ -171,12 +171,12 @@
           {
             "id": "4-health-insurance-vaccinations-and-prep-annual-deductible-100-40-500-250",
             "title": "Annual deductible $100 $40 $500 $250",
-            "body": "100% 90% 80% 80%"
+            "body": "100% 90% 80% 80%\nIn-network coinsurance"
           },
           {
             "id": "4-health-insurance-vaccinations-and-prep-out-of-pocket-max",
             "title": "Out-of-pocket max",
-            "body": "$2,000 $6,350 $6,350 $6,350"
+            "body": "$2,000 $6,350 $6,350 $6,350\nWaiver-eligible? n/a (default)"
           },
           {
             "id": "4-health-insurance-vaccinations-and-prep-yes-no-was-tbc-check",
@@ -530,7 +530,7 @@
           {
             "id": "13-academics-the-first-year-shape",
             "title": "The first-year shape",
-            "body": "Autumn is core (finance, accounting, leadership labs, organizational behavior, optimization/modeling, and friends); winter and spring blend remaining core with your first electives. Some core courses run at multiple levels (base, accelerated, advanced), set partly by placement exams in areas like microeconomics and data & decisions taken before autumn.\nFor orientation, here's the shape of a recent prereform first year \u2014 treat it as a sketch of the pattern (a heavy structured autumn, core tapering through winter and spring as electives grow), not a promise of your exact courses:"
+            "body": "Autumn is core (finance, accounting, leadership labs, organizational behavior, optimization/modeling, and friends); winter and spring blend remaining core with your first electives. Some core courses run at multiple levels (base, accelerated, advanced), set partly by placement exams in areas like microeconomics and data & decisions taken before autumn.\nFor orientation, here's the shape of a recent prereform first year \u2014 treat it as a sketch of the pattern (a heavy structured autumn, core tapering through winter and spring as electives grow), not a promise of your exact courses:\nAutumn (all core) Winter (core + first choices)"
           },
           {
             "id": "13-academics-spring-mostly-your-call",
@@ -813,22 +813,22 @@
           {
             "id": "17-health-and-wellbeing-where-to-go-for-care",
             "title": "Where to go for care",
-            "body": "The one-page triage chart from Vaden \u2014 preventive and nonurgent care at Vaden Health Center (appointments via the website); minor urgent needs at walk-in/express care; serious-but-not-life-threatening at urgent care (usually faster than the ER); emergencies at the Stanford Adult ER (location) or 911 \u2014 is in the Resources folder as Where To Get Primary Care at Stanford.pdf. ER waits can run hours even at Stanford; classmates will drive you without hesitation \u2014 ask the chat, and someone will also bring the CVS first-aid run.\nVaden main line and appointments: vaden.stanford.edu \u2014 (650) 498-2336; afterhours advice lines are listed there. GP recommendations are a perennial chat topic; ask and you'll get names within the hour.\nVaden GPs who came student-recommended: Dr. Benjamin Silverberg, Dr. Rodden, and Dr. Yeuen Kim (\u201cvery comprehensive in her diagnosis\u201d).\nPhysical therapy: MORE Physical Therapy inside Vaden \u2014 roughly a $25 copay with Cardinal Care, solid quality, but they book only a week or two out. Book here.\nPT upgrade path: Cardinal Care also covers Stanford's Redwood City orthopedic outpatient PT \u2014 reportedly higher-quality than MORE, but with a months-long waitlist before you can book. Start the referral early and use MORE in the meantime.\nDental: Cardinal Care bundles Aetna PPO dental \u2014 diagnostic/ preventive covered 100% (up to ~$1,000/year), basic restorative at 80% after a ~$25 deductible, always via in-network PPO dentists; dental can't be bought separately from the medical plan. Fastest path to a chair: log into the dental portal (Ameritas under some plan years \u2014 check your card) and filter for dentists accepting new patients. Recent plan years ran dental lookups through\nthe insurer's portal with no referral needed \u2014 Blue Turtle Dental came recommended and books easily, and a well-liked practice in San Mateo gets specific praise for anxious patients and for \u201cgetting the most out of your insurance\u201d (that one's Celeste Bean's rec).\nMental health: CAPS (counseling and psychological services) \u2014 and note Cardinal Care's mental-health benefits, administered by Aetna Student Health, work without a CAPS referral: you can see any Aetna-network clinician in the community directly (aet-nastudenthealth.com/stanford). CAPS can still recommend good fits for specific needs.\nThe fuller support stack, from the official Student Support card:"
+            "body": "The one-page triage chart from Vaden \u2014 preventive and nonurgent care at Vaden Health Center (appointments via the website); minor urgent needs at walk-in/express care; serious-but-not-life-threatening at urgent care (usually faster than the ER); emergencies at the Stanford Adult ER (location) or 911 \u2014 is in the Resources folder as Where To Get Primary Care at Stanford.pdf. ER waits can run hours even at Stanford; classmates will drive you without hesitation \u2014 ask the chat, and someone will also bring the CVS first-aid run.\nVaden main line and appointments: vaden.stanford.edu \u2014 (650) 498-2336; afterhours advice lines are listed there. GP recommendations are a perennial chat topic; ask and you'll get names within the hour.\nVaden GPs who came student-recommended: Dr. Benjamin Silverberg, Dr. Rodden, and Dr. Yeuen Kim (\u201cvery comprehensive in her diagnosis\u201d).\nPhysical therapy: MORE Physical Therapy inside Vaden \u2014 roughly a $25 copay with Cardinal Care, solid quality, but they book only a week or two out. Book here.\nPT upgrade path: Cardinal Care also covers Stanford's Redwood City orthopedic outpatient PT \u2014 reportedly higher-quality than MORE, but with a months-long waitlist before you can book. Start the referral early and use MORE in the meantime.\nDental: Cardinal Care bundles Aetna PPO dental \u2014 diagnostic/ preventive covered 100% (up to ~$1,000/year), basic restorative at 80% after a ~$25 deductible, always via in-network PPO dentists; dental can't be bought separately from the medical plan. Fastest path to a chair: log into the dental portal (Ameritas under some plan years \u2014 check your card) and filter for dentists accepting new patients. Recent plan years ran dental lookups through\nthe insurer's portal with no referral needed \u2014 Blue Turtle Dental came recommended and books easily, and a well-liked practice in San Mateo gets specific praise for anxious patients and for \u201cgetting the most out of your insurance\u201d (that one's Celeste Bean's rec).\nMental health: CAPS (counseling and psychological services) \u2014 and note Cardinal Care's mental-health benefits, administered by Aetna Student Health, work without a CAPS referral: you can see any Aetna-network clinician in the community directly (aet-nastudenthealth.com/stanford). CAPS can still recommend good fits for specific needs.\nThe fuller support stack, from the official Student Support card:\nResource What it is Contact"
           },
           {
             "id": "17-health-and-wellbeing-timelycare-247365-virtual-medical-and-mental-health-care",
             "title": "TimelyCare 24/7/365 virtual medical and mental-health care",
-            "body": "1-833-4-TIMELY \u00b7 timelycare.com/ stanford"
+            "body": "1-833-4-TIMELY \u00b7 timelycare.com/ stanford\nWellbeing coaching\nFree Stanford coaches for goals, stress, and habits\nBook online"
           },
           {
             "id": "17-health-and-wellbeing-caps-clinicians-for-the-gsb",
             "title": "CAPS clinicians for the GSB",
-            "body": "Dedicated counseling contacts (Dr. Thomas Ellis, Dr. Liz Chaney); use \u201cSecure:\u201d in the subject line for encrypted email\n650-723-3785"
+            "body": "Dedicated counseling contacts (Dr. Thomas Ellis, Dr. Liz Chaney); use \u201cSecure:\u201d in the subject line for encrypted email\n650-723-3785\nConfidential Support Team\nSexual or relationship violence, stalking, harassment\nUrgent: 650-725-9955 \u00b7 nonurgent 650-736-6933\nWeiland Health Initiative"
           },
           {
             "id": "17-health-and-wellbeing-gender-and-sexual-identity-affirming-care",
             "title": "Gender- and sexual-identity-affirming care",
-            "body": "weiland.stanford.edu"
+            "body": "weiland.stanford.edu\nNutrition counseling\nVia Well-Being at Stanford vaden.stanford.edu/ wellbeing"
           },
           {
             "id": "17-health-and-wellbeing-office-of-super-substance-use-programs-education-resources",
@@ -897,7 +897,7 @@
           {
             "id": "19-the-local-services-directory-main",
             "title": "19. The Local Services Directory",
-            "body": "Vetted by classmates, one errand at a time. Prices and availability drift; the recommendations were solid as of 2025\u201326."
+            "body": "Vetted by classmates, one errand at a time. Prices and availability drift; the recommendations were solid as of 2025\u201326.\nNeed Go-to Source"
           },
           {
             "id": "19-the-local-services-directory-dry-cleaning-laundry-service",
@@ -932,7 +932,7 @@
           {
             "id": "19-the-local-services-directory-mailing-letters-packages",
             "title": "Mailing letters & packages",
-            "body": "Stamped letters: CM004 (below Arbuckle) will send them; packages & certified mail: the fullservice USPS by the bookstore (cheapest for international documents); compare label prices on Shippo.com\nclassmates\nLost & found Charlie Munger building, room CM004 (basement by Oberndorf/Arbuckle dining) \u2014 (650) 723-2773, Mon\u2013Fri 7\u20134"
+            "body": "Stamped letters: CM004 (below Arbuckle) will send them; packages & certified mail: the fullservice USPS by the bookstore (cheapest for international documents); compare label prices on Shippo.com\nclassmates\nLost & found Charlie Munger building, room CM004 (basement by Oberndorf/Arbuckle dining) \u2014 (650) 723-2773, Mon\u2013Fri 7\u20134\nGSB Facilities\nLockers at the GSB"
           },
           {
             "id": "19-the-local-services-directory-rental-is-by-lottery-request-form",
@@ -942,7 +942,7 @@
           {
             "id": "19-the-local-services-directory-news-subscriptions",
             "title": "News subscriptions",
-            "body": "Free via the library (Ch. 11); a CA library card adds another tier\nclass consensus"
+            "body": "Free via the library (Ch. 11); a CA library card adds another tier\nclass consensus\nBass Center gear\nReport broken workstations here and furniture/facilities issues here\nBass staff"
           },
           {
             "id": "19-the-local-services-directory-more-names-the-class-swears-by",
@@ -1070,17 +1070,17 @@
           {
             "id": "23-conferences-and-the-wider-bay-area-ecosystem-main",
             "title": "23. Conferences and the Wider Bay Area Ecosystem",
-            "body": "One of the GSB's quiet advantages: the world's densest conference circuit is a Caltrain ride away. Student tickets, volunteer slots, and classmate-organized group passes make most of these accessible. The recurring anchors (dates shift each year \u2014 check current schedules):"
+            "body": "One of the GSB's quiet advantages: the world's densest conference circuit is a Caltrain ride away. Student tickets, volunteer slots, and classmate-organized group passes make most of these accessible. The recurring anchors (dates shift each year \u2014 check current schedules):\nEvent When (approx.)\nWhat it is\nJ.P. Morgan Healthcare Conference"
           },
           {
             "id": "23-conferences-and-the-wider-bay-area-ecosystem-mid-janu-ary-sf",
             "title": "Mid-Janu-ary, SF",
-            "body": "Healthcare's biggest week of the year \u2014 the side events and satellite summits around Union Square are the real conference for students"
+            "body": "Healthcare's biggest week of the year \u2014 the side events and satellite summits around Union Square are the real conference for students\nNVIDIA GTC March, San Jose\nThe AI/compute mothership; developer-priced passes\nGame Developers Conference (GDC)\nMarch, SF Moscone\nThe global games industry, 40 years running\nRSA Conference Late March\u2013 April, SF Moscone\nOne of the world's largest cybersecurity gatherings\nSF Climate Week April, across SF\nHundreds of decentralized climate events \u2014 wander freely\nStartup Grind Global\nLate April, Redwood City\nThe big founder-community conference, minutes from campus"
           },
           {
             "id": "23-conferences-and-the-wider-bay-area-ecosystem-saastr-annual-may-sf-bay-san-mateo",
             "title": "SaaStr Annual May, SF Bay (San Mateo)",
-            "body": "10,000+ founders/VCs; the B2B and AI software circuit"
+            "body": "10,000+ founders/VCs; the B2B and AI software circuit\nAI Engineer World's Fair\nJune, SF The big technical AI gathering\nDreamforce September, SF\nSalesforce's city-consuming enterprise event\nTechCrunch Disrupt\nOctober, SF The flagship startup conference"
           },
           {
             "id": "23-conferences-and-the-wider-bay-area-ecosystem-sf-tech-week-october-across-sf",
@@ -1323,7 +1323,7 @@
           {
             "id": "appendix-a-the-resources-folder-main",
             "title": "Appendix A \u2014 The Resources Folder",
-            "body": "Every file below lives in the guide\u2019s public Resources folder on Google Drive \u2014 open to anyone with the link, no Stanford login required. Each name is a direct link."
+            "body": "Every file below lives in the guide\u2019s public Resources folder on Google Drive \u2014 open to anyone with the link, no Stanford login required. Each name is a direct link.\nFile What it is"
           },
           {
             "id": "appendix-a-the-resources-folder-health-insurance-plan-comparisonxlsx",
@@ -1455,12 +1455,12 @@
           {
             "id": "appendix-b-quick-reference-numbers-and-links-public-safety-non-emer-gency",
             "title": "Public Safety (non-emer-gency)",
-            "body": "650-329-2413 \u00b7 GSB security: 408-731-0282"
+            "body": "650-329-2413 \u00b7 GSB security: 408-731-0282\nNeed Contact\nEmergencies 911 (from campus landlines: 9-911)\nStanford Adult ER Directions\nVaden Health Center (650) 498-2336 \u00b7 vaden.stanford.edu\nCAPS (mental health) vaden.stanford.edu/caps"
           },
           {
             "id": "appendix-b-quick-reference-numbers-and-links-after-hours-housing-maintenance",
             "title": "After-hours housing maintenance",
-            "body": "(650) 725-1602"
+            "body": "(650) 725-1602\nMBA Student Support gsb_mbastudentsupport@stanford.edu"
           },
           {
             "id": "appendix-b-quick-reference-numbers-and-links-gsb-residences-office-gsb_residencesstanfordedu",
@@ -1480,7 +1480,7 @@
           {
             "id": "appendix-b-quick-reference-numbers-and-links-admit-questions-pre-ar-rival",
             "title": "Admit questions (pre-ar-rival)",
-            "body": "mba_admits@gsb.stanford.edu \u00b7 +1 (650) 725-7963"
+            "body": "mba_admits@gsb.stanford.edu \u00b7 +1 (650) 725-7963\nFix-It (housing repairs) fixit.stanford.edu\nRoom booking (GSB) marrs-gsb.stanford.edu\nAbsence reports gsbabsence.stanford.edu\nCaltrain GoPass (free) transportation.stanford.edu"
           },
           {
             "id": "appendix-b-quick-reference-numbers-and-links-wellfleet-cardinal-care-abroad",

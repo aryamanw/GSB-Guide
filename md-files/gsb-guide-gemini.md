@@ -322,17 +322,20 @@ Student refunds (aid disbursements, over-payments) are sent to exactly one bank 
 4. Verify and submit[cite: 1].
 
 #### Banking: Where and How
+
 - **Stanford Federal Credit Union (SFCU):** Branches at Tresidder Union (2nd floor) and near EV[cite: 1]. Unusually friendly to students without US credit history: immediate debit card and a guaranteed credit card even without SSN or US income (bring passport, proof of address like R&DE letter in Axess, and student ID)[cite: 1].
 - **Chase** (855 El Camino Real), **Bank of America** (3000 El Camino Real), **Citibank** (250 University Ave), **Wells Fargo** (Tresidder)[cite: 1].
 - **US Payment Culture:** Cards everywhere[cite: 1]. **Venmo** dominates student-to-student payments (~$300 weekly limit initially)[cite: 1]. **Zelle** is also widely used and easier for internationals to start with[cite: 1]. Keep a checkbook for off-campus rent[cite: 1]. Foreign cards often fail at gas pumps and US online stores[cite: 1].
 
 #### Credit Cards — The Classmate Consensus
+
 - **Chase (Sapphire Reserve/Preferred):** Best for hotel redemptions (Hyatt)[cite: 1]. Apply first due to Chase's 5/24 rule (rejects applicants with >5 new cards in 24 months)[cite: 1].
 - **Amex (Platinum):** Best for flight redemptions/lounges[cite: 1]. Easy fee offsets (includes free Walmart+ membership, great for grocery delivery)[cite: 1].
 - **Capital One (Venture X):** Great lower-effort break-even card[cite: 1].
 - **Rent Hack:** Pay GSB housing rent via the **Bilt app**'s "Pay Rent" tab to earn points without transaction fees[cite: 1].
 
 #### Fee-Waiver Footnote
+
 - **ASSU Activity Fee:** Opt out quarterly if you don't use non-GSB graduate clubs (~$50 back/quarter)[cite: 1].
 - **Late Tuition Fee:** You can raise a support ticket to waive a tuition late fee **once in your degree**[cite: 1]. Save this mulligan for when it matters[cite: 1].
 
@@ -344,6 +347,7 @@ Student refunds (aid disbursements, over-payments) are sent to exactly one bank 
 - **Campus Coverage:** AT&T and Verizon are historically strongest[cite: 1]. T-Mobile is patchy in basements/interiors[cite: 1]. Field reports show Mint Mobile and T-Mobile had dead zones inside Schwab/JMac rooms, while AT&T had full coverage[cite: 1]. Enable **Wi-Fi Calling** in settings immediately[cite: 1].
 
 #### US Phone-Plan Primer
+
 - **Big Three:** Verizon, AT&T (historically favorite of internationals as it didn't require SSN), T-Mobile[cite: 1].
 - **MVNOs (Mint, Google Fi, Cricket):** Resell big networks cheaper[cite: 1]. Mint supports Wi-Fi calling and text[cite: 1].
 - **Prepaid vs. Postpaid:** Prepaid wins on cost and flexibility; postpaid wins on roaming[cite: 1].
@@ -399,12 +403,14 @@ The GSB lives in the **Knight Management Center (KMC)**[cite: 1].
 - **Building Mnemonic (Counterclockwise walk):** **"Great MBAs Come Prepared Everyday"** -> **G**iles, **M**cClelland, **C**oughenour, **P**atterson, **E**merson[cite: 1].
 
 #### Key Leadership (2026 Snapshot)
+
 - **Jonathan Levin:** President of Stanford University (former GSB Dean)[cite: 1].
 - **Sarah A. Soule:** Dean of the GSB[cite: 1].
 - **Senior Associate Deans:** Anne Beyer (Accounting), Deborah Gruenfeld (Organizational Behavior), Wesley Hartmann (Marketing), Amit Seru (Finance)[cite: 1].
 - **Administration:** Margaret Long Hayes (Associate Dean, MBA/MSx), Erin Nixon (Assistant Dean, Admissions & Financial Aid), Jamie Schein (Director, CMC), Derrick Bolton (Associate Dean, External Relations)[cite: 1].
 
 #### Stanford Side Quests
+
 - **The Dish:** 3.7-mile foothill loop past the radio telescope (no bikes allowed)[cite: 1].
 - **Cantor Arts Center & Rodin Garden:** Free; massive Rodin bronze collection[cite: 1]. Next door is the **Anderson Collection** (Rothko, Pollock)[cite: 1].
 - **Papua New Guinea Sculpture Garden & Arizona Cactus Garden:** Quiet historic spots[cite: 1].
@@ -425,12 +431,14 @@ The GSB lives in the **Knight Management Center (KMC)**[cite: 1].
 - **COMMAND HOOK WARNING:** Remove all Command hooks carefully at move-out and clean with Goo Gone[cite: 1]. Leftover hooks or wall damage have resulted in fines of $100–$200 per hook (up to $1,000+)[cite: 1].
 
 #### Products Classmates Swear By
+
 - **Folding Wagon:** Essential for hauling groceries and packages from the front desk[cite: 1].
 - **Countertop Dishwasher:** Small tabletop model with internal water tank (JMac sinks don't fit faucet adapters; e.g., Farberware/Hermitlux)[cite: 1].
 - **Portable Monitor:** ASUS ZenScreen or iPad via Sidecar[cite: 1].
 - **Dawn Powerwash:** Essential for handwashing dishes in dorm sinks[cite: 1].
 
 #### Facilities & Services
+
 - **Schwab Desk:** Staffed 24/7; serves both Schwab and JMac[cite: 1]. Free loaner helmets available in Schwab entryway[cite: 1].
 - **Housekeeping:** Bookable through front desk ($75 bed/bath, $150 with kitchen)[cite: 1].
 - **PurpleTie Dry Cleaning:** Drop-off/pickup locker in JMac lower lobby (Room 015)[cite: 1].
@@ -441,6 +449,7 @@ The GSB lives in the **Knight Management Center (KMC)**[cite: 1].
 ### 10. Eating: On Campus and Off
 
 #### On-Campus Dining
+
 - **Arbuckle Café:** KMC center; international buffet and salad bar[cite: 1].
 - **Coupa Café:** Venezuelan coffee, paninis, crepes[cite: 1].
 - **Dining Halls (Arrillaga, Branner, Gerhard, Wilbur, Stern):** All-you-can-eat[cite: 1].
@@ -449,6 +458,7 @@ The GSB lives in the **Knight Management Center (KMC)**[cite: 1].
 - **Food Trucks:** White Plaza market on Tuesdays & Fridays (10–2)[cite: 1].
 
 #### Groceries
+
 - **On Campus:** Munger Mercadito, EVGR Market[cite: 1].
 - **Off Campus:** Trader Joe's (Town & Country), Safeway, Whole Foods, Real Produce Market, 99 Ranch (Asian market), Costco (Mountain View), Target/Walmart (San Antonio)[cite: 1].
 
@@ -457,14 +467,17 @@ The GSB lives in the **Knight Management Center (KMC)**[cite: 1].
 ### 11. Tech, Printing, and Student Discounts
 
 #### Wi-Fi & Home Setup
+
 - **Router Hack:** Plug a personal Wi-Fi router (e.g., TP-Link AX1800) into the wired wall Ethernet port in your dorm room and register its MAC address at `rnt.stanford.edu` for fast, private Wi-Fi[cite: 1].
 - Disable MAC address randomization on personal devices if connection drops occur[cite: 1].
 
 #### Printing
+
 - **Cardinal Print:** Upload to portal or email `cardinalprint@stanford.edu`[cite: 1]. Tap ID on any printer[cite: 1].
 - GSB provides a **$100 annual printing allotment**[cite: 1]. Select the GSB account code on screen[cite: 1].
 
 #### Free & Discounted Software
+
 - **Free via Stanford:** Office 365, Zoom Pro, ChatGPT Edu, Claude for Education, Gemini Enterprise, Dashlane, MATLAB, Qualtrics, Stanford VPN, LinkedIn Learning, Coursera, Puffer Live TV, Windows Virtual Desktop[cite: 1].
 - **Discounts:** Adobe Creative Cloud, Superhuman ($10/mo), Spotify Student, Notion, Figma, GitHub Student Pack[cite: 1].
 
@@ -487,6 +500,7 @@ The GSB lives in the **Knight Management Center (KMC)**[cite: 1].
 ### 13. Academics
 
 #### Overview & Grading Policy
+
 - **Grade Non-Disclosure (GND):** GSB has a strict non-disclosure policy[cite: 1]. Students are prohibited from disclosing grades to prospective employers[cite: 1].
 - **Grading Scale:** H (High Pass), P (Pass), LP (Low Pass), U (Unsatisfactory)[cite: 1].
 
@@ -510,6 +524,7 @@ The GSB lives in the **Knight Management Center (KMC)**[cite: 1].
 ### 15. Social Life, Clubs, and Traditions
 
 #### Weekly Rhythm
+
 - **Tuesdays:** FOAM (Friend of Andrew Mellor / Friends of Arbuckle) party night[cite: 1].
 - **Wednesdays:** TALK (Student life stories in JMac GA room)[cite: 1].
 - **Thursdays:** BPL (Beer Pong League)[cite: 1].
@@ -517,6 +532,7 @@ The GSB lives in the **Knight Management Center (KMC)**[cite: 1].
 - **Daily:** Town Square social hours (11:30–1:15)[cite: 1].
 
 #### Major Annual Events
+
 - **Autumn:** Halloween, Big Game vs. Cal, Pre-MBA trips[cite: 1].
 - **Winter:** Vegas FOAM, Winter Formal, Charity Auction[cite: 1].
 - **Spring:** GSB Prom, Challenge 4 Charity (C4C), LOWKeynotes[cite: 1].
@@ -684,27 +700,143 @@ Leave the campground better than you found it[cite: 1]. Pass down notes, maintai
 
 ### Appendix D — The GSB Dictionary
 
-- **Arbuckle:** The main dining café in KMC[cite: 1].
-- **Blast:** The class-wide mass email system[cite: 1].
-- **C4C:** Challenge 4 Charity[cite: 1].
-- **FOAM:** Friend of Andrew Mellor (Tuesday party tradition)[cite: 1].
-- **GND:** Grade Non-Disclosure[cite: 1].
-- **GST:** Global Study Trip[cite: 1].
-- **JMac:** Jack McDonald Hall[cite: 1].
-- **KMC:** Knight Management Center[cite: 1].
-- **LPF:** Late Performance Fee (Friday happy hour)[cite: 1].
-- **Schwab:** Schwab Residential Center[cite: 1].
-- **TALK:** Weekly student storytelling tradition[cite: 1].
-- **Touchy Feely:** Interpersonal Dynamics course[cite: 1].
+- **Arbuckle:** The main dining café located in Knight Management Center (KMC).
+- **ATS:** "Across the street" — any class taken outside the GSB, anywhere at Stanford.
+- **Axess:** Stanford's university-wide system of record: enrollment, transcripts, billing, housing letters.
+- **BBL:** Brown-bag lunch — a noon speaker event; bring your own food, walk in.
+- **Bechtel:** Bechtel International Center — the official (and only) authority on visas and immigration.
+- **Big Game:** The annual Stanford–Cal football rivalry, Thanksgiving Saturday, alternating campuses.
+- **Blast / Blast Tax / Blast Sheriff:** The unofficial class-wide email lists; the required meme appended to every Blast; the student who keeps it all running.
+- **BPL:** Beer Pong League — Thursdays at the Patio, season, playoffs, and all.
+- **C4C:** Challenge 4 Charity — a sports and fundraising competition between West Coast business schools.
+- **CA:** Community Associate — the returning student assigned to help your housing community settle in.
+- **CAPS:** Counseling and Psychological Services, at Vaden.
+- **Cardinal Care:** Stanford's default (auto-enrolled) student health insurance.
+- **CardPlan / Cardinal Dollars:** Two ways to load money onto your Stanford ID for campus food and the bookstore.
+- **CMC:** Career Management Center.
+- **D&D:** Data & Decisions — one of the placement-exam subjects (no dragons).
+- **The Dish:** The radio-telescope foothills loop behind campus — the default run/walk/reset.
+- **EVGR / EV:** Escondido Village (Graduate Residences) — the big graduate housing complex.
+- **Exec Challenge:** Executive Challenge — the all-day fall MBA1 event judged by real executives.
+- **Festifall:** Stanford's all-university club fair, early fall, three days.
+- **FOAM:** Friends of Arjay Miller — the Tuesday happy-hour institution and its destination events (Vegas FOAM, LA FOAM, Band).
+- **GER:** Global Experience Requirement — satisfied by a GST, GMIX, or equivalent.
+- **GMIX:** Global Management Immersion Experience — a summer work project abroad.
+- **GND:** Grade Non-Disclosure — the student-maintained policy of not sharing grades.
+- **GoPass:** Free Caltrain pass for Stanford students.
+- **GSB Show:** The annual student sketch-comedy/musical production.
+- **GST:** Global Study Trip — the faculty-led international trips allocated by lottery (Chapter 16).
+- **JMac:** Jack McDonald Hall — half of "the GSB Residences," with Schwab.
+- **KMC:** Knight Management Center — the GSB's campus.
+- **LOWKeynotes:** The student TED-style talk series.
+- **LPF:** Liquidity Preference Function — the Friday happy hour, and proof finance people name things.
+- **Marguerite:** Stanford's free public shuttle bus.
+- **MSx:** The one-year masters program for experienced leaders — your older, wiser neighbors (Chapter 13).
+- **MyGSB:** The GSB intranet — registration, policies, careers, everything official.
+- **NGSO:** New Graduate Student Orientation — the university-wide orientation most GSBers skip and shouldn't.
+- **OB / OSM:** Organizational Behavior; Optimization & Simulation Modeling — autumn core staples.
+- **Passdown house:** An off-campus house whose lease is handed down class to class, lore included.
+- **Peer Mentor:** An MBA2 assigned to help you land — and the spirit of this entire guide.
+- **PMF:** Product-Market Fit — the famously high-effort, high-reward entrepreneurship course.
+- **RCC:** Resident Computer Consultant — paid student tech support in university housing.
+- **Rolling Funds:** Quarterly SA re-allocation of unspent budget — fundable by any student with an idea (Chapter 15).
+- **Schwab:** Schwab Residential Center — the other half of the GSB Residences.
+- **Shenanigans:** The sanctioned tradition of pre-planned classroom absurdity, scored by section (Chapter 15).
+- **SMIF / ESIP / EcoSIP:** GSB summer funding programs for low-paid internships and entrepreneurial projects (Chapter 27).
+- **SO:** Significant other — with real standing in GSB life (Chapter 20).
+- **SUNet ID:** Your Stanford username — the key to every system.
+- **Super Round:** Your once-a-year near-guaranteed class pick in registration (Chapter 13).
+- **TALK:** The Wednesday-night tradition: two classmates tell their life stories.
+- **TF / T-group:** Touchy Feely (Interpersonal Dynamics) — the famous course — and its small training group.
+- **Vaden:** Vaden Health Center — student medical care.
+- **VFTT:** View From The Top — the dean-hosted executive speaker series.
+- **Week Zero:** The pre-quarter week of orientation, admin, and setup.
+- **Window Wars:** The once-a-year event where first-floor residents "sell" home cooking out their windows.
+- **The Farm:** Stanford itself — it really was one.
 
 ---
 
 ### Appendix E — Quick Answers: The Class-Chat FAQ
 
-- *Do I need a car?* Helpful for Tahoe/grocery runs, but bikes + Caltrain + Uber/Lyft cover 90% of daily life[cite: 1].
-- *Is Cardinal Care mandatory?* You are auto-enrolled unless you submit an approved waiver by mid-September[cite: 1].
-- *Where do I get my student ID?* Tresidder Union (or Schwab desk for GSB residents)[cite: 1].
-- *Can I bring pets?* No pets in Stanford housing ($100/day fine) unless approved service/support animal[cite: 1].
+#### Living
+
+- *Room lost power but the kitchen didn't?* A tripped breaker from too many devices — call the front desk (the first saved number on your room phone) and they'll flip it.
+- *Key or card suddenly dead?* In the Residences it's usually the door-lock battery — the Schwab desk is 24/7. In EVGR, tap the card three or four times. After hours anywhere: (650) 725-1602.
+- *Group movie night venue?* EVGR's rentable theater room — mediocre seats, big screen.
+- *Booking the JMac terrace?* You can't — it's first-come-first-served; Yamada is the bookable one.
+- *Returning a UPS package?* Skip "schedule a pickup"; choose drop-off, print the label, and use the carrier shelf in the mail room.
+- *Moving bins or a bike for an afternoon?* The Schwab front desk lends both to GSB-residence students (the big red bins are made for move-in hauls).
+- *Overwhelmed by move-in boxes?* The mail rooms have returns shelves, the wagons haul, and the June you leave, someone else will want everything you bought.
+- *Where do summer subletters come from?* The class spreadsheet, Furnished Finder, and the big public Facebook groups (Chapter 27) — and they mostly appear in April, not February.
+- *Subletting your own room out?* Written agreement, one month's rent as deposit, no exceptions for friends-of-friends.
+- *Where do I get my student ID?* Tresidder Union (or Schwab desk for GSB residents).
+- *Can I bring pets?* No pets in Stanford housing ($100/day fine) unless approved service/support animal.
+
+#### Food
+
+- *Guest at the dining hall?* Your meal-pack swipes can swipe them in.
+- *Best donuts in reach?* Chuck's Donuts (the maple cronut, specifically) and Bun Apetite in Fremont.
+- *Asian groceries without a car?* The Weee app delivers to the Schwab lobby.
+- *Is Instacart worth it?* Only in a pinch or on credit-card credits — it's noticeably pricier than going yourself.
+
+#### Tech
+
+- *Smart speaker registered but still won't connect?* Factory-reset the device — the fix IT didn't know.
+- *HomePods in the dorms?* Yes: plug in, reset, re-pair through the Home app.
+- *Hit print and nothing happened?* Files over ~2 MB just take a minute — wait before resending.
+- *Canvas videos won't play in Safari?* Settings → Privacy → turn off "Prevent cross-site tracking."
+- *Partiful events into Google Calendar?* Tap "sync to iCal" on iPhone, copy the URL it opens, add it to GCal as a calendar-by-URL.
+- *Your class schedule into any calendar?* Axess homepage → download-schedule button under enrolled courses.
+- *Kindle or Paperwhite?* Paperwhite — the backlight is the whole point; the pricier ones only matter if you read in pools.
+- *Superhuman: yes or no?* Split — devoted long-term users and one-month quitters in equal numbers. Trial it; feel nothing if you pass.
+- *Live translation for a meeting?* Google Translate conversation mode and Zoom captions both disappoint; DeepL's live-translation product is the current best try.
+- *Notion slow in the browser?* Use the desktop app — it has offline mode now.
+- *Gmail invite not reaching an Outlook-side collaborator?* They must accept manually — or run everything through an aggregator like Notion Calendar.
+- *Windows-only software, Mac laptop?* Stanford's free virtual desktop, or Parallels if it's Excel shortcuts you're after.
+
+#### Academics
+
+- *Do classes meet on Veterans Day?* Yes. (Reading the GSB calendar beats assuming — some federal holidays are class days.)
+- *Max units a quarter?* 20, with everything above 15 added at open enrollment. The famous "15" is just 90 ÷ 6.
+- *A class conflicts by five minutes?* Both professors' email approval plus the overlap form (Chapter 13) — routine for ATS overlaps.
+- *Section full but another isn't?* Same-class section switches go through the regular switching system; if seats are open, just drop/re-add on Axess.
+- *Need proof of enrollment fast?* The unofficial transcript on Axess generates instantly.
+- *New course, no reviews anywhere?* Professors often post an intro video on the registration site — check before passing.
+- *One underrated GSB elective the chats kept naming?* Financial Restructuring.
+- *Recording a lecture?* Only with formal accommodations — otherwise assume no.
+- *Can MBA1s book classrooms?* Not individually — route through your section rep.
+- *Half your OB calendar vanished mid-quarter?* By design: OB is a half-quarter course; a second-half leadership course takes its slot, with its own final.
+
+#### Careers
+
+- *Startup comp benchmarks?* The CMC will walk you through Carta data in a 1:1, plus their own internship stats.
+- *LinkedIn Premium student discount?* Doesn't exist — but a friend who works at LinkedIn can gift six months.
+- *ESIP questions?* Lisa Sweeney is the 1:1 to book.
+- *Suggesting a View From The Top speaker?* Start with the program office.
+
+#### Transport
+
+- *Do I need a car?* Helpful for Tahoe/grocery runs, but bikes + Caltrain + Uber/Lyft cover 90% of daily life.
+- *How hard is the CA knowledge test, really?* ~40 questions, 8 wrong allowed, half an hour — a couple hours of study is plenty if you already drive.
+- *Behind-the-wheel edge?* Earliest morning slot (no traffic), and one lesson with a local instructor who knows the actual test route.
+- *DMV line hack?* Join the queue online while driving there — and confirm your branch offers the service first.
+- *When is Knight garage effectively free?* After ~4 p.m. and weekends.
+- *Car repair / oil change?* The class's picks are linked in Chapter 18; Jiffy Lube is fine for oil.
+
+#### Health
+
+- *Is Cardinal Care mandatory?* You are auto-enrolled unless you submit an approved waiver by mid-September.
+- *Seeing a doctor, decision tree?* Non-urgent → Vaden website booking. Urgent-ish → Stanford urgent care (faster than the ER). Emergency → Stanford Adult ER or 911.
+- *Post-Touchy-Feely-retreat plan?* A massage, pre-booked for that Sunday night.
+
+#### Social & misc
+
+- *What does BBL mean on an invite?* Brown-bag lunch — bring your own food, walk in.
+- *Did my Google Form actually submit?* Reopen it signed into the same account — it tells you if you've already responded.
+- *Comparing shipping labels?* Shippo.com.
+- *Where is BC104?* First classroom past the tech-services room, next to Coupa. You'll be asked; now you know.
+- *Visitors with a toddler?* Alcatraz, Hoover Tower, In-N-Out. In that order.
+- *An SO's honest range of options?* Nearly everything — talks, BBLs, most parties, auditing big lectures; only project-heavy classes truly require enrollment.
 
 ---
 

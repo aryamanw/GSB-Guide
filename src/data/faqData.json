@@ -1,18 +1,282 @@
 [
   {
-    "question": "Do I need a car?",
-    "answer": "Helpful for Tahoe/grocery runs, but bikes + Caltrain + Uber/Lyft cover 90% of daily life."
+    "question": "Room lost power but the kitchen didn't?",
+    "answer": "A tripped breaker from too many devices \u2014 call the front desk (the first saved number on your room phone) and they'll flip it.",
+    "category": "Living"
   },
   {
-    "question": "Is Cardinal Care mandatory?",
-    "answer": "You are auto-enrolled unless you submit an approved waiver by mid-September."
+    "question": "Key or card suddenly dead?",
+    "answer": "In the Residences it's usually the door-lock battery \u2014 the Schwab desk is 24/7. In EVGR, tap the card three or four times. After hours anywhere: (650) 725-1602.",
+    "category": "Living"
+  },
+  {
+    "question": "Group movie night venue?",
+    "answer": "EVGR's rentable theater room \u2014 mediocre seats, big screen.",
+    "category": "Living"
+  },
+  {
+    "question": "Booking the JMac terrace?",
+    "answer": "You can't \u2014 it's first-come-first-served; Yamada is the bookable one.",
+    "category": "Living"
+  },
+  {
+    "question": "Returning a UPS package?",
+    "answer": "Skip \"schedule a pickup\"; choose drop-off, print the label, and use the carrier shelf in the mail room.",
+    "category": "Living"
+  },
+  {
+    "question": "Moving bins or a bike for an afternoon?",
+    "answer": "The Schwab front desk lends both to GSB-residence students (the big red bins are made for move-in hauls).",
+    "category": "Living"
+  },
+  {
+    "question": "Overwhelmed by move-in boxes?",
+    "answer": "The mail rooms have returns shelves, the wagons haul, and the June you leave, someone else will want everything you bought.",
+    "category": "Living"
+  },
+  {
+    "question": "Where do summer subletters come from?",
+    "answer": "The class spreadsheet, Furnished Finder, and the big public Facebook groups (Chapter 27) \u2014 and they mostly appear in April, not February.",
+    "category": "Living"
+  },
+  {
+    "question": "Subletting your own room out?",
+    "answer": "Written agreement, one month's rent as deposit, no exceptions for friends-of-friends.",
+    "category": "Living"
   },
   {
     "question": "Where do I get my student ID?",
-    "answer": "Tresidder Union (or Schwab desk for GSB residents)."
+    "answer": "Tresidder Union (or Schwab desk for GSB residents).",
+    "category": "Living"
   },
   {
     "question": "Can I bring pets?",
-    "answer": "No pets in Stanford housing ($100/day fine) unless approved service/support animal.  ---"
+    "answer": "No pets in Stanford housing ($100/day fine) unless approved service/support animal.",
+    "category": "Living"
+  },
+  {
+    "question": "Guest at the dining hall?",
+    "answer": "Your meal-pack swipes can swipe them in.",
+    "category": "Food"
+  },
+  {
+    "question": "Best donuts in reach?",
+    "answer": "Chuck's Donuts (the maple cronut, specifically) and Bun Apetite in Fremont.",
+    "category": "Food"
+  },
+  {
+    "question": "Asian groceries without a car?",
+    "answer": "The Weee app delivers to the Schwab lobby.",
+    "category": "Food"
+  },
+  {
+    "question": "Is Instacart worth it?",
+    "answer": "Only in a pinch or on credit-card credits \u2014 it's noticeably pricier than going yourself.",
+    "category": "Food"
+  },
+  {
+    "question": "Smart speaker registered but still won't connect?",
+    "answer": "Factory-reset the device \u2014 the fix IT didn't know.",
+    "category": "Tech"
+  },
+  {
+    "question": "HomePods in the dorms?",
+    "answer": "Yes: plug in, reset, re-pair through the Home app.",
+    "category": "Tech"
+  },
+  {
+    "question": "Hit print and nothing happened?",
+    "answer": "Files over ~2 MB just take a minute \u2014 wait before resending.",
+    "category": "Tech"
+  },
+  {
+    "question": "Canvas videos won't play in Safari?",
+    "answer": "Settings \u2192 Privacy \u2192 turn off \"Prevent cross-site tracking.\"",
+    "category": "Tech"
+  },
+  {
+    "question": "Partiful events into Google Calendar?",
+    "answer": "Tap \"sync to iCal\" on iPhone, copy the URL it opens, add it to GCal as a calendar-by-URL.",
+    "category": "Tech"
+  },
+  {
+    "question": "Your class schedule into any calendar?",
+    "answer": "Axess homepage \u2192 download-schedule button under enrolled courses.",
+    "category": "Tech"
+  },
+  {
+    "question": "Kindle or Paperwhite?",
+    "answer": "Paperwhite \u2014 the backlight is the whole point; the pricier ones only matter if you read in pools.",
+    "category": "Tech"
+  },
+  {
+    "question": "Superhuman: yes or no?",
+    "answer": "Split \u2014 devoted long-term users and one-month quitters in equal numbers. Trial it; feel nothing if you pass.",
+    "category": "Tech"
+  },
+  {
+    "question": "Live translation for a meeting?",
+    "answer": "Google Translate conversation mode and Zoom captions both disappoint; DeepL's live-translation product is the current best try.",
+    "category": "Tech"
+  },
+  {
+    "question": "Notion slow in the browser?",
+    "answer": "Use the desktop app \u2014 it has offline mode now.",
+    "category": "Tech"
+  },
+  {
+    "question": "Gmail invite not reaching an Outlook-side collaborator?",
+    "answer": "They must accept manually \u2014 or run everything through an aggregator like Notion Calendar.",
+    "category": "Tech"
+  },
+  {
+    "question": "Windows-only software, Mac laptop?",
+    "answer": "Stanford's free virtual desktop, or Parallels if it's Excel shortcuts you're after.",
+    "category": "Tech"
+  },
+  {
+    "question": "Do classes meet on Veterans Day?",
+    "answer": "Yes. (Reading the GSB calendar beats assuming \u2014 some federal holidays are class days.)",
+    "category": "Academics"
+  },
+  {
+    "question": "Max units a quarter?",
+    "answer": "20, with everything above 15 added at open enrollment. The famous \"15\" is just 90 \u00f7 6.",
+    "category": "Academics"
+  },
+  {
+    "question": "A class conflicts by five minutes?",
+    "answer": "Both professors' email approval plus the overlap form (Chapter 13) \u2014 routine for ATS overlaps.",
+    "category": "Academics"
+  },
+  {
+    "question": "Section full but another isn't?",
+    "answer": "Same-class section switches go through the regular switching system; if seats are open, just drop/re-add on Axess.",
+    "category": "Academics"
+  },
+  {
+    "question": "Need proof of enrollment fast?",
+    "answer": "The unofficial transcript on Axess generates instantly.",
+    "category": "Academics"
+  },
+  {
+    "question": "New course, no reviews anywhere?",
+    "answer": "Professors often post an intro video on the registration site \u2014 check before passing.",
+    "category": "Academics"
+  },
+  {
+    "question": "One underrated GSB elective the chats kept naming?",
+    "answer": "Financial Restructuring.",
+    "category": "Academics"
+  },
+  {
+    "question": "Recording a lecture?",
+    "answer": "Only with formal accommodations \u2014 otherwise assume no.",
+    "category": "Academics"
+  },
+  {
+    "question": "Can MBA1s book classrooms?",
+    "answer": "Not individually \u2014 route through your section rep.",
+    "category": "Academics"
+  },
+  {
+    "question": "Half your OB calendar vanished mid-quarter?",
+    "answer": "By design: OB is a half-quarter course; a second-half leadership course takes its slot, with its own final.",
+    "category": "Academics"
+  },
+  {
+    "question": "Startup comp benchmarks?",
+    "answer": "The CMC will walk you through Carta data in a 1:1, plus their own internship stats.",
+    "category": "Careers"
+  },
+  {
+    "question": "LinkedIn Premium student discount?",
+    "answer": "Doesn't exist \u2014 but a friend who works at LinkedIn can gift six months.",
+    "category": "Careers"
+  },
+  {
+    "question": "ESIP questions?",
+    "answer": "Lisa Sweeney is the 1:1 to book.",
+    "category": "Careers"
+  },
+  {
+    "question": "Suggesting a View From The Top speaker?",
+    "answer": "Start with the program office.",
+    "category": "Careers"
+  },
+  {
+    "question": "Do I need a car?",
+    "answer": "Helpful for Tahoe/grocery runs, but bikes + Caltrain + Uber/Lyft cover 90% of daily life.",
+    "category": "Transport"
+  },
+  {
+    "question": "How hard is the CA knowledge test, really?",
+    "answer": "~40 questions, 8 wrong allowed, half an hour \u2014 a couple hours of study is plenty if you already drive.",
+    "category": "Transport"
+  },
+  {
+    "question": "Behind-the-wheel edge?",
+    "answer": "Earliest morning slot (no traffic), and one lesson with a local instructor who knows the actual test route.",
+    "category": "Transport"
+  },
+  {
+    "question": "DMV line hack?",
+    "answer": "Join the queue online while driving there \u2014 and confirm your branch offers the service first.",
+    "category": "Transport"
+  },
+  {
+    "question": "When is Knight garage effectively free?",
+    "answer": "After ~4 p.m. and weekends.",
+    "category": "Transport"
+  },
+  {
+    "question": "Car repair / oil change?",
+    "answer": "The class's picks are linked in Chapter 18; Jiffy Lube is fine for oil.",
+    "category": "Transport"
+  },
+  {
+    "question": "Is Cardinal Care mandatory?",
+    "answer": "You are auto-enrolled unless you submit an approved waiver by mid-September.",
+    "category": "Health"
+  },
+  {
+    "question": "Seeing a doctor, decision tree?",
+    "answer": "Non-urgent \u2192 Vaden website booking. Urgent-ish \u2192 Stanford urgent care (faster than the ER). Emergency \u2192 Stanford Adult ER or 911.",
+    "category": "Health"
+  },
+  {
+    "question": "Post-Touchy-Feely-retreat plan?",
+    "answer": "A massage, pre-booked for that Sunday night.",
+    "category": "Health"
+  },
+  {
+    "question": "What does BBL mean on an invite?",
+    "answer": "Brown-bag lunch \u2014 bring your own food, walk in.",
+    "category": "Social & misc"
+  },
+  {
+    "question": "Did my Google Form actually submit?",
+    "answer": "Reopen it signed into the same account \u2014 it tells you if you've already responded.",
+    "category": "Social & misc"
+  },
+  {
+    "question": "Comparing shipping labels?",
+    "answer": "Shippo.com.",
+    "category": "Social & misc"
+  },
+  {
+    "question": "Where is BC104?",
+    "answer": "First classroom past the tech-services room, next to Coupa. You'll be asked; now you know.",
+    "category": "Social & misc"
+  },
+  {
+    "question": "Visitors with a toddler?",
+    "answer": "Alcatraz, Hoover Tower, In-N-Out. In that order.",
+    "category": "Social & misc"
+  },
+  {
+    "question": "An SO's honest range of options?",
+    "answer": "Nearly everything \u2014 talks, BBLs, most parties, auditing big lectures; only project-heavy classes truly require enrollment.",
+    "category": "Social & misc"
   }
 ]
