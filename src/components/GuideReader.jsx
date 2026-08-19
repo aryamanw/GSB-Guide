@@ -39,15 +39,15 @@ export default function GuideReader({ data, isIntl = false, bookmarkedIds, onTog
     return (
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Header Banner */}
-        <div className="bg-gradient-to-r from-[#8C1515] to-red-900 rounded-2xl p-6 sm:p-8 text-white mb-8 shadow-md">
+        <div className="bg-stone-100 dark:bg-stone-900 rounded-xl border border-stone-200 dark:border-stone-800 p-6 sm:p-8 mb-8">
           <div className="max-w-3xl">
-            <span className="inline-block px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-xs font-semibold uppercase tracking-wider mb-3">
+            <span className="inline-block text-xs font-semibold uppercase tracking-wider text-cardinal-600 dark:text-cardinal-400 mb-3">
               GSB Student Association International Committee
             </span>
-            <h1 className="text-2xl sm:text-4xl font-serif font-bold mb-3">
+            <h1 className="text-2xl sm:text-3xl font-bold text-stone-900 dark:text-white mb-3">
               International Students Guide
             </h1>
-            <p className="text-red-100 text-sm sm:text-base leading-relaxed">
+            <p className="text-stone-600 dark:text-stone-400 text-sm sm:text-base leading-relaxed">
               Essential guide on visas, US banking, drivers licenses, tax filings (Form 8843), CPT, SSN, mobile setup, and settling into Palo Alto.
             </p>
           </div>
@@ -56,10 +56,10 @@ export default function GuideReader({ data, isIntl = false, bookmarkedIds, onTog
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           {/* Sidebar TOC */}
           <aside className="lg:col-span-1 space-y-4">
-            <div className="sticky top-24 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-4 shadow-sm">
-              <div className="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-800 mb-3">
-                <h3 className="font-serif font-bold text-slate-900 dark:text-white flex items-center gap-2">
-                  <Layers size={18} className="text-[#8C1515]" />
+            <div className="sticky top-24 bg-white dark:bg-stone-900 rounded-xl border border-stone-200 dark:border-stone-800 p-4">
+              <div className="flex items-center justify-between pb-3 border-b border-stone-200 dark:border-stone-800 mb-3">
+                <h3 className="font-bold text-stone-900 dark:text-white flex items-center gap-2">
+                  <Layers size={18} className="text-cardinal-600" />
                   Table of Contents
                 </h3>
               </div>
@@ -76,8 +76,8 @@ export default function GuideReader({ data, isIntl = false, bookmarkedIds, onTog
                       }}
                       className={`w-full text-left px-3 py-2 rounded-lg text-xs sm:text-sm font-medium transition-all flex items-center justify-between ${
                         isActive
-                          ? 'bg-red-50 dark:bg-red-950/60 text-[#8C1515] dark:text-red-400 font-semibold border-l-4 border-[#8C1515]'
-                          : 'text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800/60'
+                          ? 'bg-cardinal-50 dark:bg-cardinal-950/60 text-cardinal-700 dark:text-cardinal-400 font-semibold'
+                          : 'text-stone-600 dark:text-stone-400 hover:bg-stone-50 dark:hover:bg-stone-800/60'
                       }`}
                     >
                       <span className="truncate">{sec.title}</span>
@@ -92,13 +92,13 @@ export default function GuideReader({ data, isIntl = false, bookmarkedIds, onTog
           {/* Main Content Area */}
           <main className="lg:col-span-3">
             {activeSection && (
-              <article className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-6 sm:p-10 shadow-sm space-y-6">
-                <div className="flex items-center justify-between pb-4 border-b border-slate-200 dark:border-slate-800">
+              <article className="bg-white dark:bg-stone-900 rounded-xl border border-stone-200 dark:border-stone-800 p-6 sm:p-10 space-y-6">
+                <div className="flex items-center justify-between pb-4 border-b border-stone-200 dark:border-stone-800">
                   <div>
-                    <h2 className="text-2xl sm:text-3xl font-serif font-bold text-slate-900 dark:text-white">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-stone-900 dark:text-white">
                       {activeSection.title}
                     </h2>
-                    <div className="flex items-center gap-4 text-xs text-slate-500 dark:text-slate-400 mt-2">
+                    <div className="flex items-center gap-4 text-xs text-stone-500 dark:text-stone-400 mt-2">
                       <span className="flex items-center gap-1">
                         <Clock size={14} />
                         {calculateReadingTime(activeSection.body)} min read
@@ -109,26 +109,28 @@ export default function GuideReader({ data, isIntl = false, bookmarkedIds, onTog
                   <div className="flex items-center gap-2">
                     <button
                       onClick={() => onToggleBookmark(activeSection.id, activeSection.title)}
-                      className={`p-2 rounded-lg border transition-colors ${
+                      className={`size-11 flex items-center justify-center rounded-lg border active:scale-95 transition-all ${
                         bookmarkedIds.includes(activeSection.id)
-                          ? 'bg-red-50 border-red-200 text-[#8C1515] dark:bg-red-950 dark:border-red-800 dark:text-red-300'
-                          : 'border-slate-200 text-slate-500 hover:bg-slate-50 dark:border-slate-700 dark:hover:bg-slate-800'
+                          ? 'bg-cardinal-50 border-cardinal-200 text-cardinal-600 dark:bg-cardinal-950 dark:border-cardinal-800 dark:text-cardinal-300'
+                          : 'border-stone-200 text-stone-500 hover:bg-stone-50 dark:border-stone-700 dark:hover:bg-stone-800'
                       }`}
                       title="Bookmark section"
+                      aria-label={bookmarkedIds.includes(activeSection.id) ? 'Remove bookmark' : 'Bookmark section'}
                     >
                       <Bookmark size={18} fill={bookmarkedIds.includes(activeSection.id) ? 'currentColor' : 'none'} />
                     </button>
                     <button
                       onClick={() => copyPermalink(activeSection.id)}
-                      className="p-2 rounded-lg border border-slate-200 text-slate-500 hover:bg-slate-50 dark:border-slate-700 dark:hover:bg-slate-800 transition-colors"
+                      className="size-11 flex items-center justify-center rounded-lg border border-stone-200 text-stone-500 hover:bg-stone-50 dark:border-stone-700 dark:hover:bg-stone-800 active:scale-95 transition-all"
                       title="Copy permalink"
+                      aria-label="Copy permalink"
                     >
                       {copiedId === activeSection.id ? <Check size={18} className="text-emerald-500" /> : <Share2 size={18} />}
                     </button>
                   </div>
                 </div>
 
-                <div className="prose prose-slate dark:prose-invert max-w-none text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed whitespace-pre-line">
+                <div className="prose prose-slate dark:prose-invert max-w-none text-stone-700 dark:text-stone-300 text-sm sm:text-base leading-relaxed whitespace-pre-line">
                   {activeSection.body}
                 </div>
               </article>
@@ -161,15 +163,15 @@ export default function GuideReader({ data, isIntl = false, bookmarkedIds, onTog
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       {/* Header Banner */}
-      <div className="bg-gradient-to-r from-slate-900 via-slate-800 to-[#8C1515] rounded-2xl p-6 sm:p-8 text-white mb-8 shadow-md">
+      <div className="bg-stone-100 dark:bg-stone-900 rounded-xl border border-stone-200 dark:border-stone-800 p-6 sm:p-8 mb-8">
         <div className="max-w-3xl">
-          <span className="inline-block px-3 py-1 bg-white/10 backdrop-blur-md rounded-full text-xs font-semibold uppercase tracking-wider mb-3 text-red-200">
+          <span className="inline-block text-xs font-semibold uppercase tracking-wider text-cardinal-600 dark:text-cardinal-400 mb-3">
             Nikhil Jain (MBA '26) & GSB Community
           </span>
-          <h1 className="text-2xl sm:text-4xl font-serif font-bold mb-3">
+          <h1 className="text-2xl sm:text-3xl font-bold text-stone-900 dark:text-white mb-3">
             The Stanford GSB Unofficial Survival Guide
           </h1>
-          <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+          <p className="text-stone-600 dark:text-stone-400 text-sm sm:text-base leading-relaxed">
             The accumulated, road-tested advice of GSB students: housing, packing, academics, MARRS bidding, career playbooks, social traditions, and Bay Area life.
           </p>
         </div>
@@ -178,16 +180,16 @@ export default function GuideReader({ data, isIntl = false, bookmarkedIds, onTog
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
         {/* Sidebar Navigation */}
         <aside className="lg:col-span-1 space-y-4">
-          <div className="sticky top-24 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-4 shadow-sm max-h-[80vh] overflow-y-auto">
-            <h3 className="font-serif font-bold text-slate-900 dark:text-white flex items-center gap-2 pb-3 border-b border-slate-200 dark:border-slate-800 mb-3 text-sm">
-              <BookOpen size={16} className="text-[#8C1515]" />
+          <div className="sticky top-24 bg-white dark:bg-stone-900 rounded-xl border border-stone-200 dark:border-stone-800 p-4 max-h-[80vh] overflow-y-auto">
+            <h3 className="font-bold text-stone-900 dark:text-white flex items-center gap-2 pb-3 border-b border-stone-200 dark:border-stone-800 mb-3 text-sm">
+              <BookOpen size={16} className="text-cardinal-600" />
               Parts & Chapters
             </h3>
 
             <div className="space-y-4">
               {data.map((part, pIdx) => (
                 <div key={part.id || pIdx} className="space-y-1">
-                  <div className="text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500 px-2 py-1">
+                  <div className="text-xs font-bold uppercase tracking-wider text-stone-400 dark:text-stone-500 px-2 py-1">
                     {part.title}
                   </div>
                   {part.chapters.map((chap) => {
@@ -198,8 +200,8 @@ export default function GuideReader({ data, isIntl = false, bookmarkedIds, onTog
                         onClick={() => setSelectedChapterId(chap.id)}
                         className={`w-full text-left px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition-all flex items-center justify-between ${
                           isActive
-                            ? 'bg-red-50 dark:bg-red-950/60 text-[#8C1515] dark:text-red-400 font-semibold border-l-4 border-[#8C1515]'
-                            : 'text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800/60'
+                            ? 'bg-cardinal-50 dark:bg-cardinal-950/60 text-cardinal-700 dark:text-cardinal-400 font-semibold'
+                            : 'text-stone-600 dark:text-stone-400 hover:bg-stone-50 dark:hover:bg-stone-800/60'
                         }`}
                       >
                         <span className="truncate">
@@ -217,16 +219,16 @@ export default function GuideReader({ data, isIntl = false, bookmarkedIds, onTog
         {/* Main Content Pane */}
         <main className="lg:col-span-3">
           {activeChapter && (
-            <article className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-6 sm:p-10 shadow-sm space-y-8">
+            <article className="bg-white dark:bg-stone-900 rounded-xl border border-stone-200 dark:border-stone-800 p-6 sm:p-10 space-y-8">
               
               {/* Chapter Header */}
-              <div className="border-b border-slate-200 dark:border-slate-800 pb-6">
+              <div className="border-b border-stone-200 dark:border-stone-800 pb-6">
                 <div className="flex items-center justify-between">
                   <div>
-                    <span className="text-xs font-semibold uppercase tracking-wider text-[#8C1515] dark:text-red-400">
+                    <span className="text-xs font-semibold uppercase tracking-wider text-cardinal-600 dark:text-cardinal-400">
                       {activePart?.title}
                     </span>
-                    <h2 className="text-2xl sm:text-3xl font-serif font-bold text-slate-900 dark:text-white mt-1">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-stone-900 dark:text-white mt-1">
                       {activeChapter.title}
                     </h2>
                   </div>
@@ -234,19 +236,21 @@ export default function GuideReader({ data, isIntl = false, bookmarkedIds, onTog
                   <div className="flex items-center gap-2">
                     <button
                       onClick={() => onToggleBookmark(activeChapter.id, activeChapter.title)}
-                      className={`p-2 rounded-lg border transition-colors ${
+                      className={`size-11 flex items-center justify-center rounded-lg border active:scale-95 transition-all ${
                         bookmarkedIds.includes(activeChapter.id)
-                          ? 'bg-red-50 border-red-200 text-[#8C1515] dark:bg-red-950 dark:border-red-800 dark:text-red-300'
-                          : 'border-slate-200 text-slate-500 hover:bg-slate-50 dark:border-slate-700 dark:hover:bg-slate-800'
+                          ? 'bg-cardinal-50 border-cardinal-200 text-cardinal-600 dark:bg-cardinal-950 dark:border-cardinal-800 dark:text-cardinal-300'
+                          : 'border-stone-200 text-stone-500 hover:bg-stone-50 dark:border-stone-700 dark:hover:bg-stone-800'
                       }`}
                       title="Bookmark chapter"
+                      aria-label={bookmarkedIds.includes(activeChapter.id) ? 'Remove bookmark' : 'Bookmark chapter'}
                     >
                       <Bookmark size={18} fill={bookmarkedIds.includes(activeChapter.id) ? 'currentColor' : 'none'} />
                     </button>
                     <button
                       onClick={() => copyPermalink(activeChapter.id)}
-                      className="p-2 rounded-lg border border-slate-200 text-slate-500 hover:bg-slate-50 dark:border-slate-700 dark:hover:bg-slate-800 transition-colors"
+                      className="size-11 flex items-center justify-center rounded-lg border border-stone-200 text-stone-500 hover:bg-stone-50 dark:border-stone-700 dark:hover:bg-stone-800 active:scale-95 transition-all"
                       title="Copy permalink"
+                      aria-label="Copy permalink"
                     >
                       {copiedId === activeChapter.id ? <Check size={18} className="text-emerald-500" /> : <Share2 size={18} />}
                     </button>
@@ -259,12 +263,12 @@ export default function GuideReader({ data, isIntl = false, bookmarkedIds, onTog
                 {activeChapter.subsections.map((sub) => (
                   <section key={sub.id} id={sub.id} className="space-y-3">
                     {sub.title && sub.title !== activeChapter.title && (
-                      <h3 className="text-xl font-serif font-semibold text-slate-800 dark:text-slate-200 flex items-center gap-2">
-                        <span className="w-2 h-2 rounded-full bg-[#8C1515]"></span>
+                      <h3 className="text-xl font-semibold text-stone-800 dark:text-stone-200 flex items-center gap-2">
+                        <span className="w-2 h-2 rounded-full bg-cardinal-600"></span>
                         {sub.title}
                       </h3>
                     )}
-                    <div className="prose prose-slate dark:prose-invert max-w-none text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed whitespace-pre-line">
+                    <div className="prose prose-slate dark:prose-invert max-w-none text-stone-700 dark:text-stone-300 text-sm sm:text-base leading-relaxed whitespace-pre-line">
                       {sub.body}
                     </div>
                   </section>

@@ -103,23 +103,24 @@ export default function GlobalSearchModal({ isOpen, onClose, survivalData, intlD
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-start justify-center pt-16 sm:pt-24 px-4 bg-slate-950/70 backdrop-blur-sm animate-fade-in">
-      <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-2xl w-full max-w-2xl overflow-hidden flex flex-col max-h-[80vh]">
+    <div className="fixed inset-0 z-50 flex items-start justify-center pt-16 sm:pt-24 px-4 bg-stone-950/70 backdrop-blur-sm animate-fade-in">
+      <div className="bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 rounded-2xl shadow-2xl w-full max-w-2xl overflow-hidden flex flex-col max-h-[80vh]">
         
         {/* Search Input Bar */}
-        <div className="relative border-b border-slate-200 dark:border-slate-800 p-4 flex items-center gap-3">
-          <Search size={20} className="text-slate-400 shrink-0" />
+        <div className="relative border-b border-stone-200 dark:border-stone-800 p-4 flex items-center gap-3">
+          <Search size={20} className="text-stone-400 shrink-0" />
           <input
             ref={inputRef}
             type="text"
             placeholder="Search all guides, terms, housing, FAQs (e.g. Cardinal Care, MARRS, TALK)..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            className="w-full bg-transparent text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none text-base sm:text-lg"
+            className="w-full bg-transparent text-stone-900 dark:text-white placeholder-stone-400 focus:outline-none text-base sm:text-lg"
           />
           <button
             onClick={onClose}
-            className="p-1 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 rounded-lg"
+            className="size-11 flex items-center justify-center text-stone-400 hover:text-stone-600 dark:hover:text-stone-200 hover:bg-stone-100 dark:hover:bg-stone-800 active:scale-95 rounded-lg transition-all"
+            aria-label="Close search"
           >
             <X size={20} />
           </button>
@@ -128,13 +129,13 @@ export default function GlobalSearchModal({ isOpen, onClose, survivalData, intlD
         {/* Results list */}
         <div className="flex-1 overflow-y-auto p-4 space-y-2">
           {query.trim() === '' && (
-            <div className="text-center py-8 text-slate-400 text-sm">
+            <div className="text-center py-8 text-stone-400 text-sm">
               Type a keyword to instantly search across all 29 chapters, dictionary terms, and FAQs.
             </div>
           )}
 
           {query.trim() !== '' && results.length === 0 && (
-            <div className="text-center py-8 text-slate-400 text-sm">
+            <div className="text-center py-8 text-stone-400 text-sm">
               No matching results found for "{query}". Try a different search term.
             </div>
           )}
@@ -146,30 +147,30 @@ export default function GlobalSearchModal({ isOpen, onClose, survivalData, intlD
                 onSelectResult(item);
                 onClose();
               }}
-              className="p-3.5 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800/70 border border-transparent hover:border-slate-200 dark:hover:border-slate-700 cursor-pointer transition-all flex items-start justify-between gap-3 group"
+              className="p-3.5 rounded-xl hover:bg-stone-50 dark:hover:bg-stone-800/70 border border-transparent hover:border-stone-200 dark:hover:border-stone-700 cursor-pointer transition-all flex items-start justify-between gap-3 group"
             >
               <div className="space-y-1">
                 <div className="flex items-center gap-2">
-                  <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-red-50 dark:bg-red-950 text-[#8C1515] dark:text-red-300">
+                  <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-cardinal-50 dark:bg-cardinal-950 text-cardinal-600 dark:text-cardinal-300">
                     {item.category}
                   </span>
                 </div>
-                <h4 className="font-serif font-semibold text-slate-900 dark:text-white text-sm sm:text-base group-hover:text-[#8C1515] dark:group-hover:text-red-400 transition-colors">
+                <h4 className="font-semibold text-stone-900 dark:text-white text-sm sm:text-base group-hover:text-cardinal-600 dark:group-hover:text-cardinal-400 transition-colors">
                   {item.title}
                 </h4>
-                <p className="text-xs text-slate-500 dark:text-slate-400 line-clamp-2 leading-relaxed">
+                <p className="text-xs text-stone-500 dark:text-stone-400 line-clamp-2 leading-relaxed">
                   {item.snippet}
                 </p>
               </div>
 
-              <ArrowRight size={16} className="text-slate-400 group-hover:text-[#8C1515] shrink-0 mt-2 transition-transform group-hover:translate-x-1" />
+              <ArrowRight size={16} className="text-stone-400 group-hover:text-cardinal-600 shrink-0 mt-2 transition-transform group-hover:translate-x-1" />
             </div>
           ))}
         </div>
 
         {/* Footer info */}
-        <div className="px-4 py-2.5 border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950/60 text-xs text-slate-400 flex items-center justify-between">
-          <span>Press <kbd className="px-1 py-0.5 bg-white dark:bg-slate-800 border rounded text-[10px]">Esc</kbd> to close</span>
+        <div className="px-4 py-2.5 border-t border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-950/60 text-xs text-stone-400 flex items-center justify-between">
+          <span>Press <kbd className="px-1 py-0.5 bg-white dark:bg-stone-800 border rounded text-[10px]">Esc</kbd> to close</span>
           <span>Powered by Fuse.js</span>
         </div>
       </div>

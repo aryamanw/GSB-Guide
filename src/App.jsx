@@ -78,7 +78,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100">
+    <div className="min-h-screen flex flex-col bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-100">
 
       {/* Navigation Header */}
       <Header
@@ -138,17 +138,18 @@ export default function App() {
       {/* Bookmarks Drawer Overlay */}
       {bookmarksDrawerOpen && (
         <div
-          className="fixed inset-0 z-50 flex justify-end bg-slate-950/60 backdrop-blur-sm"
+          className="fixed inset-0 z-50 flex justify-end bg-stone-950/60 backdrop-blur-sm"
           onClick={(e) => { if (e.target === e.currentTarget) setBookmarksDrawerOpen(false); }}
         >
-          <div className="w-full max-w-sm bg-white dark:bg-slate-900 border-l border-slate-200 dark:border-slate-800 p-6 shadow-2xl flex flex-col h-full animate-slide-in-right">
-            <div className="flex items-center justify-between pb-4 border-b border-slate-200 dark:border-slate-800 mb-4">
-              <h3 className="font-serif font-bold text-lg text-slate-900 dark:text-white">
-                Bookmarks {bookmarks.length > 0 && <span className="text-[#8C1515]">({bookmarks.length})</span>}
+          <div className="w-full max-w-sm bg-white dark:bg-stone-900 border-l border-stone-200 dark:border-stone-800 p-6 shadow-2xl flex flex-col h-full animate-slide-in-right">
+            <div className="flex items-center justify-between pb-4 border-b border-stone-200 dark:border-stone-800 mb-4">
+              <h3 className="font-bold text-lg text-stone-900 dark:text-white">
+                Bookmarks {bookmarks.length > 0 && <span className="text-cardinal-600">({bookmarks.length})</span>}
               </h3>
               <button
                 onClick={() => setBookmarksDrawerOpen(false)}
-                className="w-8 h-8 flex items-center justify-center rounded-lg text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                className="size-11 -m-1.5 flex items-center justify-center rounded-lg text-stone-400 hover:text-stone-600 dark:hover:text-stone-200 hover:bg-stone-100 dark:hover:bg-stone-800 active:scale-95 transition-all"
+                aria-label="Close bookmarks"
               >
                 ✕
               </button>
@@ -156,22 +157,22 @@ export default function App() {
 
             <div className="flex-1 overflow-y-auto space-y-2">
               {bookmarks.length === 0 ? (
-                <div className="text-center py-16 text-slate-400">
+                <div className="text-center py-16 text-stone-400">
                   <div className="text-4xl mb-3">🔖</div>
                   <p className="text-sm font-medium">No bookmarks yet</p>
-                  <p className="text-xs mt-1 text-slate-500">Click the bookmark icon on any chapter or section to save it here.</p>
+                  <p className="text-xs mt-1 text-stone-500">Click the bookmark icon on any chapter or section to save it here.</p>
                 </div>
               ) : (
                 bookmarks.map((b) => (
                   <div
                     key={b.id}
-                    className="p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-[#8C1515] bg-slate-50 dark:bg-slate-800/40 flex items-center justify-between gap-3 cursor-pointer transition-colors"
+                    className="p-3.5 rounded-xl border border-stone-200 dark:border-stone-800 hover:border-cardinal-600 bg-stone-50 dark:bg-stone-800/40 flex items-center justify-between gap-3 cursor-pointer transition-colors"
                     onClick={() => {
                       setBookmarksDrawerOpen(false);
                       setActiveTab('survival');
                     }}
                   >
-                    <span className="font-medium text-sm text-slate-800 dark:text-slate-200 truncate">
+                    <span className="font-medium text-sm text-stone-800 dark:text-stone-200 truncate">
                       {b.title}
                     </span>
                     <button
@@ -179,7 +180,7 @@ export default function App() {
                         e.stopPropagation();
                         toggleBookmark(b.id, b.title);
                       }}
-                      className="text-xs text-slate-400 hover:text-red-500 shrink-0 transition-colors"
+                      className="text-xs text-stone-400 hover:text-cardinal-500 shrink-0 transition-colors"
                     >
                       Remove
                     </button>
@@ -204,15 +205,15 @@ export default function App() {
 
       {/* Footer — only shown on non-home tabs */}
       {activeTab !== 'home' && (
-        <footer className="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 py-8 mt-8">
-          <div className="max-w-7xl mx-auto px-4 text-center text-xs text-slate-500 dark:text-slate-400 space-y-2">
-            <p className="font-serif text-sm font-semibold text-slate-700 dark:text-slate-300">
+        <footer className="border-t border-stone-200 dark:border-stone-800 bg-white dark:bg-stone-900 py-8 mt-8">
+          <div className="max-w-7xl mx-auto px-4 text-center text-xs text-stone-500 dark:text-stone-400 space-y-2">
+            <p className="text-sm font-semibold text-stone-700 dark:text-stone-300">
               Stanford GSB Unofficial Survival Guide & International Student Handbook
             </p>
             <p>
               Developed by Nikhil Jain (MBA '26) with contributions from dozens of classmates and the GSB SA International Committee.
             </p>
-            <p className="text-[11px] text-slate-400 dark:text-slate-500">
+            <p className="text-[11px] text-stone-400 dark:text-stone-500">
               Unofficial student-created field guide. Not published, reviewed, or endorsed by Stanford University or the Graduate School of Business.
             </p>
           </div>

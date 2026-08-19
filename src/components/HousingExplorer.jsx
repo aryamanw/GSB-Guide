@@ -65,42 +65,42 @@ export default function HousingExplorer() {
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 space-y-8">
       {/* Banner */}
-      <div className="bg-gradient-to-r from-red-950 via-[#8C1515] to-slate-900 rounded-2xl p-6 sm:p-8 text-white shadow-md">
+      <div className="bg-stone-100 dark:bg-stone-900 rounded-xl border border-stone-200 dark:border-stone-800 p-6 sm:p-8">
         <div className="max-w-3xl">
           <div className="flex items-center gap-2 mb-2">
-            <Home size={20} className="text-amber-300" />
-            <span className="text-xs font-semibold uppercase tracking-wider text-amber-200">
+            <Home size={18} className="text-cardinal-600 dark:text-cardinal-400" />
+            <span className="text-xs font-semibold uppercase tracking-wider text-cardinal-600 dark:text-cardinal-400">
               Chapter 3 & International Guide
             </span>
           </div>
-          <h1 className="text-2xl sm:text-4xl font-serif font-bold mb-2">
+          <h1 className="text-2xl sm:text-3xl font-bold text-stone-900 dark:text-white mb-2">
             Stanford GSB Housing & Neighborhood Explorer
           </h1>
-          <p className="text-slate-200 text-sm sm:text-base">
+          <p className="text-stone-600 dark:text-stone-400 text-sm sm:text-base">
             Compare GSB Residences (Schwab, JMac), Stanford Escondido Village (EV), and Palo Alto off-campus neighborhood options.
           </p>
         </div>
       </div>
 
       {/* Switcher Tabs */}
-      <div className="flex justify-center border-b border-slate-200 dark:border-slate-800 pb-4">
-        <div className="inline-flex bg-slate-100 dark:bg-slate-800 p-1.5 rounded-xl gap-2">
+      <div className="flex justify-center border-b border-stone-200 dark:border-stone-800 pb-4">
+        <div className="inline-flex bg-stone-100 dark:bg-stone-800 p-1.5 rounded-xl gap-2">
           <button
             onClick={() => setActiveTab('on-campus')}
-            className={`px-5 py-2 rounded-lg text-sm font-semibold transition-all ${
+            className={`px-5 py-3 rounded-lg text-sm font-semibold active:scale-[0.97] transition-all ${
               activeTab === 'on-campus'
-                ? 'bg-[#8C1515] text-white shadow-sm'
-                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900'
+                ? 'bg-cardinal-600 text-white'
+                : 'text-stone-600 dark:text-stone-400 hover:text-stone-900'
             }`}
           >
             On-Campus Residences
           </button>
           <button
             onClick={() => setActiveTab('off-campus')}
-            className={`px-5 py-2 rounded-lg text-sm font-semibold transition-all ${
+            className={`px-5 py-3 rounded-lg text-sm font-semibold active:scale-[0.97] transition-all ${
               activeTab === 'off-campus'
-                ? 'bg-[#8C1515] text-white shadow-sm'
-                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900'
+                ? 'bg-cardinal-600 text-white'
+                : 'text-stone-600 dark:text-stone-400 hover:text-stone-900'
             }`}
           >
             Off-Campus Neighborhoods
@@ -114,25 +114,25 @@ export default function HousingExplorer() {
           {onCampusOptions.map((opt, idx) => (
             <div
               key={idx}
-              className="interactive-card bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-6 shadow-sm flex flex-col justify-between space-y-4"
+              className="interactive-card bg-white dark:bg-stone-900 rounded-xl border border-stone-200 dark:border-stone-800 p-6 flex flex-col justify-between space-y-4"
             >
               <div>
                 <span className="badge badge-cardinal mb-3">{opt.tag}</span>
-                <h3 className="text-xl font-serif font-bold text-slate-900 dark:text-white mt-1">
+                <h3 className="text-xl font-bold text-stone-900 dark:text-white mt-1">
                   {opt.name}
                 </h3>
-                <p className="text-xs text-[#8C1515] dark:text-red-400 font-medium mt-1">
+                <p className="text-xs text-cardinal-600 dark:text-cardinal-400 font-medium mt-1">
                   Target: {opt.target}
                 </p>
-                <p className="text-slate-600 dark:text-slate-300 text-sm mt-3 leading-relaxed">
+                <p className="text-stone-600 dark:text-stone-300 text-sm mt-3 leading-relaxed">
                   {opt.vibe}
                 </p>
               </div>
 
-              <div className="border-t border-slate-100 dark:border-slate-800/80 pt-4 space-y-2">
-                <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400">Highlights</h4>
+              <div className="border-t border-stone-100 dark:border-stone-800/80 pt-4 space-y-2">
+                <h4 className="text-xs font-bold uppercase tracking-wider text-stone-400">Highlights</h4>
                 {opt.perks.map((p, i) => (
-                  <div key={i} className="flex items-center gap-2 text-xs text-slate-700 dark:text-slate-300">
+                  <div key={i} className="flex items-center gap-2 text-xs text-stone-700 dark:text-stone-300">
                     <CheckCircle2 size={14} className="text-emerald-500 shrink-0" />
                     <span>{p}</span>
                   </div>
@@ -146,23 +146,23 @@ export default function HousingExplorer() {
           {offCampusNeighborhoods.map((n, idx) => (
             <div
               key={idx}
-              className="interactive-card bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-6 shadow-sm space-y-4"
+              className="interactive-card bg-white dark:bg-stone-900 rounded-xl border border-stone-200 dark:border-stone-800 p-6 space-y-4"
             >
               <div className="flex items-center justify-between">
                 <span className="badge badge-gold">{n.tag}</span>
-                <span className="text-xs font-medium text-slate-500 dark:text-slate-400 flex items-center gap-1">
-                  <MapPin size={14} className="text-[#8C1515]" />
+                <span className="text-xs font-medium text-stone-500 dark:text-stone-400 flex items-center gap-1">
+                  <MapPin size={14} className="text-cardinal-600 dark:text-cardinal-400" />
                   {n.dist}
                 </span>
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-slate-900 dark:text-white">
+                <h3 className="text-xl font-bold text-stone-900 dark:text-white">
                   {n.name}
                 </h3>
-                <p className="text-xs text-slate-500 dark:text-slate-400 font-medium mt-1">
+                <p className="text-xs text-stone-500 dark:text-stone-400 font-medium mt-1">
                   Ideal for: {n.target}
                 </p>
-                <p className="text-slate-600 dark:text-slate-300 text-sm mt-3 leading-relaxed">
+                <p className="text-stone-600 dark:text-stone-300 text-sm mt-3 leading-relaxed">
                   {n.vibe}
                 </p>
               </div>
