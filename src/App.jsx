@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Bookmark } from 'lucide-react';
 import Header from './components/Header';
 import HeroLanding from './components/HeroLanding';
 import GuideReader from './components/GuideReader';
@@ -78,7 +79,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-100">
+    <div className="min-h-[100dvh] flex flex-col bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-100">
 
       {/* Navigation Header */}
       <Header
@@ -157,10 +158,12 @@ export default function App() {
 
             <div className="flex-1 overflow-y-auto space-y-2">
               {bookmarks.length === 0 ? (
-                <div className="text-center py-16 text-stone-400">
-                  <div className="text-4xl mb-3">🔖</div>
-                  <p className="text-sm font-medium">No bookmarks yet</p>
-                  <p className="text-xs mt-1 text-stone-500">Click the bookmark icon on any chapter or section to save it here.</p>
+                <div className="text-center py-16 text-stone-500">
+                  <div className="inline-flex p-3 rounded-full bg-stone-100 dark:bg-stone-800 text-stone-400 mb-3">
+                    <Bookmark size={22} />
+                  </div>
+                  <p className="text-sm font-medium text-stone-600 dark:text-stone-300">No bookmarks yet</p>
+                  <p className="text-xs mt-1 text-stone-500 dark:text-stone-400">Click the bookmark icon on any chapter or section to save it here.</p>
                 </div>
               ) : (
                 bookmarks.map((b) => (
@@ -180,7 +183,7 @@ export default function App() {
                         e.stopPropagation();
                         toggleBookmark(b.id, b.title);
                       }}
-                      className="text-xs text-stone-400 hover:text-cardinal-500 shrink-0 transition-colors"
+                      className="text-xs text-stone-500 dark:text-stone-400 hover:text-cardinal-500 shrink-0 transition-colors"
                     >
                       Remove
                     </button>
@@ -203,7 +206,7 @@ export default function App() {
         onSelectResult={handleSearchResultSelect}
       />
 
-      {/* Footer — only shown on non-home tabs */}
+      {/* Footer - only shown on non-home tabs */}
       {activeTab !== 'home' && (
         <footer className="border-t border-stone-200 dark:border-stone-800 bg-white dark:bg-stone-900 py-8 mt-8">
           <div className="max-w-7xl mx-auto px-4 text-center text-xs text-stone-500 dark:text-stone-400 space-y-2">
@@ -213,7 +216,7 @@ export default function App() {
             <p>
               Developed by Nikhil Jain (MBA '26) with contributions from dozens of classmates and the GSB SA International Committee.
             </p>
-            <p className="text-[11px] text-stone-400 dark:text-stone-500">
+            <p className="text-[11px] text-stone-500 dark:text-stone-400">
               Unofficial student-created field guide. Not published, reviewed, or endorsed by Stanford University or the Graduate School of Business.
             </p>
           </div>

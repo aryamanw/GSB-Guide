@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { CheckSquare, Square, RotateCcw, Plus, Sparkles, Filter, Award } from 'lucide-react';
+import { CheckSquare, RotateCcw, Plus, Sparkles, Filter } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
 export default function ChecklistTracker({ initialItems }) {
@@ -136,7 +136,7 @@ export default function ChecklistTracker({ initialItems }) {
             placeholder="Add your own custom task (e.g., Book flight to SF)..."
             value={newTaskText}
             onChange={(e) => setNewTaskText(e.target.value)}
-            className="flex-1 px-4 py-2 text-sm rounded-lg border border-stone-200 dark:border-stone-700 bg-stone-50 dark:bg-stone-800 text-stone-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-cardinal-600"
+            className="flex-1 px-4 py-2 text-sm rounded-lg border border-stone-200 dark:border-stone-700 bg-stone-50 dark:bg-stone-800 text-stone-900 dark:text-white placeholder-stone-500 dark:placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-cardinal-600"
           />
           <button
             type="submit"

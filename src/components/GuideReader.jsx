@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Bookmark, Share2, Copy, Check, ChevronRight, ChevronDown, Clock, BookOpen, Layers } from 'lucide-react';
+import { Bookmark, Share2, Check, ChevronRight, ChevronDown, Clock, BookOpen, Layers } from 'lucide-react';
 
 export default function GuideReader({ data, isIntl = false, bookmarkedIds, onToggleBookmark }) {
   const [selectedPartIndex, setSelectedPartIndex] = useState(0);
@@ -20,7 +20,7 @@ export default function GuideReader({ data, isIntl = false, bookmarkedIds, onTog
 
   const copyPermalink = (id) => {
     const url = `${window.location.origin}${window.location.pathname}#${id}`;
-    navigator.clipboard.writeText(url);
+    navigator.clipboard.writeText(url).catch(() => {});
     setCopiedId(id);
     setTimeout(() => setCopiedId(null), 2000);
   };
@@ -189,7 +189,7 @@ export default function GuideReader({ data, isIntl = false, bookmarkedIds, onTog
             <div className="space-y-4">
               {data.map((part, pIdx) => (
                 <div key={part.id || pIdx} className="space-y-1">
-                  <div className="text-xs font-bold uppercase tracking-wider text-stone-400 dark:text-stone-500 px-2 py-1">
+                  <div className="text-xs font-bold uppercase tracking-wider text-stone-500 dark:text-stone-400 px-2 py-1">
                     {part.title}
                   </div>
                   {part.chapters.map((chap) => {
@@ -225,7 +225,7 @@ export default function GuideReader({ data, isIntl = false, bookmarkedIds, onTog
               <div className="border-b border-stone-200 dark:border-stone-800 pb-6">
                 <div className="flex items-center justify-between">
                   <div>
-                    <span className="text-xs font-semibold uppercase tracking-wider text-cardinal-600 dark:text-cardinal-400">
+                    <span className="text-sm font-semibold text-cardinal-600 dark:text-cardinal-400">
                       {activePart?.title}
                     </span>
                     <h2 className="text-2xl sm:text-3xl font-bold text-stone-900 dark:text-white mt-1">

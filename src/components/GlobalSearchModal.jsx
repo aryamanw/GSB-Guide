@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Search, X, BookOpen, Globe, Book, HelpCircle, ArrowRight } from 'lucide-react';
+import { Search, X, ArrowRight } from 'lucide-react';
 import Fuse from 'fuse.js';
 
 export default function GlobalSearchModal({ isOpen, onClose, survivalData, intlData, dictData, faqData, onSelectResult }) {
@@ -17,14 +17,9 @@ export default function GlobalSearchModal({ isOpen, onClose, survivalData, intlD
     }
   }, [isOpen]);
 
-  // Handle Cmd+K and Esc keyboard shortcuts
+  // Handle Esc keyboard shortcut (Cmd+K is handled globally in App.jsx)
   useEffect(() => {
     const handleKeyDown = (e) => {
-      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
-        e.preventDefault();
-        if (isOpen) onClose();
-        else onOpenSearchModal();
-      }
       if (e.key === 'Escape' && isOpen) {
         onClose();
       }
@@ -48,7 +43,7 @@ export default function GlobalSearchModal({ isOpen, onClose, survivalData, intlD
         (chap.subsections || []).forEach((sub) => {
           corpus.push({
             type: 'survival',
-            title: `${chap.title} — ${sub.title}`,
+            title: `${chap.title} · ${sub.title}`,
             snippet: sub.body ? sub.body.slice(0, 180) + '...' : '',
             targetId: chap.id,
             category: 'Survival Guide'
@@ -115,7 +110,7 @@ export default function GlobalSearchModal({ isOpen, onClose, survivalData, intlD
             placeholder="Search all guides, terms, housing, FAQs (e.g. Cardinal Care, MARRS, TALK)..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            className="w-full bg-transparent text-stone-900 dark:text-white placeholder-stone-400 focus:outline-none text-base sm:text-lg"
+            className="w-full bg-transparent text-stone-900 dark:text-white placeholder-stone-500 dark:placeholder-stone-400 focus:outline-none text-base sm:text-lg"
           />
           <button
             onClick={onClose}
@@ -129,13 +124,13 @@ export default function GlobalSearchModal({ isOpen, onClose, survivalData, intlD
         {/* Results list */}
         <div className="flex-1 overflow-y-auto p-4 space-y-2">
           {query.trim() === '' && (
-            <div className="text-center py-8 text-stone-400 text-sm">
+            <div className="text-center py-8 text-stone-500 dark:text-stone-400 text-sm">
               Type a keyword to instantly search across all 29 chapters, dictionary terms, and FAQs.
             </div>
           )}
 
           {query.trim() !== '' && results.length === 0 && (
-            <div className="text-center py-8 text-stone-400 text-sm">
+            <div className="text-center py-8 text-stone-500 dark:text-stone-400 text-sm">
               No matching results found for "{query}". Try a different search term.
             </div>
           )}
@@ -169,7 +164,7 @@ export default function GlobalSearchModal({ isOpen, onClose, survivalData, intlD
         </div>
 
         {/* Footer info */}
-        <div className="px-4 py-2.5 border-t border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-950/60 text-xs text-stone-400 flex items-center justify-between">
+        <div className="px-4 py-2.5 border-t border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-950/60 text-xs text-stone-500 dark:text-stone-400 flex items-center justify-between">
           <span>Press <kbd className="px-1 py-0.5 bg-white dark:bg-stone-800 border rounded text-[10px]">Esc</kbd> to close</span>
           <span>Powered by Fuse.js</span>
         </div>

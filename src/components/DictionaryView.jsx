@@ -45,7 +45,7 @@ export default function DictionaryView({ terms }) {
           placeholder="Filter dictionary terms (e.g. Touchy Feely, Arbuckle, MARRS)..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="w-full pl-11 pr-4 py-3 rounded-xl border border-stone-200 dark:border-stone-800 bg-white dark:bg-stone-900 text-stone-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-cardinal-600 text-sm"
+          className="w-full pl-11 pr-4 py-3 rounded-xl border border-stone-200 dark:border-stone-800 bg-white dark:bg-stone-900 text-stone-900 dark:text-white placeholder-stone-500 dark:placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-cardinal-600 text-sm"
         />
       </div>
 
@@ -79,7 +79,7 @@ export default function DictionaryView({ terms }) {
       </div>
 
       {filteredTerms.length === 0 && (
-        <div className="text-center py-12 text-stone-400">
+        <div className="text-center py-12 text-stone-500 dark:text-stone-400">
           No matching dictionary terms found for "{search}".
         </div>
       )}

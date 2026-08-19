@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, CheckSquare, Globe, Book, Home, HelpCircle, ArrowRight, Star } from 'lucide-react';
+import { BookOpen, CheckSquare, Globe, Book, Home, HelpCircle, ArrowRight } from 'lucide-react';
 
 const STATS = [
   { label: 'Chapters', value: '29+' },
@@ -55,26 +55,21 @@ const QUICK_LINKS = [
 
 export default function HeroLanding({ onNavigate }) {
   return (
-    <div className="min-h-[calc(100vh-64px)]">
-
-      {/* Hero Section — flat, warm, restrained. No gradient theater. */}
+    <div>
+      {/* Hero Section - flat, warm, restrained. No gradient theater. */}
       <div className="border-b border-stone-200 dark:border-stone-800">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-14 sm:pt-20 sm:pb-16">
-
-          <span className="block text-center text-xs font-semibold uppercase tracking-wider text-cardinal-600 dark:text-cardinal-400 mb-4">
-            Stanford GSB · Class of 2026 · Unofficial Guide
-          </span>
 
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center text-stone-900 dark:text-white leading-tight mb-5">
             The GSB Survival Guide, in one place
           </h1>
 
           <p className="text-center text-stone-600 dark:text-stone-400 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
-            The accumulated, road-tested advice of a Stanford GSB class — organized so you don't have to learn everything the hard way. Housing, packing, academics, careers, social life, and Bay Area living.
+            Road-tested advice from a GSB class: housing, packing, academics, careers, social life, and Bay Area living.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-14">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-12">
             <button
               onClick={() => onNavigate('survival')}
               className="inline-flex items-center gap-2 px-6 py-3 bg-cardinal-600 hover:bg-cardinal-700 active:scale-[0.97] text-white rounded-lg font-semibold text-sm transition-all"
@@ -92,8 +87,21 @@ export default function HeroLanding({ onNavigate }) {
             </button>
           </div>
 
-          {/* Stats — a plain divided row, not a card grid */}
-          <div className="flex items-center justify-center divide-x divide-stone-200 dark:divide-stone-800 max-w-2xl mx-auto">
+          {/* Hero visual: a real photo, bordered and flat like every surface */}
+          <img
+            src="https://picsum.photos/seed/gsb-campus-quad/1600/760"
+            alt="The Stanford campus quad on a sunny morning"
+            loading="eager"
+            fetchPriority="high"
+            className="w-full aspect-[21/9] object-cover rounded-xl border border-stone-200 dark:border-stone-800"
+          />
+        </div>
+      </div>
+
+      {/* Stats - a plain divided row below the hero, not a card grid */}
+      <div className="border-b border-stone-200 dark:border-stone-800">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="flex items-center justify-center divide-x divide-stone-200 dark:divide-stone-800">
             {STATS.map((stat) => (
               <div key={stat.label} className="flex-1 text-center px-2">
                 <div className="text-xl sm:text-2xl font-bold text-stone-900 dark:text-white">{stat.value}</div>
@@ -104,7 +112,7 @@ export default function HeroLanding({ onNavigate }) {
         </div>
       </div>
 
-      {/* Quick Links Grid — one consistent treatment, not six competing colors */}
+      {/* Quick Links Grid - one consistent treatment, not six competing colors */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <h2 className="text-xl font-bold text-stone-900 dark:text-white text-center mb-8">
           What do you need today?
@@ -145,15 +153,11 @@ export default function HeroLanding({ onNavigate }) {
       {/* Attribution */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         <div className="bg-stone-100 dark:bg-stone-900/60 rounded-xl border border-stone-200 dark:border-stone-800 p-6 sm:p-8 text-center">
-          <div className="flex items-center justify-center gap-2 mb-3">
-            <Star size={14} className="text-gold-500" />
-            <span className="text-xs font-bold uppercase tracking-wider text-stone-500 dark:text-stone-400">About this guide</span>
-          </div>
           <p className="text-stone-700 dark:text-stone-300 text-sm max-w-2xl mx-auto leading-relaxed">
             Developed by <strong>Nikhil Jain (MBA Class of 2026)</strong> with contributions from dozens of classmates, and material drawn from the International Student Handbook by the{' '}
             <strong>GSB Student Association International Committee</strong>.
           </p>
-          <p className="text-stone-500 dark:text-stone-500 text-xs mt-3">
+          <p className="text-stone-500 dark:text-stone-400 text-xs mt-3">
             Unofficial, student-created resource. Not endorsed by Stanford University or the Graduate School of Business.
           </p>
         </div>
