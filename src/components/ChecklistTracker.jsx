@@ -2,6 +2,29 @@ import React, { useState, useEffect } from 'react';
 import { CheckSquare, RotateCcw, Plus, Sparkles, Filter } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
+function ProgressRing({ percent }) {
+  const r = 8;
+  const circumference = 2 * Math.PI * r;
+  const offset = circumference * (1 - percent / 100);
+  return (
+    <svg width="20" height="20" viewBox="0 0 20 20" className="progress-ring shrink-0" aria-hidden="true">
+      <circle cx="10" cy="10" r={r} fill="none" stroke="currentColor" strokeWidth="2.5" opacity="0.25" />
+      <circle
+        cx="10"
+        cy="10"
+        r={r}
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeDasharray={circumference}
+        strokeDashoffset={offset}
+        transform="rotate(-90 10 10)"
+      />
+    </svg>
+  );
+}
+
 export default function ChecklistTracker({ initialItems }) {
   const [items, setItems] = useState(() => {
     const saved = localStorage.getItem('gsb-checklist-state');
@@ -25,7 +48,7 @@ export default function ChecklistTracker({ initialItems }) {
   const toggleItem = (id) => {
     setItems((prev) => {
       const next = prev.map((item) => (item.id === id ? { ...item, defaultChecked: !item.defaultChecked } : item));
-      
+
       const totalChecked = next.filter((i) => i.defaultChecked).length;
       if (totalChecked === next.length && next.length > 0) {
         confetti({
@@ -64,6 +87,16 @@ export default function ChecklistTracker({ initialItems }) {
   const completedCount = items.filter((i) => i.defaultChecked).length;
   const progressPercent = items.length > 0 ? Math.round((completedCount / items.length) * 100) : 0;
 
+  const categoryCompletion = {};
+  for (const cat of categories) {
+    if (cat === 'All') continue;
+    const catItems = items.filter((i) => i.category === cat);
+    const done = catItems.filter((i) => i.defaultChecked).length;
+    categoryCompletion[cat] = catItems.length ? Math.round((done / catItems.length) * 100) : 0;
+  }
+
+  const ringPercent = (cat) => (cat === 'All' ? progressPercent : categoryCompletion[cat]);
+
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8">
       {/* Banner */}
@@ -101,7 +134,7 @@ export default function ChecklistTracker({ initialItems }) {
 
       {/* Controls & Filter */}
       <div className="bg-white dark:bg-stone-900 rounded-xl border border-stone-200 dark:border-stone-800 p-6 space-y-6">
-        
+
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-4 border-b border-stone-200 dark:border-stone-800">
           <div className="flex flex-wrap items-center gap-2">
             <Filter size={16} className="text-stone-400 mr-1" />
@@ -109,12 +142,14 @@ export default function ChecklistTracker({ initialItems }) {
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`px-3 py-2.5 rounded-lg text-xs font-semibold active:scale-[0.97] transition-all ${
+                aria-pressed={activeCategory === cat}
+                className={`px-3 py-2.5 rounded-lg text-xs font-semibold active:scale-[0.97] transition-all flex items-center gap-1.5 ${
                   activeCategory === cat
                     ? 'bg-cardinal-600 text-white'
                     : 'bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-400 hover:bg-stone-200'
                 }`}
               >
+                <ProgressRing percent={ringPercent(cat)} />
                 {cat}
               </button>
             ))}

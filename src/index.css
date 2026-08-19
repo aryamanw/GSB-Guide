@@ -304,3 +304,14 @@ body {
     transition: none;
   }
 }
+
+/* Category progress rings in the checklist: the stroke animates as items toggle. */
+.progress-ring circle {
+  transition: stroke-dashoffset 0.5s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .progress-ring circle {
+    transition: none;
+  }
+}
