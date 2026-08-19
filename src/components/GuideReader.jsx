@@ -1,22 +1,125 @@
-import React, { useState, useEffect } from 'react';
-import { Bookmark, Share2, Check, ChevronRight, ChevronDown, Clock, BookOpen, Layers } from 'lucide-react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
+import { Bookmark, Share2, Check, ChevronRight, ChevronLeft, ChevronDown, ChevronUp, Clock, BookOpen, Layers } from 'lucide-react';
+
+function ScrollProgressBar({ percent }) {
+  return (
+    <div className="fixed top-0 left-0 right-0 h-0.5 z-50 bg-stone-200/60 dark:bg-stone-800/60" aria-hidden="true">
+      <div className="h-full bg-cardinal-600" style={{ width: `${percent}%` }} />
+    </div>
+  );
+}
 
 export default function GuideReader({ data, isIntl = false, bookmarkedIds, onToggleBookmark }) {
-  const [selectedPartIndex, setSelectedPartIndex] = useState(0);
   const [selectedChapterId, setSelectedChapterId] = useState('');
   const [copiedId, setCopiedId] = useState(null);
   const [tocOpenMobile, setTocOpenMobile] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
+  const [expandedSubs, setExpandedSubs] = useState(new Set());
+  const articleRef = useRef(null);
 
   // Set default active chapter
   useEffect(() => {
-    if (!isIntl && data && data.length > 0) {
-      if (data[0].chapters && data[0].chapters.length > 0) {
+    if (data && data.length > 0) {
+      if (isIntl) {
+        setSelectedChapterId(data[0].id);
+      } else if (data[0].chapters && data[0].chapters.length > 0) {
         setSelectedChapterId(data[0].chapters[0].id);
       }
-    } else if (isIntl && data && data.length > 0) {
-      setSelectedChapterId(data[0].id);
     }
   }, [data, isIntl]);
+
+  // Resolve active chapter/part for the survival guide (unused for intl)
+  let activeChapter = null;
+  let activePart = null;
+  if (!isIntl) {
+    for (const p of data || []) {
+      for (const c of p.chapters || []) {
+        if (c.id === selectedChapterId) {
+          activeChapter = c;
+          activePart = p;
+          break;
+        }
+      }
+    }
+    if (!activeChapter && data && data.length > 0 && data[0].chapters && data[0].chapters.length > 0) {
+      activeChapter = data[0].chapters[0];
+      activePart = data[0];
+    }
+  }
+
+  // Flatten survival guide chapters into an ordered list for prev/next nav
+  const flatChapters = useMemo(() => {
+    if (isIntl || !data) return [];
+    const list = [];
+    for (const part of data) {
+      for (const chap of part.chapters || []) {
+        list.push(chap);
+      }
+    }
+    return list;
+  }, [data, isIntl]);
+
+  // Seed collapsible subsections whenever the active chapter changes.
+  // Chapters with 3+ titled subsections open only the first; shorter
+  // chapters open all — avoids an awkward fully-collapsed first load.
+  useEffect(() => {
+    if (isIntl) return;
+    const subs = activeChapter?.subsections || [];
+    const titled = subs.filter((s) => s.title && s.title !== activeChapter.title);
+    if (titled.length >= 3) {
+      setExpandedSubs(new Set([titled[0].id]));
+    } else {
+      setExpandedSubs(new Set(titled.map((s) => s.id)));
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedChapterId, isIntl]);
+
+  // Track scroll progress through the active article as the page scrolls
+  useEffect(() => {
+    setScrollProgress(0);
+    const handleScroll = () => {
+      const el = articleRef.current;
+      if (!el) return;
+      const rect = el.getBoundingClientRect();
+      const totalScrollable = rect.height - window.innerHeight;
+      if (totalScrollable <= 0) {
+        setScrollProgress(100);
+        return;
+      }
+      const scrolled = -rect.top;
+      const pct = Math.min(100, Math.max(0, (scrolled / totalScrollable) * 100));
+      setScrollProgress(pct);
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [selectedChapterId]);
+
+  const toggleSub = (id) => {
+    setExpandedSubs((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+  };
+
+  const goToAdjacentChapter = (direction) => {
+    const idx = flatChapters.findIndex((c) => c.id === selectedChapterId);
+    if (idx === -1) return;
+    const nextIdx = idx + direction;
+    if (nextIdx < 0 || nextIdx >= flatChapters.length) return;
+    setSelectedChapterId(flatChapters[nextIdx].id);
+  };
+
+  const goToAdjacentSection = (direction) => {
+    if (!data) return;
+    const idx = data.findIndex((s) => s.id === selectedChapterId);
+    if (idx === -1) return;
+    const nextIdx = idx + direction;
+    if (nextIdx < 0 || nextIdx >= data.length) return;
+    setSelectedChapterId(data[nextIdx].id);
+  };
 
   const copyPermalink = (id) => {
     const url = `${window.location.origin}${window.location.pathname}#${id}`;
@@ -35,9 +138,11 @@ export default function GuideReader({ data, isIntl = false, bookmarkedIds, onTog
   if (isIntl) {
     // Render International Student Guide Layout
     const activeSection = data.find((s) => s.id === selectedChapterId) || data[0];
+    const sectionIdx = data.findIndex((s) => s.id === activeSection?.id);
 
     return (
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <ScrollProgressBar percent={scrollProgress} />
         {/* Header Banner */}
         <div className="bg-stone-100 dark:bg-stone-900 rounded-xl border border-stone-200 dark:border-stone-800 p-6 sm:p-8 mb-8">
           <div className="max-w-3xl">
@@ -92,7 +197,7 @@ export default function GuideReader({ data, isIntl = false, bookmarkedIds, onTog
           {/* Main Content Area */}
           <main className="lg:col-span-3">
             {activeSection && (
-              <article className="bg-white dark:bg-stone-900 rounded-xl border border-stone-200 dark:border-stone-800 p-6 sm:p-10 space-y-6">
+              <article ref={articleRef} className="bg-white dark:bg-stone-900 rounded-xl border border-stone-200 dark:border-stone-800 p-6 sm:p-10 space-y-6">
                 <div className="flex items-center justify-between pb-4 border-b border-stone-200 dark:border-stone-800">
                   <div>
                     <h2 className="text-2xl sm:text-3xl font-bold text-stone-900 dark:text-white">
@@ -133,6 +238,26 @@ export default function GuideReader({ data, isIntl = false, bookmarkedIds, onTog
                 <div className="prose prose-slate dark:prose-invert max-w-none text-stone-700 dark:text-stone-300 text-sm sm:text-base leading-relaxed whitespace-pre-line">
                   {activeSection.body}
                 </div>
+
+                {/* Prev/Next Section Nav */}
+                <div className="flex items-center justify-between pt-6 border-t border-stone-200 dark:border-stone-800">
+                  <button
+                    onClick={() => goToAdjacentSection(-1)}
+                    disabled={sectionIdx <= 0}
+                    className="flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-medium text-stone-600 dark:text-stone-300 border border-stone-200 dark:border-stone-700 hover:bg-stone-50 dark:hover:bg-stone-800 disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:bg-transparent active:scale-[0.97] transition-all"
+                  >
+                    <ChevronLeft size={16} />
+                    Previous
+                  </button>
+                  <button
+                    onClick={() => goToAdjacentSection(1)}
+                    disabled={sectionIdx === -1 || sectionIdx >= data.length - 1}
+                    className="flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-medium text-stone-600 dark:text-stone-300 border border-stone-200 dark:border-stone-700 hover:bg-stone-50 dark:hover:bg-stone-800 disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:bg-transparent active:scale-[0.97] transition-all"
+                  >
+                    Next
+                    <ChevronRight size={16} />
+                  </button>
+                </div>
               </article>
             )}
           </main>
@@ -142,26 +267,11 @@ export default function GuideReader({ data, isIntl = false, bookmarkedIds, onTog
   }
 
   // Render Survival Guide Layout
-  let activeChapter = null;
-  let activePart = null;
-
-  for (const p of data || []) {
-    for (const c of p.chapters || []) {
-      if (c.id === selectedChapterId) {
-        activeChapter = c;
-        activePart = p;
-        break;
-      }
-    }
-  }
-
-  if (!activeChapter && data && data.length > 0 && data[0].chapters.length > 0) {
-    activeChapter = data[0].chapters[0];
-    activePart = data[0];
-  }
+  const chapterIdx = flatChapters.findIndex((c) => c.id === selectedChapterId);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <ScrollProgressBar percent={scrollProgress} />
       {/* Header Banner */}
       <div className="bg-stone-100 dark:bg-stone-900 rounded-xl border border-stone-200 dark:border-stone-800 p-6 sm:p-8 mb-8">
         <div className="max-w-3xl">
@@ -219,8 +329,8 @@ export default function GuideReader({ data, isIntl = false, bookmarkedIds, onTog
         {/* Main Content Pane */}
         <main className="lg:col-span-3">
           {activeChapter && (
-            <article className="bg-white dark:bg-stone-900 rounded-xl border border-stone-200 dark:border-stone-800 p-6 sm:p-10 space-y-8">
-              
+            <article ref={articleRef} className="bg-white dark:bg-stone-900 rounded-xl border border-stone-200 dark:border-stone-800 p-6 sm:p-10 space-y-8">
+
               {/* Chapter Header */}
               <div className="border-b border-stone-200 dark:border-stone-800 pb-6">
                 <div className="flex items-center justify-between">
@@ -260,19 +370,62 @@ export default function GuideReader({ data, isIntl = false, bookmarkedIds, onTog
 
               {/* Subsections Content */}
               <div className="space-y-8">
-                {activeChapter.subsections.map((sub) => (
-                  <section key={sub.id} id={sub.id} className="space-y-3">
-                    {sub.title && sub.title !== activeChapter.title && (
-                      <h3 className="text-xl font-semibold text-stone-800 dark:text-stone-200 flex items-center gap-2">
-                        <span className="w-2 h-2 rounded-full bg-cardinal-600"></span>
-                        {sub.title}
-                      </h3>
-                    )}
-                    <div className="prose prose-slate dark:prose-invert max-w-none text-stone-700 dark:text-stone-300 text-sm sm:text-base leading-relaxed whitespace-pre-line">
-                      {sub.body}
-                    </div>
-                  </section>
-                ))}
+                {activeChapter.subsections.map((sub) => {
+                  const hasTitle = Boolean(sub.title && sub.title !== activeChapter.title);
+                  const isOpen = !hasTitle || expandedSubs.has(sub.id);
+                  return (
+                    <section key={sub.id} id={sub.id} className="space-y-3">
+                      {hasTitle && (
+                        <button
+                          onClick={() => toggleSub(sub.id)}
+                          aria-expanded={isOpen}
+                          className="w-full flex items-center justify-between gap-2 text-left group"
+                        >
+                          <h3 className="text-xl font-semibold text-stone-800 dark:text-stone-200 flex items-center gap-2">
+                            <span className="w-2 h-2 rounded-full bg-cardinal-600"></span>
+                            {sub.title}
+                          </h3>
+                          {isOpen ? (
+                            <ChevronUp size={18} className="text-stone-400 group-hover:text-cardinal-600 transition-colors shrink-0" />
+                          ) : (
+                            <ChevronDown size={18} className="text-stone-400 group-hover:text-cardinal-600 transition-colors shrink-0" />
+                          )}
+                        </button>
+                      )}
+                      <div
+                        className={`grid transition-all duration-300 ease-in-out ${
+                          isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
+                        }`}
+                      >
+                        <div className="overflow-hidden">
+                          <div className="prose prose-slate dark:prose-invert max-w-none text-stone-700 dark:text-stone-300 text-sm sm:text-base leading-relaxed whitespace-pre-line">
+                            {sub.body}
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  );
+                })}
+              </div>
+
+              {/* Prev/Next Chapter Nav */}
+              <div className="flex items-center justify-between pt-6 border-t border-stone-200 dark:border-stone-800">
+                <button
+                  onClick={() => goToAdjacentChapter(-1)}
+                  disabled={chapterIdx <= 0}
+                  className="flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-medium text-stone-600 dark:text-stone-300 border border-stone-200 dark:border-stone-700 hover:bg-stone-50 dark:hover:bg-stone-800 disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:bg-transparent active:scale-[0.97] transition-all"
+                >
+                  <ChevronLeft size={16} />
+                  Previous
+                </button>
+                <button
+                  onClick={() => goToAdjacentChapter(1)}
+                  disabled={chapterIdx === -1 || chapterIdx >= flatChapters.length - 1}
+                  className="flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-medium text-stone-600 dark:text-stone-300 border border-stone-200 dark:border-stone-700 hover:bg-stone-50 dark:hover:bg-stone-800 disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:bg-transparent active:scale-[0.97] transition-all"
+                >
+                  Next
+                  <ChevronRight size={16} />
+                </button>
               </div>
 
             </article>
